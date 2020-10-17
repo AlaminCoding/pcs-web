@@ -28,6 +28,9 @@ header {
 .navbar-light .navbar-nav .nav-link:hover {
   color: rgb(255, 255, 255, 0.8);
 }
+/* .navbar-light .navbar-nav .nav-link:visited {
+  color: rgb(255, 255, 255);
+} */
 li.nav-item {
   margin: 0px 50px;
 }
@@ -46,6 +49,9 @@ li.nav-item {
 .secure-btn:hover {
   background-color: white;
   color: black;
+}
+.secure-btn:focus {
+  outline: none;
 }
 @media screen and (max-width: 998px) {
   .secure-btn {
