@@ -24,3 +24,13 @@ new Glide(".glide", {
     },
   },
 }).mount();
+new Glide(".about-glide", {
+  type: "carousel",
+  perView: 6,
+  gap: 20,
+  breakpoints: {
+    800: {
+      perView: 3,
+    },
+  },
+}).mount();
