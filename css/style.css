@@ -2529,7 +2529,8 @@ a.bs-read {
   text-transform: uppercase;
   margin-bottom: 50px;
 }
-.dcta a {
+.dcta a,
+.faq-cta a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 28px;
@@ -2538,7 +2539,8 @@ a.bs-read {
   padding: 12px 35px;
   transition: 0.5s;
 }
-.dcta a:hover {
+.dcta a:hover,
+.faq-cta a:hover {
   text-decoration: none;
   color: #111624;
   background-color: white;
@@ -2702,5 +2704,193 @@ a.bs-read {
   .dcta a {
     font-size: 23px;
     padding: 10px 17px;
+  }
+}
+/*FAQ Section*/
+.f-banner {
+  background-image: url("../img/faq/Header.png");
+  background-position: center;
+  background-size: cover;
+  padding: 260px 0px;
+}
+.f-banner h2 {
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 48px;
+}
+.f-banner p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 25px;
+}
+.fsearch-box {
+  max-width: 520px;
+  margin-top: 35px;
+  position: relative;
+}
+.fsearch-box input {
+  background-color: white;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  font-size: 22px;
+  width: 100%;
+  height: 55px;
+  border-radius: 28px;
+}
+.fsearch-box input:focus {
+  outline: none;
+}
+.fsearch-box:after {
+  content: "\f002";
+  font-family: fontAwesome;
+  position: absolute;
+  top: 10px;
+  font-size: 25px;
+  left: 12px;
+  color: gray;
+}
+/* FAQ Section */
+.faq-section {
+  padding: 60px 0px;
+}
+.faq-title {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  color: #111725;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+/*FAQ Accordio*/
+.faq-row {
+  padding-top: 30px;
+}
+.faq-category {
+  border-top: 5px solid #182f49;
+  padding-top: 14px;
+}
+.faq-category h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+  color: #111725;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+.accordion {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: #f4f4f4;
+  color: #111725;
+  cursor: pointer;
+  padding: 22px 18px 22px 0px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  border-top: 3px solid #182f49;
+}
+
+.factive,
+.accordion:hover {
+  background-color: #ccc;
+}
+.factive,
+.accordion:focus {
+  outline: none;
+}
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.factive:after {
+  content: "\2212";
+}
+
+.fpanel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.fpanel p {
+  margin-bottom: 0;
+  padding: 10px 0px;
+  color: #111725;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+}
+/* FAQ End */
+/* FAQ CTA */
+.faq-cta {
+  background-image: url("../img/faq/CTA.png");
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0px;
+  text-align: center;
+}
+.faq-cta h2 {
+  font-size: 48px;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+.faq-cta a {
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .f-banner {
+    background-position: 85%;
+    padding: 162px 0px;
+  }
+  .f-banner h2 {
+    font-size: 35px;
+  }
+  .f-banner p {
+    font-size: 16px;
+  }
+  .faq-section {
+    padding: 30px 0px;
+  }
+  .faq-title {
+    font-size: 25px;
+  }
+  .faq-category {
+    margin-bottom: 30px;
+  }
+  .faq-category h2 {
+    font-size: 24px;
+  }
+  .accordion {
+    font-size: 14px;
+    padding: 22px 14px 22px 7px;
+  }
+  .accordion:after {
+    margin-top: -10px;
+  }
+  .faq-cta h2 {
+    font-size: 30px;
+  }
+  .faq-cta a {
+    font-size: 20px;
+  }
+  .faq-cta {
+    padding: 150px 0px;
   }
 }
