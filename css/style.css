@@ -2276,3 +2276,431 @@ a.bs-read {
     text-align: center;
   }
 }
+/*Data Removal Section*/
+.d-banner {
+  background-image: url(../img/data-removal/banner.png);
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(17, 23, 37, 0.7);
+  background-blend-mode: overlay;
+  color: white;
+  padding: 400px 0px 205px 0px;
+}
+.d-banner h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-size: 45px;
+  text-align: center;
+}
+/* Data Removal Method */
+.d-method {
+  padding: 60px 0px;
+}
+.dm-title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  text-align: center;
+  color: #181e2f;
+  margin: 0;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+.dm-row {
+  margin-top: 60px;
+}
+.dm-box img {
+  width: 100%;
+}
+.dm-text {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding-left: 10px;
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px gray;
+}
+.dm-text p {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  color: #111725;
+  margin: 0;
+  font-size: 25px;
+}
+/*Data Broker Section*/
+.db-mobile-img img {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+.db-box {
+  background-image: url("../img/data-removal/Data-broker.png");
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+}
+.db-inner-box {
+  width: 60%;
+  background-color: rgb(17, 23, 37, 0.6);
+  color: white;
+  padding: 60px 30px 60px 120px;
+}
+.db-inner-box h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  margin: 0;
+  font-size: 38px;
+}
+.db-inner-box p {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+.db-inner-box ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+.db-inner-box ul li {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+/*Techforing Solution*/
+.d-solution {
+  background-color: white;
+  padding: 60px 0px;
+}
+.ds-title {
+  font-family: "Roboto Slab", serif;
+  color: #111725;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  font-size: 38px;
+}
+.ds-text {
+  color: #182f59;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 45px;
+}
+/*Data Link*/
+.d-link {
+  padding: 80px 0px;
+  width: 100%;
+  background-image: url("../img/data-removal/Link-approval.png");
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.dlink-title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-size: 40px;
+  max-width: 800px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.dlink-list-title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+.dlink-list {
+  padding-inline-start: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+.dlink-list li {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+/*Slider for Data Client*/
+.d-slider {
+  width: 100%;
+  padding: 60px 0px;
+}
+.dslider-title {
+  font-family: "Roboto Slab", serif;
+  color: #111725;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+.dslider-box {
+  margin-top: 50px;
+}
+.dslider {
+  width: 100%;
+  display: flex;
+}
+.dslider-left {
+  background-color: #111624;
+  border-radius: 0px 70px;
+  position: relative;
+  padding: 70px 85px 70px 70px;
+  width: 75%;
+}
+.dslider-left p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0px;
+  line-height: 35px;
+}
+.dslider-img {
+  position: absolute;
+  top: 28%;
+  right: -60px;
+}
+.dslider-img img {
+  width: 150px;
+}
+.dslider-right {
+  width: 25%;
+  padding-left: 75px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.dslider-name {
+  font-family: "Roboto Slab", serif;
+  color: #111725;
+  font-weight: 600;
+  font-size: 28px;
+  margin-top: 0px;
+}
+.dslider-company {
+  font-family: "Roboto Slab", serif;
+  color: #111725;
+  font-weight: 500;
+  font-size: 22px;
+}
+.dslider-des {
+  font-family: "Roboto Slab", serif;
+  color: #111725;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.dslide-bullets {
+  bottom: 2em;
+  left: 84%;
+}
+.dslide-bullets .glide__bullet {
+  background-color: #111624;
+  width: 15px;
+  height: 15px;
+}
+.dslide-bullets .glide__bullet:hover,
+.dslide-bullets .glide__bullet:focus {
+  border: 2px solid white;
+  background-color: #182f59;
+}
+.dslide-bullets .glide__bullet--active {
+  background-color: #182f59;
+}
+/*CTA Section of Data Removal*/
+.dcta {
+  background-image: url("../img/data-removal/CTA.png");
+  background-position: top;
+  background-size: cover;
+  padding: 200px 0px;
+  text-align: center;
+  color: white;
+}
+.dcta h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  margin-top: 0;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.dcta a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  color: white;
+  border: 4px solid white;
+  padding: 12px 35px;
+  transition: 0.5s;
+}
+.dcta a:hover {
+  text-decoration: none;
+  color: #111624;
+  background-color: white;
+}
+@media screen and (max-width: 992px) {
+  .d-banner {
+    padding: 350px 0px 275px 0px;
+  }
+  .d-banner h2 {
+    font-size: 37px;
+  }
+  .dm-title {
+    font-size: 28px;
+  }
+  .dm-text {
+    height: 140px;
+  }
+  .dm-text p {
+    font-size: 18px;
+  }
+  .db-inner-box {
+    width: 100%;
+    padding: 60px 30px 60px 65px;
+  }
+  .ds-title {
+    font-size: 28px;
+  }
+  .ds-text {
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .d-link {
+    padding: 40px 0px;
+  }
+  .dlink-title {
+    font-size: 28px;
+  }
+  .dlink-list-title {
+    font-size: 24px;
+  }
+  .dlink-list li {
+    margin-top: 10px;
+  }
+  .dslider-title {
+    font-size: 28px;
+  }
+  .dslider {
+    flex-direction: column;
+  }
+  .dslider-left {
+    width: 100%;
+  }
+  .dslider-img {
+    width: 100%;
+    text-align: center;
+    top: 82%;
+    right: 0px;
+  }
+  .dslider-right {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 92px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .d-banner h2 {
+    font-size: 33px;
+    text-align: left;
+  }
+  .d-banner {
+    background-position: 69%;
+    padding: 250px 0px 115px 0px;
+  }
+  .d-method {
+    padding: 30px 0px;
+  }
+  .dm-title {
+    font-size: 20px;
+  }
+  .dm-box {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .dm-box img {
+    width: 75%;
+  }
+  .db-mobile-img img {
+    display: block;
+  }
+  .db-box {
+    background-image: none;
+    background-color: #111624;
+    width: 100%;
+  }
+  .db-inner-box {
+    width: 100%;
+    padding: 60px 10px 30px 10px;
+  }
+  .db-inner-box h2 {
+    font-size: 28px;
+  }
+  .db-inner-box p {
+    font-size: 18px;
+  }
+  .db-inner-box ul li {
+    margin-top: 18px;
+    font-size: 16px;
+  }
+  .d-solution {
+    padding: 30px 0px;
+  }
+  .ds-text {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+  }
+  .dlink-title {
+    font-size: 24px;
+    text-align: center;
+  }
+  .dlink-list-title {
+    font-size: 20px;
+    text-align: center;
+  }
+  .dlink-list {
+    padding-inline-start: 58px;
+  }
+  .d-slider {
+    padding: 30px 0px;
+  }
+  .dslider-left {
+    border-radius: 0px 35px;
+    padding: 10px 10px 40px 14px;
+  }
+  .dslider-left p {
+    text-align: center;
+    line-height: 24px;
+  }
+  .dslider-img img {
+    width: 110px;
+  }
+  .dslider-img {
+    top: 85%;
+  }
+  .dslider-right {
+    padding-top: 70px;
+  }
+  .dslide-bullets {
+    bottom: 0em;
+  }
+  .dcta h2 {
+    font-size: 22px;
+  }
+  .dcta {
+    padding: 130px 0px;
+  }
+  .dcta a {
+    font-size: 23px;
+    padding: 10px 17px;
+  }
+}
