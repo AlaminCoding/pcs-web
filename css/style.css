@@ -1853,7 +1853,8 @@ a.bs-read {
 .cu-form-group textarea {
   width: 100%;
 }
-#cu-submit {
+#cu-submit,
+#price-submit {
   font-family: "Montserrat", sans-serif;
   margin: 0 auto;
   margin-top: 40px;
@@ -3307,5 +3308,290 @@ a.bs-read {
   }
   .o-cta a {
     font-size: 20px;
+  }
+}
+/* Pricing Page Start */
+.price-banner {
+  padding: 335px 0px 300px 0px;
+  background-image: url("../img/price/Header.png");
+  background-position: center;
+  background-size: cover;
+}
+.pr-banner-title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-size: 48px;
+  margin: 0;
+  color: white;
+  max-width: 495px;
+}
+.about-price {
+  padding: 60px 0px;
+  width: 100%;
+}
+.ap-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.ap-box-img {
+  padding: 40px 0px;
+  width: 45%;
+}
+.ap-box-img img {
+  width: 100%;
+}
+.ap-box-text {
+  position: absolute;
+  height: 100%;
+  width: 65%;
+  top: 0;
+  right: 0;
+  border: 4px solid #111725;
+  z-index: -1;
+  padding: 12% 5% 0px 12%;
+}
+.ap-box-text h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  margin: 0;
+  color: #111725;
+}
+.ap-box-text h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #111725;
+  margin: 40px 0px;
+}
+.ap-box-text ul {
+  padding-inline-start: 19px;
+}
+.ap-box-text ul li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #111725;
+  font-size: 21px;
+  margin-bottom: 22px;
+}
+.price-form {
+  padding: 25px 0px;
+}
+.pf-title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #111725;
+  font-size: 24px;
+  margin-top: 0;
+}
+#price-submit {
+  background-color: black;
+  padding: 18px 40px;
+  border-radius: 10px;
+  margin-top: 60px;
+}
+.price-slider {
+  padding: 50px 0px;
+}
+.ps-slider-outer {
+  position: relative;
+  padding-top: 95px;
+  padding-bottom: 42px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.price-slider-box {
+  background-color: #111624;
+  padding: 100px 10% 50px 10%;
+  color: white;
+  position: relative;
+  z-index: -1;
+}
+.quote-left {
+  position: absolute;
+  top: -40px;
+  left: -6px;
+  width: 110px;
+}
+.quote-right {
+  position: absolute;
+  bottom: -40px;
+  right: -6px;
+  width: 110px;
+  transform: rotate(180deg);
+}
+.price-slider-box h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  font-size: 22px;
+  line-height: 38px;
+}
+.price-slider-box h3 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  margin-top: 45px;
+}
+.ps-company {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.ps-des {
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.ps-img-box {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.ps-img-box img {
+  width: 170px;
+}
+.ps-bullets {
+  bottom: 110px;
+}
+.ps-bullets .glide__bullet {
+  background-color: rgba(255, 255, 255);
+  width: 17px;
+  height: 17px;
+}
+.ps-bullets .glide__bullet:hover,
+.ps-bullets .glide__bullet:focus {
+  background-color: #335c8a;
+}
+.ps-bullets .glide__bullet--active {
+  background-color: #335c8a;
+}
+@media screen and (max-width: 1026px) {
+  .ap-box-text {
+    padding: 6% 2% 0px 12%;
+  }
+  .ap-box-text h2 {
+    font-size: 25px;
+  }
+  .ap-box-text h3 {
+    margin: 30px 0px;
+    font-size: 20px;
+  }
+  .ap-box-text ul li {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+}
+@media screen and (max-width: 995px) {
+  .about-price {
+    padding-bottom: 0px;
+  }
+  .ap-box {
+    flex-direction: column;
+  }
+  .ap-box-img {
+    padding: 0px 30px;
+    width: 100%;
+  }
+  .ap-box-text {
+    position: relative;
+    width: 99%;
+    top: -40px;
+    padding: 7% 2% 0px 2%;
+  }
+  .ap-box-text h2 {
+    font-size: 23px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 765px) {
+  .price-banner {
+    background-position: 20%;
+  }
+  .ps-bullets {
+    bottom: 80px;
+  }
+  .quote-left,
+  .quote-right {
+    width: 95px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .price-banner {
+    padding: 250px 0px 203px 0px;
+    background-position: 35%;
+  }
+  .pr-banner-title {
+    font-size: 32px;
+  }
+  .ap-box-text {
+    padding: 17% 2% 0px 2%;
+  }
+  .ap-box-text h2 {
+    font-size: 20px;
+  }
+  .ap-box-text h3 {
+    font-size: 16px;
+  }
+  .ap-box-text ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .price-form {
+    padding-top: 0px;
+  }
+  .pf-title {
+    font-size: 18px;
+  }
+  .ps-slider-outer {
+    padding-top: 60px;
+  }
+  .ps-img-box img {
+    width: 110px;
+  }
+  .quote-left,
+  .quote-right {
+    width: 55px;
+  }
+  .quote-left {
+    top: -25px;
+  }
+  .quote-right {
+    bottom: -25px;
+  }
+  .price-slider-box {
+    padding: 62px 2% 14px 2%;
+  }
+  .price-slider-box h2 {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+  }
+  .price-slider-box h3 {
+    margin-top: 5px;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  .ps-company {
+    font-size: 14px;
+  }
+  .ps-des {
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top: 0px;
+  }
+  .ps-bullets {
+    bottom: 72px;
+    left: 58%;
+  }
+  #price-submit {
+    padding: 12px 20px;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .price-slider {
+    padding: 0px 0px;
   }
 }
