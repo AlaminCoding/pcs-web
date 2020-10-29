@@ -2894,3 +2894,418 @@ a.bs-read {
     padding: 150px 0px;
   }
 }
+/*On Boarding Start*/
+.o-banner {
+  background-image: url(../img/onboard/banner.png);
+  background-position: top;
+  background-size: cover;
+  background-color: rgb(17, 23, 37, 0.7);
+  background-blend-mode: overlay;
+  padding: 410px 0px 200px 0px;
+}
+.o-banner h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: white;
+  max-width: 650px;
+  text-align: center;
+  margin: 0;
+}
+.o-service {
+  padding: 60px 0px;
+}
+.os-title {
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-size: 38px;
+  color: #111725;
+  text-align: center;
+  text-transform: uppercase;
+}
+.os-row {
+  margin-top: 60px;
+}
+.os-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.os-img {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px dashed #999999;
+  border-radius: 50%;
+  position: relative;
+}
+
+.os-img:before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 4px;
+  background-color: #999999;
+  top: 50%;
+  right: -48px;
+}
+.os-img:after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 4px;
+  background-color: #999999;
+  top: 50%;
+  left: -48px;
+}
+.os-img-left:after {
+  display: none;
+}
+.os-img-right:before {
+  display: none;
+}
+.os-img img {
+  height: 90px;
+}
+.os-box p {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 18px;
+  color: #111725;
+  padding-left: 18px;
+  font-weight: 600;
+}
+.o-agreement {
+  padding: 30px 0;
+}
+.og-row {
+  width: 100%;
+  display: flex;
+  position: relative;
+  padding-bottom: 60px;
+}
+.og-img-box {
+  width: 52%;
+}
+.og-img-box img {
+  width: 100%;
+}
+.og-box {
+  width: 52%;
+  background-color: #111725;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  padding: 250px 15% 258px 35px;
+}
+.og-box h2 {
+  margin: 0;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.og-box p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 40px;
+}
+.og-link {
+  text-align: right;
+  margin-top: 40px;
+}
+.og-link a {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  border: 3px solid white;
+  padding: 10px 25px;
+  transition: 0.5s;
+}
+.og-link a:hover {
+  background-color: white;
+  color: #111725;
+  text-decoration: none;
+}
+.o-protection {
+  padding-bottom: 60px;
+  text-align: center;
+}
+.o-protection h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  color: #111725;
+  text-transform: uppercase;
+  font-size: 38px;
+}
+.o-protection p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  color: #111725;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.o-protection a {
+  font-family: "Roboto Slab", serif;
+  text-decoration: none;
+  color: white;
+  background-color: #111725;
+  font-size: 24px;
+  padding: 10px 25px;
+}
+.o-expert {
+  padding: 100px 0px;
+  background-image: url("../img/onboard/Team-Bg.png");
+  background-size: cover;
+  background-position: top;
+  background-color: #0b111e;
+}
+.oe-title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+.oe-right {
+  padding-top: 30px;
+}
+.oe-left p,
+.oe-right p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  color: white;
+  font-weight: 500;
+  line-height: 35px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+.o-threat {
+  padding: 60px 0px;
+  text-align: center;
+}
+.o-threat h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  color: #111725;
+  text-transform: uppercase;
+  margin-top: 0;
+  font-size: 38px;
+}
+.o-threat p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  color: #111725;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.o-cta {
+  padding: 140px 0px 100px 0px;
+  background-image: url("../img/onboard/CTA.png");
+  background-position: top;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+.o-cta h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 38px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.o-cta p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.o-cta a {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 30px;
+  border: 4px solid white;
+  padding: 12px 35px;
+  transition: 0.5s;
+}
+.o-cta a:hover {
+  text-decoration: none;
+  background-color: white;
+  color: #111725;
+}
+@media screen and (max-width: 1026px) {
+  .og-box {
+    padding: 94px 5% 94px 35px;
+  }
+  .og-box p {
+    line-height: 33px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .os-title {
+    font-size: 30px;
+  }
+  .os-img:after {
+    display: none;
+  }
+  .os-img:before {
+    display: none;
+  }
+  .os-box p {
+    font-size: 13px;
+    padding-left: 0;
+  }
+  .og-box {
+    padding: 80px 4% 45px 35px;
+  }
+  .o-protection h2 {
+    font-size: 30px;
+  }
+  .o-threat h2 {
+    font-size: 30px;
+  }
+  .o-cta h2 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .og-box {
+    padding: 35px 4% 45px 35px;
+  }
+  .og-box h2 {
+    font-size: 21px;
+  }
+  .og-box p {
+    font-size: 18px;
+    line-height: 33px;
+  }
+}
+@media screen and (max-width: 765px) {
+  .os-title {
+    font-size: 25px;
+  }
+  .os-img:before {
+    display: block;
+    width: 4px;
+    height: 35%;
+    top: 100%;
+    right: 48%;
+  }
+  .os-box p {
+    text-align: center;
+    font-size: 20px;
+    padding-left: 0;
+    margin-top: 75px;
+    margin-bottom: 40px;
+  }
+  .og-row {
+    flex-direction: column;
+  }
+  .og-img-box {
+    width: 100%;
+  }
+  .og-box {
+    width: 100%;
+    position: relative;
+    top: -2px;
+  }
+  .o-protection h2 {
+    font-size: 25px;
+  }
+  .o-threat h2 {
+    font-size: 25px;
+  }
+  .o-cta h2 {
+    font-size: 29px;
+  }
+  .o-cta p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .o-banner {
+    background-position: 65%;
+    padding: 259px 0px 200px 0px;
+  }
+  .o-banner h2 {
+    font-size: 30px;
+  }
+  .o-service {
+    padding: 30px 0px;
+  }
+  .os-title {
+    font-size: 17px;
+  }
+  .o-agreement {
+    padding: 0px 0;
+  }
+  .og-row {
+    padding-bottom: 30px;
+  }
+  .og-box {
+    padding: 40px 4% 40px 4%;
+  }
+  .og-box h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+  .og-box p {
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .og-link {
+    text-align: center;
+  }
+  .o-protection h2 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .o-protection p {
+    font-size: 15px;
+  }
+  .o-expert {
+    padding: 60px 0px;
+    background-position: 50%;
+  }
+  .oe-left p,
+  .oe-right p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  .oe-right {
+    padding-top: 0px;
+  }
+  .o-threat {
+    padding: 30px 0px;
+  }
+  .o-threat h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  .o-threat p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .o-cta h2 {
+    font-size: 26px;
+  }
+  .o-cta p {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .o-cta a {
+    font-size: 20px;
+  }
+}
