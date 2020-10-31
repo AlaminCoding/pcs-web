@@ -6,14 +6,13 @@ $(document).ready(function () {
   });
 });
 
-// const arrow = document.querySelectorAll(".down-arrow-img");
-// arrow.forEach((element, index) => {
-//   console.log(element);
-//   element.addEventListener("click", function () {
-//     element.style.display = "none";
-//   });
-// });
-// console.log(arrow);
+const openModal = document.getElementById("video-open-btn");
+// const closeModal = document.getElementById("video-close-btn");
+const videoModal = document.getElementById("video-modal");
+openModal.addEventListener("click", function () {
+  videoModal.style.display = "flex";
+});
+
 new Glide(".glide", {
   type: "carousel",
   startAt: 0,
@@ -21,16 +20,6 @@ new Glide(".glide", {
   breakpoints: {
     800: {
       perView: 1,
-    },
-  },
-}).mount();
-new Glide(".about-glide", {
-  type: "carousel",
-  perView: 6,
-  gap: 20,
-  breakpoints: {
-    800: {
-      perView: 3,
     },
   },
 }).mount();
