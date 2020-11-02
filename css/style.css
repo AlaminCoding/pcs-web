@@ -1031,8 +1031,6 @@ footer {
   background-image: url(../img/about/Header.png);
   background-size: cover;
   background-position: center;
-  background-color: rgb(0, 0, 0, 0.7);
-  background-blend-mode: overlay;
 }
 .about-btext {
   padding: 288px 0px;
@@ -1040,6 +1038,7 @@ footer {
   font-family: "Roboto Slab", serif;
   font-size: 55px;
   padding-right: 25%;
+  padding-left: 10px;
   line-height: 68px;
 }
 /*Story section*/
@@ -1048,11 +1047,11 @@ footer {
 }
 .mission,
 .vision {
-  background-color: #111725;
+  background-color: #182f49;
   color: white;
   font-family: "Roboto Slab", serif;
   width: 100%;
-  padding: 40px 54px 40px 27.5%;
+  padding: 40px 54px 40px 29%;
   margin-top: 1px;
 }
 .mission h2,
@@ -1062,7 +1061,7 @@ footer {
 .mission p,
 .vision p {
   font-size: 20px;
-  line-height: 44px;
+  line-height: 34px;
   margin-top: 24px;
 }
 .story {
@@ -1072,32 +1071,55 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-right: 20%;
-  padding-left: 10px;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 .story h2 {
-  color: #111725;
-  font-size: 50px;
+  color: #182f49;
+  font-size: 32px;
   text-transform: uppercase;
   text-align: center;
 }
 .story p {
-  color: #182f49;
+  color: rgb(0, 0, 0, 0.85);
   font-size: 22px;
-  line-height: 44px;
+  line-height: 34px;
   margin-top: 16px;
 }
+@media screen and (max-width: 1296px) {
+  .mission,
+  .vision {
+    padding: 40px 54px 40px 16.5%;
+  }
+}
+@media screen and (max-width: 1183px) {
+  .mission,
+  .vision {
+    padding: 40px 54px 40px 24.5%;
+  }
+}
 @media screen and (max-width: 480px) {
+  .story h2 {
+    font-size: 32px;
+  }
   .story p {
-    font-size: 22px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 32px;
     margin-top: 7px;
     margin-bottom: 30px;
+    text-align: center;
+  }
+  .mission p,
+  .vision p {
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 24px;
+    text-align: center;
   }
 }
 /*About Testimoni*/
 .about-client {
-  background-color: #111725;
+  background-color: #182f49;
   padding: 80px 0px;
   color: white;
   position: relative;
@@ -1141,11 +1163,13 @@ footer {
 .count-header {
   text-align: center;
   font-weight: 600;
-  margin: 30px 0px 20px 0px;
+  margin: 30px 0px 90px 0px;
+  color: #182f49;
 }
 @media screen and (max-width: 480px) {
   .count-header {
     margin-top: 45px;
+    margin-bottom: 0px;
   }
 }
 .about-count {
@@ -1155,7 +1179,7 @@ footer {
   background-position: center;
   background-size: cover;
   color: #111725;
-  margin-top: 30px;
+  margin-top: 90px;
   margin-bottom: 90px;
 }
 
@@ -1179,14 +1203,17 @@ footer {
   text-transform: uppercase;
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 0;
+  padding-top: 30px;
   font-family: "Roboto Slab", serif;
   font-weight: 600;
   font-size: 44px;
+  background-color: white;
 }
 .board {
-  background-color: #111725;
+  background-color: white;
   padding-top: 28px;
-  margin-top: 30px;
+  margin-top: 0px;
   padding-bottom: 35px;
 }
 .board-row {
@@ -1197,7 +1224,7 @@ footer {
 }
 .board-box h2,
 .board-box p {
-  color: white;
+  color: #182f49;
 }
 .member-text {
   font-size: 16px;
@@ -1224,7 +1251,7 @@ footer {
   margin-bottom: 30px;
   width: 100%;
   height: auto;
-  border: 2px solid white;
+  border: 2px solid #182f49;
   padding: 35px 0px;
   border-radius: 50%;
   position: relative;
@@ -1253,18 +1280,18 @@ footer {
 .board-img-box a i {
   padding: 18px 20px;
   font-size: 30px;
-  background-color: white;
-  color: #111725;
+  background-color: #182f49;
+  color: white;
   position: absolute;
   border-radius: 50%;
   right: 15px;
   bottom: 15px;
-  border: 2px solid white;
+  border: 2px solid #182f49;
   transition: 0.5s;
 }
 .board-img-box a i:hover {
   background-color: white;
-  color: #5bbc2e;
+  color: #067c05;
 }
 /*Slider*/
 .aslider {
@@ -1274,12 +1301,15 @@ footer {
   .aslider {
     padding-top: 50px;
   }
+  .about-count-box img {
+    width: 80%;
+  }
 }
 .aslider h2 {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  color: #111725;
+  color: #182f49;
   padding: 0px 50px;
   text-transform: uppercase;
   margin-bottom: 80px;
@@ -1310,33 +1340,62 @@ footer {
 
 .about-protect {
   text-align: center;
-  background-image: url(../img/about/CTA.png);
-  background-position: center;
-  background-size: cover;
-  color: white;
-  padding: 190px 0px;
+  background-color: white;
+  padding: 90px 0px;
 }
-
+.ap-line {
+  height: 8px;
+  width: 80px;
+  background-color: #182f49;
+  margin: 0 auto;
+}
+.about-protect p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #182f49;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
 .about-protect h2 {
   font-family: "Roboto Slab", serif;
   font-size: 40px;
+  color: black;
   padding: 0px 11%;
   font-weight: 600;
   margin-bottom: 40px;
 }
 .about-protect button {
-  border: 3px solid white;
-  font-family: "Poppins", sans-serif;
+  color: black;
   background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0px 0px 0px 5px;
+  transition: 0.5s;
+  border: 3px solid transparent;
+  border-radius: 24px;
+}
+.about-protect button i {
+  background-color: #182f49;
   color: white;
-  font-weight: 600;
-  font-size: 25px;
-  padding: 8px 52px;
+  padding: 10px 23px;
+  border-radius: 24px;
+  border: 3px solid #182f49;
+  margin-left: 30px;
   transition: 0.5s;
 }
 .about-protect button:hover {
-  background-color: white;
-  color: #111725;
+  background-color: transparent;
+  color: black;
+}
+/* .about-protect button:hover i {
+  background-color: #182f49;
+  color: white;
+} */
+.about-protect button:focus {
+  outline: none;
+  border: 3px solid #182f49;
 }
 @media screen and (max-width: 480px) {
   .about-btext {
@@ -1353,7 +1412,8 @@ footer {
     margin-bottom: 60px;
   }
   .story {
-    padding-right: 0%;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .mission,
   .vision {
@@ -1373,6 +1433,8 @@ footer {
   }
   .about-count {
     padding: 5px 0px 20px 0px;
+    margin-top: 0px;
+    margin-bottom: 30px;
   }
   .about-count-box {
     margin-top: 30px;
@@ -2186,7 +2248,10 @@ a.bs-read {
   border: 1px solid rgb(118, 118, 118);
 }
 .social-drop,
-.device-drop {
+.device-drop,
+.payment-drop,
+.email-drop,
+.cloud-drop {
   width: 80%;
   height: auto;
   padding: 5px 10px;
@@ -2217,7 +2282,10 @@ a.bs-read {
   color: white;
 }
 .social-drop input,
-.device-drop input {
+.device-drop input,
+.payment-drop input,
+.email-drop input,
+.cloud-drop input {
   height: 40px;
   font-size: 20px;
   margin-bottom: 5px;
@@ -2225,11 +2293,29 @@ a.bs-read {
 #facebook,
 #twitter,
 #insta,
+#link,
+#pint,
+#youtube,
+#snap,
+#whats,
 #android,
 #ios,
 #windows,
 #linux,
-#mac {
+#mac,
+#paypal,
+#skrill,
+#visa,
+#bank,
+#yahoo,
+#hotmail,
+#gmail,
+#outlook,
+#customMail,
+#icloud,
+#gcloud,
+#dropbox,
+#googleDrive {
   width: 20px;
   height: 20px;
   margin-top: 2px;
@@ -2238,11 +2324,29 @@ a.bs-read {
 #fb-input,
 #twitter-input,
 #insta-input,
+#link-input,
+#pint-input,
+#youtube-input,
+#snap-input,
+#whats-input,
 #android-input,
 #ios-input,
 #windows-input,
 #linux-input,
-#mac-input {
+#mac-input,
+#paypal-input,
+#skrill-input,
+#visa-input,
+#bank-input,
+#yahoo-input,
+#hotmail-input,
+#gmail-input,
+#outlook-input,
+#customMail-input,
+#icloud-input,
+#gcloud-input,
+#dropbox-input,
+#googleDrive-input {
   display: none;
 }
 #mobile-btn,
@@ -2380,7 +2484,7 @@ a.bs-read {
 .wwd-middle-img {
   text-align: center;
   width: 100%;
-  margin-top: -100px;
+  margin-top: 0px;
 }
 .wwd-middle-img img {
   height: 520px;
@@ -2540,6 +2644,9 @@ a.bs-read {
   text-align: center;
   margin-bottom: 40px;
 }
+.card {
+  margin-bottom: 40px;
+}
 .card-body {
   padding-bottom: 5px;
 }
@@ -2549,6 +2656,22 @@ a.bs-read {
   font-weight: 600;
   text-transform: uppercase;
   color: #111725;
+}
+.card-btn {
+  margin: 0 auto;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  border: 3px solid #111125;
+  background-color: white;
+  color: #111125;
+  font-weight: 600;
+  padding: 8px 60px;
+  transition: 0.5s;
+}
+.card-btn:hover {
+  background-color: #111125;
+  color: white;
 }
 @media screen and (max-width: 1025px) {
   .wwd-title {
@@ -2604,7 +2727,7 @@ a.bs-read {
 }
 @media screen and (max-width: 480px) {
   .i-banner {
-    padding: 320px 0px 65px 0px;
+    padding: 235px 0px 150px 0px;
   }
   .i-wwd {
     padding: 28px 0px;
@@ -2705,7 +2828,7 @@ a.bs-read {
   background-color: rgb(17, 23, 37, 0.7);
   background-blend-mode: overlay;
   color: white;
-  padding: 380px 0px 205px 0px;
+  padding: 270px 0px 315px 0px;
 }
 .d-banner h2 {
   font-family: "Roboto Slab", serif;
@@ -2736,6 +2859,7 @@ a.bs-read {
 .dm-box img {
   width: 80%;
 }
+
 .dm-text {
   width: 100%;
   height: 200px;
@@ -2945,7 +3069,7 @@ a.bs-read {
   left: 84%;
 }
 .dslide-bullets .glide__bullet {
-  background-color: #111624;
+  background-color: gray;
   width: 15px;
   height: 15px;
 }
@@ -3025,8 +3149,9 @@ a.bs-read {
   .dlink-list-title {
     font-size: 24px;
   }
+
   .dlink-list li {
-    margin-top: 10px;
+    margin-top: 2px;
   }
   .dslider-title {
     font-size: 28px;
@@ -3115,6 +3240,7 @@ a.bs-read {
   }
   .dlink-list {
     padding-inline-start: 58px;
+    margin-bottom: 0px;
   }
   .d-slider {
     padding: 30px 0px;
