@@ -180,6 +180,7 @@ li.nav-item {
     background-position: 57%;
     background-color: rgb(24, 47, 89, 0.4);
     background-blend-mode: overlay;
+    padding-top: 155px;
   }
 }
 @media screen and (max-width: 380px) {
@@ -301,6 +302,9 @@ li.nav-item {
 @media screen and (max-width: 550px) {
   .intro-border-box {
     top: 44%;
+  }
+  .intro-btn-box {
+    text-align: center;
   }
 }
 @media screen and (max-width: 420px) {
@@ -492,6 +496,18 @@ li.nav-item {
 .down-arrow-img {
   transition: 0.5s;
 }
+.down-arrow-img-sm {
+  display: none;
+  transition: 0.5s;
+}
+.down-arrow-img-sm:hover {
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 768px) {
+  .down-arrow-img-sm {
+    display: inline-block;
+  }
+}
 .r-tabs .r-tabs-tab:hover .down-arrow-img {
   transform: rotate(180deg);
 }
@@ -502,13 +518,14 @@ li.nav-item {
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
+  padding-bottom: 60px;
 }
 .r-tabs .r-tabs-accordion-title {
   position: relative;
   padding-bottom: 25px;
   margin-bottom: 30px;
 }
-.r-tabs .r-tabs-accordion-title:after {
+/* .r-tabs .r-tabs-accordion-title:after {
   content: "";
   background-image: url("../img/down-arrow.png");
   height: 19px;
@@ -520,7 +537,7 @@ li.nav-item {
 }
 .r-tabs .r-tabs-accordion-title:hover::after {
   transform: rotate(180deg);
-}
+} */
 @media screen and (max-width: 765px) {
   .serve-header h2 {
     font-size: 30px;
@@ -816,6 +833,9 @@ li.nav-item {
   line-height: 32px;
 }
 /*Slider*/
+.client-slider {
+  padding-bottom: 30px;
+}
 .left-slide-img,
 .right-slide-img {
   height: 80px;
@@ -855,6 +875,34 @@ img.quot-img {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.home-glide-bullets {
+  bottom: -30px;
+}
+.home-glide-bullets .glide__bullet {
+  background-color: #182f49;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  line-height: 0;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+  margin: 0 0.25em;
+}
+.home-glide-bullets .glide__bullet:focus {
+  outline: none;
+}
+.home-glide-bullets .glide__bullet:hover,
+.home-glide-bullets .glide__bullet:focus {
+  border: 2px solid #5bbc2e;
+  background-color: #5bbc2e;
+}
+.home-glide-bullets .glide__bullet--active {
+  background-color: #5bbc2e;
+}
+
 @media screen and (max-width: 1025px) {
   .glide__arrow--left {
     left: -3em;
@@ -865,7 +913,7 @@ img.quot-img {
 }
 @media screen and (max-width: 765px) {
   .happy-client h2 {
-    font-size: 30px;
+    font-size: 34px;
   }
   .client-box {
     padding: 25px 18px;
@@ -888,6 +936,13 @@ img.quot-img {
   .glide__arrow--right {
     right: -2em;
   }
+  .inner-slide {
+    padding: 0px 15px;
+  }
+  .left-slide-img,
+  .right-slide-img {
+    height: 50px;
+  }
 }
 @media screen and (max-width: 380px) {
   .client-box {
@@ -902,7 +957,7 @@ img.quot-img {
     height: 25px;
   }
   .client-box p {
-    line-height: 28px;
+    line-height: 25px;
     margin-bottom: 0;
   }
 }
@@ -1134,13 +1189,11 @@ footer {
   top: 50px;
   z-index: 1;
 }
-@media screen and (max-width: 765px) {
-  .about-client:before {
-    display: none;
-  }
-  .client-abox {
-    margin-top: 40px;
-  }
+.about-client-sm {
+  display: none;
+}
+.client-abox-img {
+  text-align: center;
 }
 .client-abox-img img {
   width: 100%;
@@ -1158,7 +1211,33 @@ footer {
 .client-abox-des {
   font-size: 20px;
 }
-
+@media screen and (max-width: 765px) {
+  .about-client:before {
+    display: none;
+  }
+  .client-abox {
+    margin-top: 40px;
+  }
+  .about-client-sm {
+    display: block;
+  }
+  .about-client-bg {
+    display: none;
+  }
+  .client-abox-img img {
+    width: 80%;
+  }
+  .client-abox-details {
+    padding-left: 0px;
+  }
+  .client-abox-details p {
+    text-align: center;
+  }
+  .about-client-sm {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+}
 /*About Security*/
 .count-header {
   text-align: center;
@@ -1168,7 +1247,7 @@ footer {
 }
 @media screen and (max-width: 480px) {
   .count-header {
-    margin-top: 45px;
+    margin-top: 0px;
     margin-bottom: 0px;
   }
 }
@@ -2481,14 +2560,21 @@ a.bs-read {
   font-weight: 500;
   margin-top: 6px;
 }
-.wwd-middle-img {
+.wwd-middle-img-bg {
   text-align: center;
   width: 100%;
   margin-top: 0px;
 }
-.wwd-middle-img img {
+.wwd-middle-img-bg img {
   height: 520px;
   width: auto;
+}
+.wwd-middle-img-sm {
+  text-align: center;
+  display: none;
+}
+.wwd-middle-img-sm img {
+  width: 80%;
 }
 .wwd-row2 {
   margin-top: -100px;
@@ -2690,7 +2776,7 @@ a.bs-read {
     font-size: 16px;
     margin-top: 4px;
   }
-  .wwd-middle-img img {
+  .wwd-middle-img-bg img {
     height: 400px;
   }
   .wwd-row2 {
@@ -2741,12 +2827,11 @@ a.bs-read {
   .wwd-row ul li {
     font-size: 15px;
   }
-  .wwd-middle-img {
-    margin-top: 0;
+  .wwd-middle-img-bg {
+    display: none;
   }
-  .wwd-middle-img img {
-    height: auto;
-    width: 100%;
+  .wwd-middle-img-sm {
+    display: block;
   }
   .method-title {
     font-size: 20px;
@@ -3904,6 +3989,7 @@ a.bs-read {
 }
 .banner-doller {
   display: none;
+  font-family: "Poppins", sans-serif;
 }
 .about-price {
   padding: 60px 0px;
@@ -4070,6 +4156,14 @@ a.bs-read {
   }
 }
 @media screen and (max-width: 995px) {
+  .price-banner {
+    background-image: url("../img/price/pricing-bg.png");
+  }
+  .banner-doller {
+    display: block;
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
   .about-price {
     padding-bottom: 0px;
   }
@@ -4093,7 +4187,7 @@ a.bs-read {
 }
 @media screen and (max-width: 765px) {
   .price-banner {
-    background-position: 20%;
+    background-image: url("../img/price/pricing-bg.png");
   }
   .ps-bullets {
     bottom: 80px;
@@ -4105,16 +4199,18 @@ a.bs-read {
 }
 @media screen and (max-width: 480px) {
   .price-banner {
-    padding: 195px 0px 203px 0px;
-    background-position: 45%;
+    padding: 240px 0px 203px 0px;
+    background-position: 90%;
   }
   .pr-banner-title {
     font-size: 32px;
+    text-align: center;
   }
   .banner-doller {
     display: block;
-    font-size: 50px;
-    margin-bottom: 30px;
+    font-size: 65px;
+    margin-bottom: 20px;
+    text-align: center;
   }
   .ap-box-text {
     padding: 17% 2% 0px 2%;
