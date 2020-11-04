@@ -24,6 +24,7 @@ header {
   color: white;
   font-weight: 500;
   text-transform: uppercase;
+  font-size: 12px;
 }
 .navbar-light .navbar-nav .nav-link:hover {
   color: rgb(255, 255, 255, 0.8);
@@ -32,7 +33,7 @@ header {
   color: rgb(255, 255, 255);
 } */
 li.nav-item {
-  margin: 0px 50px;
+  margin: 0px 0px;
 }
 .navbar-light .navbar-toggler-icon i {
   color: white;
@@ -1085,20 +1086,51 @@ footer {
   width: 100%;
   background-image: url(../img/about/Header.png);
   background-size: cover;
-  background-position: center;
+  background-position: top;
+  padding: 360px 0px 290px 0px;
 }
 .about-btext {
-  padding: 288px 0px;
   color: white;
   font-family: "Roboto Slab", serif;
   font-size: 55px;
-  padding-right: 25%;
-  padding-left: 10px;
-  line-height: 68px;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0px 0px 4px black;
+}
+.about-bbutton {
+  text-align: center;
+}
+.about-bbutton a {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 7px 0px 7px 10px;
+  border-radius: 33px;
+}
+.about-bbutton a i {
+  background-color: #067c05;
+  border: 3px solid #067c05;
+  color: white;
+  margin-left: 10px;
+  padding: 6px 18px;
+  border-radius: 22px;
+  transition: 0.5s;
+}
+.about-bbutton a:hover {
+  text-decoration: none;
+}
+.about-bbutton a:hover i {
+  background-color: transparent;
+  border: 3px solid white;
+}
+.about-bbutton a:focus {
+  border: 3px solid white;
 }
 /*Story section*/
 .story-sec {
   margin: 100px 0px;
+  overflow: hidden;
 }
 .mission,
 .vision {
@@ -1106,8 +1138,20 @@ footer {
   color: white;
   font-family: "Roboto Slab", serif;
   width: 100%;
-  padding: 40px 54px 40px 29%;
+  padding: 40px 30px 40px 0px;
   margin-top: 1px;
+  position: relative;
+  padding-left: 10px;
+}
+.mission:after,
+.vision:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #182f49;
+  top: 0;
+  left: -100%;
 }
 .mission h2,
 .vision h2 {
@@ -1118,6 +1162,7 @@ footer {
   font-size: 20px;
   line-height: 34px;
   margin-top: 24px;
+  text-align: justify;
 }
 .story {
   font-family: "Roboto Slab", serif;
@@ -1126,7 +1171,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-right: 10%;
+  padding-right: 0%;
   padding-left: 10%;
 }
 .story h2 {
@@ -1140,17 +1185,13 @@ footer {
   font-size: 22px;
   line-height: 34px;
   margin-top: 16px;
+  text-align: justify;
 }
-@media screen and (max-width: 1296px) {
-  .mission,
-  .vision {
-    padding: 40px 54px 40px 16.5%;
-  }
-}
-@media screen and (max-width: 1183px) {
-  .mission,
-  .vision {
-    padding: 40px 54px 40px 24.5%;
+@media screen and (max-width: 765px) {
+  .mission:after,
+  .vision:after {
+    left: 0px;
+    z-index: -1;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1216,7 +1257,11 @@ footer {
     display: none;
   }
   .client-abox {
-    margin-top: 40px;
+    margin-top: 0px;
+    padding: 30px 0px;
+  }
+  .client-abox-sm {
+    border-bottom: 1px solid white;
   }
   .about-client-sm {
     display: block;
@@ -1235,7 +1280,7 @@ footer {
   }
   .about-client-sm {
     padding-top: 0;
-    padding-bottom: 60px;
+    padding-bottom: 0px;
   }
 }
 /*About Security*/
@@ -1404,7 +1449,7 @@ footer {
 }
 .aslide-arrow-left,
 .aslide-arrow-right {
-  color: #111725;
+  color: #067c05;
   font-size: 30px;
 }
 .aslide-arrow-left {
@@ -1417,7 +1462,8 @@ footer {
 }
 /*About Protect*/
 
-.about-protect {
+.about-protect,
+.price-cta {
   text-align: center;
   background-color: white;
   padding: 90px 0px;
@@ -1425,10 +1471,11 @@ footer {
 .ap-line {
   height: 8px;
   width: 80px;
-  background-color: #182f49;
+  background-color: #067c05;
   margin: 0 auto;
 }
-.about-protect p {
+.about-protect p,
+.price-cta p {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -1436,52 +1483,65 @@ footer {
   margin-bottom: 12px;
   margin-top: 12px;
 }
-.about-protect h2 {
+.about-protect h2,
+.price-cta h2 {
   font-family: "Roboto Slab", serif;
-  font-size: 40px;
+  font-size: 36px;
   color: black;
   padding: 0px 11%;
   font-weight: 600;
-  margin-bottom: 40px;
+  margin-bottom: 16px;
 }
-.about-protect button {
+.about-protect button,
+.price-cta button {
   color: black;
   background-color: transparent;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 20px;
-  padding: 0px 0px 0px 5px;
+  padding: 0px 0px 0px 10px;
   transition: 0.5s;
   border: 3px solid transparent;
   border-radius: 24px;
 }
-.about-protect button i {
-  background-color: #182f49;
+.about-protect button i,
+.price-cta button i {
+  background-color: #067c05;
   color: white;
   padding: 10px 23px;
   border-radius: 24px;
-  border: 3px solid #182f49;
+  border: 3px solid #067c05;
   margin-left: 30px;
   transition: 0.5s;
 }
-.about-protect button:hover {
+.about-protect button:hover,
+.price-cta button:hover {
   background-color: transparent;
   color: black;
 }
-/* .about-protect button:hover i {
-  background-color: #182f49;
-  color: white;
-} */
-.about-protect button:focus {
+.about-protect button:hover i,
+.price-cta button:hover i {
+  background-color: transparent;
+  color: #067c05;
+}
+.about-protect button:focus,
+.price-cta button:focus {
   outline: none;
-  border: 3px solid #182f49;
+  border: 3px solid #067c05;
 }
 @media screen and (max-width: 480px) {
+  .about-banner {
+    width: 100%;
+    background-image: url(../img/about/Header.png);
+    background-size: cover;
+    background-position: 80%;
+    padding: 300px 0px 230px 0px;
+  }
   .about-btext {
     text-align: center;
-    font-size: 28px;
-    line-height: 54px;
-    padding: 260px 0px;
+    font-size: 33px;
+    line-height: 38px;
+    text-shadow: 0px 0px 4px #067c05;
   }
   .about-story-row {
     flex-direction: column-reverse;
@@ -1496,7 +1556,7 @@ footer {
   }
   .mission,
   .vision {
-    padding: 40px 15px 40px 15px;
+    padding: 40px 15px;
   }
   .mission h2,
   .vision h2 {
@@ -1544,6 +1604,10 @@ footer {
     font-size: 26px;
     padding: 0px 0%;
   }
+  .price-cta h2 {
+    font-size: 24px;
+    padding: 0px 0%;
+  }
 }
 /*PService Banner*/
 .pservice-banner {
@@ -1551,7 +1615,7 @@ footer {
   background-color: rgb(0, 0, 0, 0.5);
   background-blend-mode: overlay;
   color: white;
-  padding: 320px 0px;
+  padding: 360px 0px 280px 0px;
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -1561,74 +1625,113 @@ footer {
   font-size: 40px;
 }
 /*Pservices Section*/
-.pservices {
-  padding-top: 50px;
-  padding-bottom: 70px;
+.ps-report {
+  background-color: #f4f4f4;
+  padding: 80px 0px 80px 0px;
+  text-align: center;
 }
-.pservices h2 {
-  font-family: "Roboto Slab", serif;
-  color: #111725;
-  font-size: 55px;
-  padding-right: 29%;
-  font-weight: 700;
-  position: relative;
-  padding-bottom: 15px;
-}
-.pservices h2:before {
-  content: "";
-  height: 8px;
-  width: 115px;
-  background-color: #111725;
-  position: absolute;
-  bottom: 0;
-  left: 10%;
-}
-.pservice-row {
-  margin-top: 30px;
-}
-.pservice-box {
-  background-color: #011725;
-  height: 100%;
-  color: white;
-  padding: 20px;
-  transition: 0.5s;
-}
-.pservices .pservice-box h2 {
-  color: white;
-  padding-left: 0;
-  padding-right: 0;
-  font-size: 32px;
-  margin-top: 0px;
-}
-.pservices .pservice-box h2:before {
-  display: none;
-}
-.pservice-box h2 i {
-  color: white;
-  font-size: 27px;
-}
-.pservice-box ul {
-  list-style: none;
-  padding-inline-start: 0px;
+.ps-report p {
   font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
-.pservice-box ul li {
-  display: flex;
-  font-size: 18px;
-  margin-top: 10px;
+.ps-report h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  color: #444444;
+  margin-top: 0px;
+  margin-bottom: 48px;
+  font-size: 40px;
+  padding: 0px 50px;
 }
-.pservice-box ul li i {
+.psr-btn {
+  background-color: #575757;
   color: white;
-  margin-top: 7px;
-  margin-right: 8px;
-  font-size: 12px;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 15px 40px;
+  position: relative;
+  transition: 0.5s;
+  z-index: 2;
 }
-.pservice-box:hover {
-  box-shadow: 8px 8px 15px rgb(0, 0, 0, 0.7);
+.psr-btn:before {
+  content: "";
+  width: 120%;
+  height: 100%;
+  border: 4px solid #182f59;
+  position: absolute;
+  top: 25px;
+  left: -26px;
+  transition: 0.5s;
+  z-index: -1;
+}
+.psr-btn:hover {
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+}
+.psr-btn:hover:before {
+  background-color: #182f59;
+  top: 0;
 }
 
-.ps-history {
+.ps-services {
+  background-color: white;
   padding: 30px 0px 60px 0px;
+}
+.pss-title {
+  color: #111125;
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 0px;
+  font-size: 38px;
+}
+.pss-col {
+  display: flex;
+  align-items: center;
+}
+.pss-img-box {
+  width: 100%;
+  margin-top: 60px;
+}
+.pss-img-box img {
+  width: 100%;
+}
+.pss-box {
+  margin-top: 60px;
+}
+.pss-box h2 {
+  color: #111125;
+  font-family: "Roboto Slab", serif;
+  font-size: 32px;
+  margin-bottom: 0;
+  position: relative;
+  padding-top: 15px;
+}
+.pss-box h2:after {
+  content: "";
+  height: 6px;
+  width: 80px;
+  position: absolute;
+  background-color: #111125;
+  top: 0;
+  left: 0;
+}
+.pss-box ul {
+  padding-inline-start: 0;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+.pss-box ul li {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.ps-history {
+  padding: 60px 0px 60px 0px;
 }
 .ps-history h2 {
   font-family: "Roboto Slab", serif;
@@ -1713,6 +1816,9 @@ footer {
 .ps-topics {
   padding: 60px 0px;
 }
+.ps-topics-row {
+  justify-content: space-evenly;
+}
 .topic-box {
   height: 190px;
   width: 190px;
@@ -1741,8 +1847,11 @@ footer {
   z-index: 1;
 }
 .topic-box .topic-box-expand p {
-  font-size: 14px;
+  font-size: 22px;
   padding: 0px 10px;
+}
+.topic-box .topic-box-expand h2 {
+  font-size: 40px;
 }
 .topic-box h2 {
   text-align: center;
@@ -1751,7 +1860,7 @@ footer {
 .topic-box p {
   text-align: center;
   color: white;
-  font-size: 22px;
+  font-size: 20px;
 }
 .topic-box:hover .topic-box-expand {
   display: flex;
@@ -1790,9 +1899,6 @@ footer {
   background-color: #011725;
 }
 @media screen and (max-width: 992px) {
-  .pservices h2 {
-    font-size: 40px;
-  }
   .history-box h1 {
     font-size: 60px;
   }
@@ -1817,14 +1923,27 @@ footer {
   }
 }
 @media screen and (max-width: 765px) {
-  .pservice-row {
-    margin-top: 0px;
+  .ps-services {
+    background-color: white;
+    padding: 30px 0px 30px 0px;
   }
-  .pservices {
-    padding-bottom: 30px;
+  .ps-report {
+    padding: 30px 0px 80px 0px;
   }
-  .pservice-box {
-    height: auto;
+  .ps-report h2 {
+    font-size: 28px;
+    padding: 0px 0px;
+  }
+  .pss-title {
+    font-size: 28px;
+  }
+  .pss-row {
+    flex-direction: column-reverse;
+  }
+  .pss-img-box {
+    margin-top: 30px;
+  }
+  .pss-box {
     margin-top: 30px;
   }
   .ps-history h2 {
@@ -1874,31 +1993,14 @@ footer {
     font-size: 32px;
     text-align: left;
   }
-  .pservices {
-    padding-top: 30px;
-  }
-  .pservices h2 {
-    font-size: 38px;
-    padding-left: 0;
-  }
-  .pservices .pservice-box h2 {
-    font-size: 28px;
-  }
-  .pservice-box ul li {
-    font-size: 16px;
-    margin-top: 8px;
-  }
   .ps-history {
-    padding: 10px 0px 60px 0px;
+    padding: 30px 0px 0px 0px;
   }
   .ps-history h2 {
     font-size: 20px;
   }
   .h-even:after {
     top: 0%;
-  }
-  .pservices h2:before {
-    left: 13%;
   }
 }
 /*Blog Page Start*/
@@ -2330,7 +2432,8 @@ a.bs-read {
 .device-drop,
 .payment-drop,
 .email-drop,
-.cloud-drop {
+.cloud-drop,
+.service-drop {
   width: 80%;
   height: auto;
   padding: 5px 10px;
@@ -2349,7 +2452,9 @@ a.bs-read {
   color: white;
 }
 .mobile-drop,
-.pc-drop {
+.pc-drop,
+.ci-drop,
+.ir-drop {
   border: 3px solid white;
   background-color: #111725;
   padding: 10px;
@@ -2357,9 +2462,12 @@ a.bs-read {
   margin: 5px;
 }
 .mobile-drop .check-group label,
-.pc-drop .check-group label {
+.pc-drop .check-group label,
+.ci-drop .check-group label,
+.ir-drop .check-group label {
   color: white;
 }
+
 .social-drop input,
 .device-drop input,
 .payment-drop input,
@@ -2382,6 +2490,7 @@ a.bs-read {
 #windows,
 #linux,
 #mac,
+#stv,
 #paypal,
 #skrill,
 #visa,
@@ -2394,7 +2503,13 @@ a.bs-read {
 #icloud,
 #gcloud,
 #dropbox,
-#googleDrive {
+#googleDrive,
+#ccs,
+#oi,
+#ci,
+#vr,
+#hr,
+#dr {
   width: 20px;
   height: 20px;
   margin-top: 2px;
@@ -2413,6 +2528,7 @@ a.bs-read {
 #windows-input,
 #linux-input,
 #mac-input,
+#stv-input,
 #paypal-input,
 #skrill-input,
 #visa-input,
@@ -2429,9 +2545,26 @@ a.bs-read {
   display: none;
 }
 #mobile-btn,
-#pc-btn {
+#pc-btn,
+#ci-btn,
+#ir-btn {
   font-size: 16px;
   height: 40px;
+}
+#device-sec,
+#media-sec,
+#cloud-sec,
+#email-sec,
+#payment-sec,
+#wifi-sec {
+  display: none;
+}
+.text-box {
+  display: none;
+}
+.pricing-msg-box,
+.pricing-link-box {
+  width: 100%;
 }
 .cu-form-group .select-div select {
   -webkit-appearance: none;
@@ -3653,11 +3786,15 @@ a.bs-read {
 }
 .og-box {
   width: 52%;
+  height: 92%;
   background-color: #111725;
   position: absolute;
   top: 40px;
   right: 0;
-  padding: 250px 15% 258px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 15% 0px 35px;
 }
 .og-box h2 {
   margin: 0;
@@ -3802,14 +3939,10 @@ a.bs-read {
   background-color: white;
   color: #111725;
 }
-@media screen and (max-width: 1296px) {
-  .og-box {
-    padding: 170px 15% 258px 35px;
-  }
-}
+
 @media screen and (max-width: 1026px) {
   .og-box {
-    padding: 94px 5% 94px 35px;
+    padding: 0px 5% 0px 35px;
   }
   .og-box p {
     line-height: 33px;
@@ -3830,7 +3963,7 @@ a.bs-read {
     padding-left: 0;
   }
   .og-box {
-    padding: 80px 4% 45px 35px;
+    padding: 30px 4% 40px 35px;
   }
   .o-protection h2 {
     font-size: 30px;
@@ -3844,7 +3977,7 @@ a.bs-read {
 }
 @media screen and (max-width: 800px) {
   .og-box {
-    padding: 35px 4% 45px 35px;
+    padding: 30px 4% 40px 35px;
   }
   .og-box h2 {
     font-size: 21px;
@@ -3917,7 +4050,7 @@ a.bs-read {
     padding-bottom: 30px;
   }
   .og-box {
-    padding: 40px 4% 40px 4%;
+    padding: 30px 4% 40px 4%;
   }
   .og-box h2 {
     font-size: 26px;

@@ -1,4 +1,25 @@
 $(document).ready(function () {
+  //Service Buttons and Drop Variables
+  var serviceBtn = $("#service-btn");
+  var serviceDrop = $("#service-drop");
+  var ccs = $("#ccs");
+  var deviceSec = $("#device-sec");
+  var mediaSec = $("#media-sec");
+  var cloudSec = $("#cloud-sec");
+  var emailSec = $("#email-sec");
+  var paymentSec = $("#payment-sec");
+  var wifiSec = $("#wifi-sec");
+  var ciBtn = $("#ci-btn");
+  var ciDrop = $("#ci-drop");
+  var oi = $("#oi");
+  var ci = $("#ci");
+  var textBox = $("#text-box");
+  var irBtn = $("#ir-btn");
+  var irDrop = $("#ir-drop");
+  var vr = $("#vr");
+  var hr = $("#hr");
+  var dr = $("#dr");
+  var linkBox = $("#link-box");
   //Social Button and Drop Variables
   var socialBtn = $("#social-btn");
   var socialDrop = $("#social-drop");
@@ -70,6 +91,113 @@ $(document).ready(function () {
   var macInput = $("#mac-input");
   var linux = $("#linux");
   var linuxInput = $("#linux-input");
+  var stv = $("#stv");
+  var stvInput = $("#stv-input");
+  //Service Selection
+  serviceBtn.click(function (event) {
+    event.preventDefault();
+    serviceDrop.slideToggle();
+  });
+  ccs.click(function () {
+    if ($(this).prop("checked") == true) {
+      deviceSec.show();
+      mediaSec.show();
+      cloudSec.show();
+      emailSec.show();
+      paymentSec.show();
+      wifiSec.show();
+    } else if ($(this).prop("checked") == false) {
+      deviceSec.hide();
+      mediaSec.hide();
+      cloudSec.hide();
+      emailSec.hide();
+      paymentSec.hide();
+      wifiSec.hide();
+    }
+  });
+  ciBtn.click(function (event) {
+    event.preventDefault();
+    ciDrop.slideToggle();
+    irDrop.slideUp();
+  });
+  oi.click(function () {
+    if ($(this).prop("checked") == true) {
+      textBox.show();
+      deviceSec.hide();
+      mediaSec.hide();
+      cloudSec.hide();
+      emailSec.hide();
+      paymentSec.hide();
+      wifiSec.hide();
+    } else if ($(this).prop("checked") == false) {
+      textBox.hide();
+    }
+  });
+  ci.click(function () {
+    if ($(this).prop("checked") == true) {
+      textBox.show();
+      deviceSec.hide();
+      mediaSec.hide();
+      cloudSec.hide();
+      emailSec.hide();
+      paymentSec.hide();
+      wifiSec.hide();
+    } else if ($(this).prop("checked") == false) {
+      textBox.hide();
+    }
+  });
+  irBtn.click(function (event) {
+    event.preventDefault();
+    irDrop.slideToggle();
+    ciDrop.slideUp();
+  });
+  vr.click(function () {
+    if ($(this).prop("checked") == true) {
+      textBox.hide();
+      deviceSec.show();
+      mediaSec.hide();
+      cloudSec.hide();
+      emailSec.hide();
+      paymentSec.hide();
+      wifiSec.hide();
+    } else if ($(this).prop("checked") == false) {
+      deviceSec.hide();
+    }
+  });
+  hr.click(function () {
+    if ($(this).prop("checked") == true) {
+      textBox.hide();
+      deviceSec.show();
+      mediaSec.show();
+      cloudSec.show();
+      emailSec.show();
+      paymentSec.show();
+      wifiSec.show();
+    } else if ($(this).prop("checked") == false) {
+      textBox.hide();
+      deviceSec.hide();
+      mediaSec.hide();
+      cloudSec.hide();
+      emailSec.hide();
+      paymentSec.hide();
+      wifiSec.hide();
+    }
+  });
+  dr.click(function () {
+    if ($(this).prop("checked") == true) {
+      linkBox.show();
+      textBox.show();
+      deviceSec.hide();
+      mediaSec.hide();
+      cloudSec.hide();
+      emailSec.hide();
+      paymentSec.hide();
+      wifiSec.hide();
+    } else if ($(this).prop("checked") == false) {
+      linkBox.hide();
+      textBox.hide();
+    }
+  });
   //Social Section
   socialBtn.click(function (event) {
     event.preventDefault();
@@ -295,7 +423,14 @@ $(document).ready(function () {
       macInput.val(0);
     }
   });
-
+  stv.click(function () {
+    if ($(this).prop("checked") == true) {
+      stvInput.show();
+    } else if ($(this).prop("checked") == false) {
+      stvInput.hide();
+      stvInput.val(0);
+    }
+  });
   //Cloud Section
   cloudBtn.click(function (event) {
     event.preventDefault();

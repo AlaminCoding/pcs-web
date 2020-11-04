@@ -19,8 +19,8 @@
   <body>
     <header>
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light pr-0 pl-0">
-          <a class="navbar-brand" href="#"
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html"
             ><img src="img/logo.png" alt="Site Img"
           /></a>
           <button
@@ -38,13 +38,33 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="aboutus.html">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="personal_service.html"
+                  >Personal Services</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Who we serve</a>
+                <a class="nav-link" href="data_removal.html">Data Removal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="investigate.html">Investigate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="on_board.html">On Board</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -144,33 +164,46 @@
               <div class="col-md-6">
                 <div class="cu-form-group">
                   <label for="service">Choose the service</label>
-                  <div class="select-div">
-                    <select name="service" id="service">
-                      <option value="PersonalCyberSecurity">
-                        Personal Cyber Security
-                      </option>
-                      <option value="PersonalCyberSecurity">
-                        Personal Cyber Security
-                      </option>
-                      <option value="PersonalCyberSecurity">
-                        Personal Cyber Security
-                      </option>
-                      <option value="PersonalCyberSecurity">
-                        Personal Cyber Security
-                      </option>
-                      <option value="PersonalCyberSecurity">
-                        Personal Cyber Security
-                      </option>
-                      <option value="PersonalCyberSecurity">
-                        Personal Cyber Security
-                      </option>
-                    </select>
+                  <button id="service-btn">
+                    Choose the Service (Main Services)
+                  </button>
+                  <div class="service-drop" id="service-drop">
+                    <div class="check-group">
+                      <input type="checkbox" name="ccs" id="ccs" />
+                      <label for="ccs">Concierge Cybersecurity</label>
+                    </div>
+                    <button id="ci-btn">Cyber Investigation</button>
+                    <div class="ci-drop" id="ci-drop">
+                      <div class="check-group">
+                        <input type="checkbox" name="oi" id="oi" />
+                        <label for="oi">Opensource Intelligence</label>
+                      </div>
+                      <div class="check-group">
+                        <input type="checkbox" name="ci" id="ci" />
+                        <label for="ci">Crime Investigation</label>
+                      </div>
+                    </div>
+                    <button id="ir-btn">Incident Response</button>
+                    <div class="ir-drop" id="ir-drop">
+                      <div class="check-group">
+                        <input type="checkbox" name="vr" id="vr" />
+                        <label for="vr">Virus Removal</label>
+                      </div>
+                      <div class="check-group">
+                        <input type="checkbox" name="hr" id="hr" />
+                        <label for="hr">Hack Recovery</label>
+                      </div>
+                      <div class="check-group">
+                        <input type="checkbox" name="dr" id="dr" />
+                        <label for="dr">Data Removal</label>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6" id="device-sec">
                 <div class="cu-form-group">
                   <label for="device">No of Device</label>
                   <button id="device-btn">Your Device</button>
@@ -236,10 +269,21 @@
                         value="0"
                       />
                     </div>
+                    <div class="check-group">
+                      <input type="checkbox" name="stv" id="stv" />
+                      <label for="stv">Smart TV</label>
+                    </div>
+                    <input
+                      type="number"
+                      min="1"
+                      id="stv-input"
+                      name="stv-input"
+                      value="0"
+                    />
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6" id="media-sec">
                 <div class="cu-form-group">
                   <label for="social">No of Social Media</label>
                   <button id="social-btn">Your Social Media</button>
@@ -336,8 +380,7 @@
                   </div>
                 </div>
               </div>
-              <!-- </div> -->
-              <div class="col-md-6">
+              <div class="col-md-6" id="email-sec">
                 <div class="cu-form-group">
                   <label for="numberOfEmail">No of Email</label>
                   <button id="email-btn">Your Email</button>
@@ -404,7 +447,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6" id="payment-sec">
                 <div class="cu-form-group">
                   <label for="payment">Payment Gateway</label>
                   <button id="payment-btn">Your Payment Gateway</button>
@@ -456,7 +499,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6" id="cloud-sec">
                 <div class="cu-form-group">
                   <label for="cloud">Number of cloud account</label>
                   <button id="cloud-btn">Your Cloud Account</button>
@@ -512,12 +555,31 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6" id="wifi-sec">
                 <div class="cu-form-group">
                   <label for="numberOfWifi">No of Wifi</label>
                   <input type="number" min="1" />
                 </div>
               </div>
+            </div>
+            <div class="cu-form-group text-box" id="link-box">
+              <label for="pricing-link-box">All Links</label>
+              <textarea
+                placeholder="Enter your links"
+                name="pricing-link-box"
+                class="pricing-link-box"
+                id="pricing-link-box"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="cu-form-group text-box" id="text-box">
+              <label for="pricing-msg-box">Write your massage</label>
+              <textarea
+                name="pricing-msg-box"
+                class="pricing-msg-box"
+                id="pricing-msg-box"
+                rows="10"
+              ></textarea>
             </div>
             <input type="submit" value="Request Quote" id="price-submit" />
           </form>
@@ -621,6 +683,17 @@
             <button class="glide__bullet" data-glide-dir="=2"></button>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="price-cta">
+      <div class="container">
+        <div class="ap-line"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
+          corrupti.
+        </p>
+        <h2>WANT TO CONNECT WITH US?</h2>
+        <button>Schedule a call <i class="fas fa-arrow-right"></i></button>
       </div>
     </section>
     <footer>
