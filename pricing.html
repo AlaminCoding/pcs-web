@@ -19,7 +19,7 @@
   <body>
     <header>
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light pr-0 pl-0">
           <a class="navbar-brand" href="index.html"
             ><img src="img/logo.png" alt="Site Img"
           /></a>
@@ -37,38 +37,88 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="aboutus.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="personal_service.html"
-                  >Personal Services</a
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-toggle="dropdown"
                 >
+                  About
+                </a>
+                <ul class="dropdown-menu fade-up">
+                  <li>
+                    <a class="dropdown-item" href="aboutus.html">Who We Are</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Who We Serve</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">On Boarding</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-toggle="dropdown"
+                >
+                  Personal Cybersecurity
+                </a>
+                <ul class="dropdown-menu fade-up">
+                  <li>
+                    <a class="dropdown-item" href="personal_service.html"
+                      >Concierge Cybersecurity</a
+                    >
+                  </li>
+                  <li class="sub-dropdown">
+                    <a class="dropdown-item" href="#" id="sub-dropdown1">
+                      Cyber Investigation
+                    </a>
+                    <div class="sub-menu" id="sub-menu1">
+                      <a href="#">Open Source Intelligence</a>
+                      <a href="investigate.html">Crime Investigation</a>
+                    </div>
+                  </li>
+                  <li class="sub-dropdown" id="sub-dropdown2">
+                    <a class="dropdown-item" href="#">Incident Response</a>
+                    <div class="sub-menu" id="sub-menu2">
+                      <a href="hack_recovery.html">Hack Recovery</a>
+                      <a href="#">Virus Removal</a>
+                      <a href="data_removal.html">Data Removal</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-toggle="dropdown"
+                >
+                  More
+                </a>
+                <ul class="dropdown-menu fade-up">
+                  <li>
+                    <a class="dropdown-item" href="#">Pricing</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Blog</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">FAQ</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Contact</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="data_removal.html">Data Removal</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="investigate.html">Investigate</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="on_board.html">On Board</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pricing.html">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="faq.html">FAQ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="contact.html">Get Started</a>
               </li>
             </ul>
           </div>
-          <button class="secure-btn">Secure Me</button>
+          <button class="secure-btn">Sign In</button>
         </nav>
       </div>
     </header>
@@ -168,10 +218,7 @@
                     Choose the Service (Main Services)
                   </button>
                   <div class="service-drop" id="service-drop">
-                    <div class="check-group">
-                      <input type="checkbox" name="ccs" id="ccs" />
-                      <label for="ccs">Concierge Cybersecurity</label>
-                    </div>
+                    <button id="ccs-btn">Concierge Cybersecurity</button>
                     <button id="ci-btn">Cyber Investigation</button>
                     <div class="ci-drop" id="ci-drop">
                       <div class="check-group">
@@ -203,80 +250,174 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6" id="device-sec">
+              <div class="col-md-6" id="device-sec-ccs">
                 <div class="cu-form-group">
                   <label for="device">No of Device</label>
-                  <button id="device-btn">Your Device</button>
-                  <div class="device-drop" id="device-drop">
-                    <button id="mobile-btn">Mobile</button>
-                    <div class="mobile-drop" id="mobile-drop">
+                  <button id="device-btn-ccs">Your Device</button>
+                  <div class="device-drop" id="device-drop-ccs">
+                    <button id="mobile-btn-ccs">Mobile</button>
+                    <div class="mobile-drop" id="mobile-drop-ccs">
                       <div class="check-group">
-                        <input type="checkbox" name="android" id="android" />
-                        <label for="android">Android</label>
+                        <input
+                          type="checkbox"
+                          name="android-ccs"
+                          id="android-ccs"
+                        />
+                        <label for="android-ccs">Android</label>
                       </div>
                       <input
                         type="number"
                         min="1"
-                        id="android-input"
+                        id="android-input-ccs"
                         name="android-input"
                         value="0"
                       />
                       <div class="check-group">
-                        <input type="checkbox" name="ios" id="ios" />
-                        <label for="ios">IOS</label>
+                        <input type="checkbox" name="ios-ccs" id="ios-ccs" />
+                        <label for="ios-ccs">IOS</label>
                       </div>
                       <input
                         type="number"
                         min="1"
-                        id="ios-input"
+                        id="ios-input-ccs"
                         name="ios-input"
                         value="0"
                       />
                     </div>
-                    <button id="pc-btn">Computer</button>
-                    <div class="pc-drop" id="pc-drop">
+                    <button id="pc-btn-ccs">Computer</button>
+                    <div class="pc-drop" id="pc-drop-ccs">
                       <div class="check-group">
-                        <input type="checkbox" name="windows" id="windows" />
-                        <label for="windows">Windows</label>
+                        <input
+                          type="checkbox"
+                          name="windows-ccs"
+                          id="windows-ccs"
+                        />
+                        <label for="windows-ccs">Windows</label>
                       </div>
                       <input
                         type="number"
                         min="1"
-                        id="windows-input"
+                        id="windows-input-ccs"
                         name="windows-input"
                         value="0"
                       />
                       <div class="check-group">
-                        <input type="checkbox" name="linux" id="linux" />
-                        <label for="linux">Linux</label>
+                        <input
+                          type="checkbox"
+                          name="linux-ccs"
+                          id="linux-ccs"
+                        />
+                        <label for="linux-ccs">Linux</label>
                       </div>
                       <input
                         type="number"
                         min="1"
-                        id="linux-input"
+                        id="linux-input-ccs"
                         name="linux-input"
                         value="0"
                       />
                       <div class="check-group">
-                        <input type="checkbox" name="mac" id="mac" />
-                        <label for="mac">MAC</label>
+                        <input type="checkbox" name="mac-ccs" id="mac-ccs" />
+                        <label for="mac-ccs">MAC</label>
                       </div>
                       <input
                         type="number"
                         min="1"
-                        id="mac-input"
+                        id="mac-input-ccs"
                         name="mac-input"
                         value="0"
                       />
                     </div>
-                    <div class="check-group">
-                      <input type="checkbox" name="stv" id="stv" />
-                      <label for="stv">Smart TV</label>
-                    </div>
+                    <button id="stv-btn-ccs">Smart TV</button>
                     <input
                       type="number"
                       min="1"
-                      id="stv-input"
+                      id="stv-input-ccs"
+                      name="stv-input"
+                      value="0"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" id="device-sec-vr">
+                <div class="cu-form-group">
+                  <label for="device">No of Device</label>
+                  <button id="device-btn-vr">Your Device</button>
+                  <div class="device-drop" id="device-drop-vr">
+                    <button id="mobile-btn-vr">Mobile</button>
+                    <div class="mobile-drop" id="mobile-drop-vr">
+                      <div class="check-group">
+                        <input
+                          type="checkbox"
+                          name="android-vr"
+                          id="android-vr"
+                        />
+                        <label for="android-vr">Android</label>
+                      </div>
+                      <input
+                        type="number"
+                        min="1"
+                        id="android-input-vr"
+                        name="android-input"
+                        value="0"
+                      />
+                      <div class="check-group">
+                        <input type="checkbox" name="ios-vr" id="ios-vr" />
+                        <label for="ios-vr">IOS</label>
+                      </div>
+                      <input
+                        type="number"
+                        min="1"
+                        id="ios-input-vr"
+                        name="ios-input"
+                        value="0"
+                      />
+                    </div>
+                    <button id="pc-btn-vr">Computer</button>
+                    <div class="pc-drop" id="pc-drop-vr">
+                      <div class="check-group">
+                        <input
+                          type="checkbox"
+                          name="windows-vr"
+                          id="windows-vr"
+                        />
+                        <label for="windows-vr">Windows</label>
+                      </div>
+                      <input
+                        type="number"
+                        min="1"
+                        id="windows-input-vr"
+                        name="windows-input"
+                        value="0"
+                      />
+                      <div class="check-group">
+                        <input type="checkbox" name="linux-vr" id="linux-vr" />
+                        <label for="linux-vr">Linux</label>
+                      </div>
+                      <input
+                        type="number"
+                        min="1"
+                        id="linux-input-vr"
+                        name="linux-input"
+                        value="0"
+                      />
+                      <div class="check-group">
+                        <input type="checkbox" name="mac-vr" id="mac-vr" />
+                        <label for="mac-vr">MAC</label>
+                      </div>
+                      <input
+                        type="number"
+                        min="1"
+                        id="mac-input-vr"
+                        name="mac-input"
+                        value="0"
+                      />
+                    </div>
+                    <button id="stv-btn-vr">Smart TV</button>
+                    <input
+                      type="number"
+                      min="1"
+                      id="stv-input-vr"
                       name="stv-input"
                       value="0"
                     />

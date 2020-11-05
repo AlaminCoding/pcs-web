@@ -2,8 +2,9 @@ $(document).ready(function () {
   //Service Buttons and Drop Variables
   var serviceBtn = $("#service-btn");
   var serviceDrop = $("#service-drop");
-  var ccs = $("#ccs");
-  var deviceSec = $("#device-sec");
+  var ccsBtn = $("#ccs-btn");
+  var deviceSecCcs = $("#device-sec-ccs");
+  var deviceSecVr = $("#device-sec-vr");
   var mediaSec = $("#media-sec");
   var cloudSec = $("#cloud-sec");
   var emailSec = $("#email-sec");
@@ -75,46 +76,66 @@ $(document).ready(function () {
   var dropboxInput = $("#dropbox-input");
   var googleDriveInput = $("#googleDrive-input");
   // Device Button and Drop Variables
-  var deviceBtn = $("#device-btn");
-  var deviceDrop = $("#device-drop");
-  var mobileBtn = $("#mobile-btn");
-  var mobileDrop = $("#mobile-drop");
-  var android = $("#android");
-  var androidInput = $("#android-input");
-  var ios = $("#ios");
-  var iosInput = $("#ios-input");
-  var pcBtn = $("#pc-btn");
-  var pcDrop = $("#pc-drop");
-  var windows = $("#windows");
-  var windowsInput = $("#windows-input");
-  var mac = $("#mac");
-  var macInput = $("#mac-input");
-  var linux = $("#linux");
-  var linuxInput = $("#linux-input");
-  var stv = $("#stv");
-  var stvInput = $("#stv-input");
+  var deviceBtnCcs = $("#device-btn-ccs");
+  var deviceDropCcs = $("#device-drop-ccs");
+  var mobileBtnCcs = $("#mobile-btn-ccs");
+  var mobileDropCcs = $("#mobile-drop-ccs");
+  var androidCcs = $("#android-ccs");
+  var androidInputCcs = $("#android-input-ccs");
+  var iosCcs = $("#ios-ccs");
+  var iosInputCcs = $("#ios-input-ccs");
+  var pcBtnCcs = $("#pc-btn-ccs");
+  var pcDropCcs = $("#pc-drop-ccs");
+  var windowsCcs = $("#windows-ccs");
+  var windowsInputCcs = $("#windows-input-ccs");
+  var macCcs = $("#mac-ccs");
+  var macInputCcs = $("#mac-input-ccs");
+  var linuxCcs = $("#linux-ccs");
+  var linuxInputCcs = $("#linux-input-ccs");
+  var stvBtnCcs = $("#stv-btn-ccs");
+  var stvInputCcs = $("#stv-input-ccs");
+  //For VR
+  var deviceBtnVr = $("#device-btn-vr");
+  var deviceDropVr = $("#device-drop-vr");
+  var mobileBtnVr = $("#mobile-btn-vr");
+  var mobileDropVr = $("#mobile-drop-vr");
+  var androidVr = $("#android-vr");
+  var androidInputVr = $("#android-input-vr");
+  var iosVr = $("#ios-vr");
+  var iosInputVr = $("#ios-input-vr");
+  var pcBtnVr = $("#pc-btn-vr");
+  var pcDropVr = $("#pc-drop-vr");
+  var windowsVr = $("#windows-vr");
+  var windowsInputVr = $("#windows-input-vr");
+  var macVr = $("#mac-vr");
+  var macInputVr = $("#mac-input-vr");
+  var linuxVr = $("#linux-vr");
+  var linuxInputVr = $("#linux-input-vr");
+  var stvBtnVr = $("#stv-btn-vr");
+  var stvInputVr = $("#stv-input-vr");
   //Service Selection
   serviceBtn.click(function (event) {
     event.preventDefault();
     serviceDrop.slideToggle();
   });
-  ccs.click(function () {
-    if ($(this).prop("checked") == true) {
-      deviceSec.show();
-      mediaSec.show();
-      cloudSec.show();
-      emailSec.show();
-      paymentSec.show();
-      wifiSec.show();
-    } else if ($(this).prop("checked") == false) {
-      deviceSec.hide();
-      mediaSec.hide();
-      cloudSec.hide();
-      emailSec.hide();
-      paymentSec.hide();
-      wifiSec.hide();
-    }
+  ccsBtn.click(function (event) {
+    event.preventDefault();
+    oi.prop("checked", false);
+    ci.prop("checked", false);
+    vr.prop("checked", false);
+    hr.prop("checked", false);
+    dr.prop("checked", false);
+    textBox.hide();
+    linkBox.hide();
+    deviceSecVr.hide();
+    deviceSecCcs.toggle();
+    mediaSec.toggle();
+    cloudSec.toggle();
+    emailSec.toggle();
+    paymentSec.toggle();
+    wifiSec.toggle();
   });
+
   ciBtn.click(function (event) {
     event.preventDefault();
     ciDrop.slideToggle();
@@ -123,12 +144,18 @@ $(document).ready(function () {
   oi.click(function () {
     if ($(this).prop("checked") == true) {
       textBox.show();
-      deviceSec.hide();
+      linkBox.hide();
+      deviceSecCcs.hide();
+      deviceSecVr.hide();
       mediaSec.hide();
       cloudSec.hide();
       emailSec.hide();
       paymentSec.hide();
       wifiSec.hide();
+      ci.prop("checked", false);
+      vr.prop("checked", false);
+      hr.prop("checked", false);
+      dr.prop("checked", false);
     } else if ($(this).prop("checked") == false) {
       textBox.hide();
     }
@@ -136,12 +163,18 @@ $(document).ready(function () {
   ci.click(function () {
     if ($(this).prop("checked") == true) {
       textBox.show();
-      deviceSec.hide();
+      linkBox.hide();
+      deviceSecCcs.hide();
+      deviceSecVr.hide();
       mediaSec.hide();
       cloudSec.hide();
       emailSec.hide();
       paymentSec.hide();
       wifiSec.hide();
+      oi.prop("checked", false);
+      vr.prop("checked", false);
+      hr.prop("checked", false);
+      dr.prop("checked", false);
     } else if ($(this).prop("checked") == false) {
       textBox.hide();
     }
@@ -153,29 +186,40 @@ $(document).ready(function () {
   });
   vr.click(function () {
     if ($(this).prop("checked") == true) {
+      hr.prop("checked", false);
+      dr.prop("checked", false);
+      oi.prop("checked", false);
+      ci.prop("checked", false);
       textBox.hide();
-      deviceSec.show();
+      linkBox.hide();
+      deviceSecVr.show();
+      deviceSecCcs.hide();
       mediaSec.hide();
       cloudSec.hide();
       emailSec.hide();
       paymentSec.hide();
       wifiSec.hide();
     } else if ($(this).prop("checked") == false) {
-      deviceSec.hide();
+      deviceSecVr.hide();
     }
   });
   hr.click(function () {
     if ($(this).prop("checked") == true) {
+      dr.prop("checked", false);
+      vr.prop("checked", false);
+      oi.prop("checked", false);
+      ci.prop("checked", false);
       textBox.hide();
-      deviceSec.show();
+      linkBox.hide();
+      deviceSecVr.hide();
+      deviceSecCcs.show();
       mediaSec.show();
       cloudSec.show();
       emailSec.show();
       paymentSec.show();
       wifiSec.show();
     } else if ($(this).prop("checked") == false) {
-      textBox.hide();
-      deviceSec.hide();
+      deviceSecCcs.hide();
       mediaSec.hide();
       cloudSec.hide();
       emailSec.hide();
@@ -185,9 +229,14 @@ $(document).ready(function () {
   });
   dr.click(function () {
     if ($(this).prop("checked") == true) {
+      hr.prop("checked", false);
+      vr.prop("checked", false);
+      oi.prop("checked", false);
+      ci.prop("checked", false);
       linkBox.show();
       textBox.show();
-      deviceSec.hide();
+      deviceSecCcs.hide();
+      deviceSecVr.hide();
       mediaSec.hide();
       cloudSec.hide();
       emailSec.hide();
@@ -203,7 +252,7 @@ $(document).ready(function () {
     event.preventDefault();
     socialDrop.slideToggle();
     paymentDrop.slideUp();
-    deviceDrop.slideUp();
+    deviceDropCcs.slideUp();
     emailDrop.slideUp();
     cloudDrop.slideUp();
   });
@@ -277,7 +326,7 @@ $(document).ready(function () {
     event.preventDefault();
     paymentDrop.slideToggle();
     socialDrop.slideUp();
-    deviceDrop.slideUp();
+    deviceDropCcs.slideUp();
     emailDrop.slideUp();
     cloudDrop.slideUp();
   });
@@ -320,7 +369,7 @@ $(document).ready(function () {
     emailDrop.slideToggle();
     socialDrop.slideUp();
     paymentDrop.slideUp();
-    deviceDrop.slideUp();
+    deviceDropCcs.slideUp();
     cloudDrop.slideUp();
   });
   yahoo.click(function () {
@@ -365,77 +414,132 @@ $(document).ready(function () {
   });
 
   // Device Section
-  deviceBtn.click(function (event) {
+  deviceBtnCcs.click(function (event) {
     event.preventDefault();
-    deviceDrop.slideToggle();
+    deviceDropCcs.slideToggle();
     socialDrop.slideUp();
     paymentDrop.slideUp();
     emailDrop.slideUp();
     cloudDrop.slideUp();
   });
-  mobileBtn.click(function (event) {
+  mobileBtnCcs.click(function (event) {
     event.preventDefault();
-    mobileDrop.slideToggle();
-    pcDrop.slideUp();
+    mobileDropCcs.slideToggle();
+    pcDropCcs.slideUp();
   });
-  android.click(function () {
+  androidCcs.click(function () {
     if ($(this).prop("checked") == true) {
-      androidInput.show();
+      androidInputCcs.show();
     } else if ($(this).prop("checked") == false) {
-      androidInput.hide();
-      androidInput.val(0);
+      androidInputCcs.hide();
+      androidInputCcs.val(0);
     }
   });
-  ios.click(function () {
+  iosCcs.click(function () {
     if ($(this).prop("checked") == true) {
-      iosInput.show();
+      iosInputCcs.show();
     } else if ($(this).prop("checked") == false) {
-      iosInput.hide();
-      iosInput.val(0);
+      iosInputCcs.hide();
+      iosInputCcs.val(0);
     }
   });
-  pcBtn.click(function (event) {
+  pcBtnCcs.click(function (event) {
     event.preventDefault();
-    pcDrop.slideToggle();
-    mobileDrop.slideUp();
+    pcDropCcs.slideToggle();
+    mobileDropCcs.slideUp();
   });
-  windows.click(function () {
+  windowsCcs.click(function () {
     if ($(this).prop("checked") == true) {
-      windowsInput.show();
+      windowsInputCcs.show();
     } else if ($(this).prop("checked") == false) {
-      windowsInput.hide();
-      windowsInput.val(0);
+      windowsInputCcs.hide();
+      windowsInputCcs.val(0);
     }
   });
-  linux.click(function () {
+  linuxCcs.click(function () {
     if ($(this).prop("checked") == true) {
-      linuxInput.show();
+      linuxInputCcs.show();
     } else if ($(this).prop("checked") == false) {
-      linuxInput.hide();
-      linuxInput.val(0);
+      linuxInputCcs.hide();
+      linuxInputCcs.val(0);
     }
   });
-  mac.click(function () {
+  macCcs.click(function () {
     if ($(this).prop("checked") == true) {
-      macInput.show();
+      macInputCcs.show();
     } else if ($(this).prop("checked") == false) {
-      macInput.hide();
-      macInput.val(0);
+      macInputCcs.hide();
+      macInputCcs.val(0);
     }
   });
-  stv.click(function () {
+  stvBtnCcs.click(function (event) {
+    event.preventDefault();
+    stvInputCcs.toggle();
+  });
+  //VR Device
+  deviceBtnVr.click(function (event) {
+    event.preventDefault();
+    deviceDropVr.slideToggle();
+  });
+  mobileBtnVr.click(function (event) {
+    event.preventDefault();
+    mobileDropVr.slideToggle();
+    pcDropVr.slideUp();
+  });
+  androidVr.click(function () {
     if ($(this).prop("checked") == true) {
-      stvInput.show();
+      androidInputVr.show();
     } else if ($(this).prop("checked") == false) {
-      stvInput.hide();
-      stvInput.val(0);
+      androidInputVr.hide();
+      androidInputVr.val(0);
     }
+  });
+  iosVr.click(function () {
+    if ($(this).prop("checked") == true) {
+      iosInputVr.show();
+    } else if ($(this).prop("checked") == false) {
+      iosInputVr.hide();
+      iosInputVr.val(0);
+    }
+  });
+  pcBtnVr.click(function (event) {
+    event.preventDefault();
+    pcDropVr.slideToggle();
+    mobileDropVr.slideUp();
+  });
+  windowsVr.click(function () {
+    if ($(this).prop("checked") == true) {
+      windowsInputVr.show();
+    } else if ($(this).prop("checked") == false) {
+      windowsInputVr.hide();
+      windowsInputVr.val(0);
+    }
+  });
+  linuxVr.click(function () {
+    if ($(this).prop("checked") == true) {
+      linuxInputVr.show();
+    } else if ($(this).prop("checked") == false) {
+      linuxInputVr.hide();
+      linuxInputVr.val(0);
+    }
+  });
+  macVr.click(function () {
+    if ($(this).prop("checked") == true) {
+      macInputVr.show();
+    } else if ($(this).prop("checked") == false) {
+      macInputVr.hide();
+      macInputVr.val(0);
+    }
+  });
+  stvBtnVr.click(function (event) {
+    event.preventDefault();
+    stvInputVr.toggle();
   });
   //Cloud Section
   cloudBtn.click(function (event) {
     event.preventDefault();
     cloudDrop.slideToggle();
-    deviceDrop.slideUp();
+    deviceDropCcs.slideUp();
     socialDrop.slideUp();
     paymentDrop.slideUp();
     emailDrop.slideUp();

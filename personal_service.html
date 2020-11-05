@@ -18,7 +18,7 @@
   <body>
     <header>
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light pr-0 pl-0">
           <a class="navbar-brand" href="index.html"
             ><img src="img/logo.png" alt="Site Img"
           /></a>
@@ -36,38 +36,88 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="aboutus.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="personal_service.html"
-                  >Personal Services</a
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-toggle="dropdown"
                 >
+                  About
+                </a>
+                <ul class="dropdown-menu fade-up">
+                  <li>
+                    <a class="dropdown-item" href="aboutus.html">Who We Are</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Who We Serve</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">On Boarding</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-toggle="dropdown"
+                >
+                  Personal Cybersecurity
+                </a>
+                <ul class="dropdown-menu fade-up">
+                  <li>
+                    <a class="dropdown-item" href="personal_service.html"
+                      >Concierge Cybersecurity</a
+                    >
+                  </li>
+                  <li class="sub-dropdown">
+                    <a class="dropdown-item" href="#" id="sub-dropdown1">
+                      Cyber Investigation
+                    </a>
+                    <div class="sub-menu" id="sub-menu1">
+                      <a href="#">Open Source Intelligence</a>
+                      <a href="investigate.html">Crime Investigation</a>
+                    </div>
+                  </li>
+                  <li class="sub-dropdown" id="sub-dropdown2">
+                    <a class="dropdown-item" href="#">Incident Response</a>
+                    <div class="sub-menu" id="sub-menu2">
+                      <a href="hack_recovery.html">Hack Recovery</a>
+                      <a href="#">Virus Removal</a>
+                      <a href="data_removal.html">Data Removal</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-toggle="dropdown"
+                >
+                  More
+                </a>
+                <ul class="dropdown-menu fade-up">
+                  <li>
+                    <a class="dropdown-item" href="#">Pricing</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Blog</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">FAQ</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Contact</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="data_removal.html">Data Removal</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="investigate.html">Investigate</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="on_board.html">On Board</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pricing.html">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="faq.html">FAQ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="contact.html">Get Started</a>
               </li>
             </ul>
           </div>
-          <button class="secure-btn">Secure Me</button>
+          <button class="secure-btn">Sign In</button>
         </nav>
       </div>
     </header>
@@ -79,20 +129,62 @@
         </h2>
       </div>
     </section>
-    <section class="ps-report">
-      <div class="container">
-        <p>Report, Presentation & Free Test</p>
-        <h2>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry
-        </h2>
+    <section class="ps-report-slider">
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="ps-report">
+                <div class="container">
+                  <p>Report, Presentation & Free Test</p>
+                  <h2>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </h2>
 
-        <a href="#" class="psr-btn"
-          >Read the full report
-          <!-- <span class="psr-btn-border"></span> -->
-        </a>
+                  <a href="#" class="psr-btn">Read the full report </a>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="ps-report">
+                <div class="container">
+                  <p>Report, Presentation & Free Test</p>
+                  <h2>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </h2>
+
+                  <a href="#" class="psr-btn">Read the full report </a>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="ps-report">
+                <div class="container">
+                  <p>Report, Presentation & Free Test</p>
+                  <h2>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </h2>
+
+                  <a href="#" class="psr-btn">Read the full report </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="glide__bullets ps-report-bullets"
+          data-glide-el="controls[nav]"
+        >
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+        </div>
       </div>
     </section>
+    <!-- Personal Services -->
     <section class="ps-services">
       <div class="container">
         <h2 class="pss-title">Personal Cybersecurity Services</h2>
@@ -122,6 +214,9 @@
                   secure
                 </li>
               </ul>
+              <div class="ps-link">
+                <a href="#">Let's Talk <i class="fas fa-arrow-right"></i></a>
+              </div>
             </div>
           </div>
         </div>
@@ -144,53 +239,9 @@
                   Macbook, MAc Mini and PCs
                 </li>
               </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row pss-row justify-content-between">
-          <div class="col-md-6 pss-col">
-            <div class="pss-box">
-              <h2>Secure Communication Channels</h2>
-              <ul>
-                <li>
-                  Your social media accounts kept secure and updated for safety
-                </li>
-                <li>
-                  Encrypting your WhatsApp, Messenger,Skype such VOIP calls
-                </li>
-                <li>
-                  Securing your email accounts & transmissions from prying eyes
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div class="pss-img-box">
-              <img src="img/personal-service/pss3.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="row pss-row justify-content-between">
-          <div class="col-md-6 pss-col">
-            <div class="pss-box">
-              <h2>Protect Your Privacy</h2>
-              <ul>
-                <li>
-                  Keeping your privacy intact, shielded and of course private
-                </li>
-                <li>
-                  An in-depth scan of your web history to make sure it's clean
-                </li>
-                <li>
-                  Your reputation takes years to build, and seconds to ruin; we
-                  keep it untainted
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div class="pss-img-box">
-              <img src="img/personal-service/pss4.png" alt="" />
+              <div class="ps-link">
+                <a href="#">Let's Talk <i class="fas fa-arrow-right"></i></a>
+              </div>
             </div>
           </div>
         </div>
@@ -253,6 +304,63 @@
         </div>
       </div>
     </section>
+    <section class="ps-services">
+      <div class="container">
+        <div class="row pss-row justify-content-between">
+          <div class="col-md-6 pss-col">
+            <div class="pss-box">
+              <h2>Secure Communication Channels</h2>
+              <ul>
+                <li>
+                  Your social media accounts kept secure and updated for safety
+                </li>
+                <li>
+                  Encrypting your WhatsApp, Messenger,Skype such VOIP calls
+                </li>
+                <li>
+                  Securing your email accounts & transmissions from prying eyes
+                </li>
+              </ul>
+              <div class="ps-link">
+                <a href="#">Let's Talk <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="pss-img-box">
+              <img src="img/personal-service/pss3.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="row pss-row justify-content-between">
+          <div class="col-md-6 pss-col">
+            <div class="pss-box">
+              <h2>Protect Your Privacy</h2>
+              <ul>
+                <li>
+                  Keeping your privacy intact, shielded and of course private
+                </li>
+                <li>
+                  An in-depth scan of your web history to make sure it's clean
+                </li>
+                <li>
+                  Your reputation takes years to build, and seconds to ruin; we
+                  keep it untainted
+                </li>
+              </ul>
+              <div class="ps-link">
+                <a href="#">Let's Talk <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="pss-img-box">
+              <img src="img/personal-service/pss4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="ps-topics">
       <div class="container">
         <div class="row ps-topics-row">
@@ -272,7 +380,7 @@
               <p>Data Breaches</p>
               <div class="topic-box-expand">
                 <h2>94%</h2>
-                <p>94% of data breaches beginwith a phishing email</p>
+                <p>Data breaches beginwith a phishing email</p>
               </div>
             </div>
           </div>
@@ -302,7 +410,7 @@
               <p>Heacker Attack</p>
               <div class="topic-box-expand">
                 <h2>39s</h2>
-                <p>Heacker Attack</p>
+                <p>A hacker attacks in every 39s</p>
               </div>
             </div>
           </div>
@@ -382,6 +490,11 @@
     <script src="js/jquery.responsiveTabs.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/glide.js"></script>
-    <script src="js/custom.js"></script>
+    <script>
+      new Glide(".glide", {
+        type: "carousel",
+        perView: 1,
+      }).mount();
+    </script>
   </body>
 </html>
