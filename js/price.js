@@ -117,6 +117,8 @@ $(document).ready(function () {
   serviceBtn.click(function (event) {
     event.preventDefault();
     serviceDrop.slideToggle();
+    ciDrop.slideUp();
+    irDrop.slideUp();
   });
   ccsBtn.click(function (event) {
     event.preventDefault();
@@ -134,12 +136,26 @@ $(document).ready(function () {
     emailSec.toggle();
     paymentSec.toggle();
     wifiSec.toggle();
+    ciDrop.slideUp();
+    irDrop.slideUp();
   });
 
   ciBtn.click(function (event) {
     event.preventDefault();
     ciDrop.slideToggle();
     irDrop.slideUp();
+    textBox.hide();
+    linkBox.hide();
+    deviceSecCcs.hide();
+    deviceSecVr.hide();
+    mediaSec.hide();
+    cloudSec.hide();
+    emailSec.hide();
+    paymentSec.hide();
+    wifiSec.hide();
+    vr.prop("checked", false);
+    hr.prop("checked", false);
+    dr.prop("checked", false);
   });
   oi.click(function () {
     if ($(this).prop("checked") == true) {
@@ -183,6 +199,17 @@ $(document).ready(function () {
     event.preventDefault();
     irDrop.slideToggle();
     ciDrop.slideUp();
+    textBox.hide();
+    linkBox.hide();
+    deviceSecCcs.hide();
+    deviceSecVr.hide();
+    mediaSec.hide();
+    cloudSec.hide();
+    emailSec.hide();
+    paymentSec.hide();
+    wifiSec.hide();
+    oi.prop("checked", false);
+    ci.prop("checked", false);
   });
   vr.click(function () {
     if ($(this).prop("checked") == true) {
