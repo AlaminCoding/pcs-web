@@ -275,9 +275,9 @@
       <nav class="ir-sticky">
         <div class="container">
           <div class="ir-sticky-box" id="sticky-box">
-            <a href="#">Hack Recovery</a>
-            <a href="#">Virus Removal</a>
-            <a href="#">Data Removal</a>
+            <a href="#hack-recovery" class="scroll">Hack Recovery</a>
+            <a href="#virus-removal" class="scroll">Virus Removal</a>
+            <a href="#data-removal" class="scroll">Data Removal</a>
           </div>
         </div>
       </nav>
@@ -286,7 +286,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="ir-category-img">
+            <div class="ir-category-img" id="hack-recovery">
               <img src="img/incident/SMH.png" alt="Social Hack Recovery" />
             </div>
           </div>
@@ -309,7 +309,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="ir-category-img">
+            <div class="ir-category-img" id="virus-removal">
               <img src="img/incident/VRH.png" alt="Social Hack Recovery" />
             </div>
           </div>
@@ -332,7 +332,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="ir-category-img">
+            <div class="ir-category-img" id="data-removal">
               <img src="img/incident/DBRH.png" alt="Social Hack Recovery" />
             </div>
           </div>
@@ -357,63 +357,97 @@
         </div>
       </div>
     </section>
-    <section class="ir-blog">
+    <section class="ir-blog" id="ir-blog">
       <div class="container">
         <h2 class="ir-blog-title">Important Blogs</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="irb-box">
-              <img src="img/incident/1.jpg" alt="Blog 1" />
-              <div class="irb-text">
-                <h2>Hacking Attack in every 39sec</h2>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s
-                </p>
-                <div class="irb-btn">
-                  <a href="#"
-                    >Learn More <i class="fas fa-chevron-right"></i
-                  ></a>
+        <div class="glide" id="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="irb-box">
+                  <img src="img/incident/1.jpg" alt="Blog 1" />
+                  <div class="irb-text">
+                    <h2>Hacking Attack in every 39sec</h2>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s
+                    </p>
+                    <div class="irb-btn">
+                      <a href="#"
+                        >Learn More <i class="fas fa-chevron-right"></i
+                      ></a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
+              </li>
+              <li class="glide__slide">
+                <div class="irb-box">
+                  <img src="img/incident/2.jpg" alt="Blog 2" />
+                  <div class="irb-text">
+                    <h2>Record Break Data Breaches in 2018</h2>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s
+                    </p>
+                    <div class="irb-btn">
+                      <a href="#"
+                        >Learn More <i class="fas fa-chevron-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="irb-box">
+                  <img src="img/incident/3.jpg" alt="Blog 3" />
+                  <div class="irb-text">
+                    <h2>RYUK randsomware Attack in 2020</h2>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s
+                    </p>
+                    <div class="irb-btn">
+                      <a href="#"
+                        >Learn More <i class="fas fa-chevron-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div class="col-md-4">
-            <div class="irb-box">
-              <img src="img/incident/2.jpg" alt="Blog 2" />
-              <div class="irb-text">
-                <h2>Record Break Data Breaches in 2018</h2>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s
-                </p>
-                <div class="irb-btn">
-                  <a href="#"
-                    >Learn More <i class="fas fa-chevron-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
+          <div class="glide__arrows ir-blog-arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <i class="fas fa-chevron-right"></i>
+            </button>
           </div>
-          <div class="col-md-4">
-            <div class="irb-box">
-              <img src="img/incident/3.jpg" alt="Blog 3" />
-              <div class="irb-text">
-                <h2>RYUK randsomware Attack in 2020</h2>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s
-                </p>
-                <div class="irb-btn">
-                  <a href="#"
-                    >Learn More <i class="fas fa-chevron-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
+        </div>
+      </div>
+    </section>
+    <section class="ir-cta">
+      <div class="container">
+        <div class="ir-cta-box">
+          <div class="ir-cta-line"></div>
+          <h2>Tell Us If You Are Interested</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s,
+          </p>
+          <input
+            type="email"
+            name="ir-cta-email"
+            id="ir-cta-email"
+            placeholder="Enter your email address"
+          />
+          <div class="ps-link ir-cta-link">
+            <a href="#">Let's Talk <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -516,9 +550,20 @@
       new Glide(".glide", {
         type: "carousel",
         keyboard: true,
-        autoplay: 2000,
+        autoplay: 2500,
         hoverpause: true,
         perView: 1,
+      }).mount();
+    </script>
+    <script>
+      new Glide("#glide", {
+        type: "carousel",
+        perView: 3,
+        breakpoints: {
+          800: {
+            perView: 1,
+          },
+        },
       }).mount();
     </script>
   </body>
