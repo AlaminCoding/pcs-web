@@ -5868,3 +5868,392 @@ a {
     bottom: 38px;
   }
 }
+/*Virus Removal*/
+.vr-banner {
+  background-image: url("../img/virus/Header.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 325px 0px 275px 0px;
+}
+.vr-banner h2 {
+  color: white;
+  max-width: 500px;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 46px;
+}
+.vr-devices {
+  padding: 80px 0px;
+}
+.vr-device-img img {
+  width: 90%;
+}
+.vr-device-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.vrd-line,
+.vrp-line,
+.vrps-line {
+  height: 6px;
+  width: 60px;
+  background-color: #111125;
+  margin-bottom: 15px;
+}
+.vrd-title {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.vrd-subtitle {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.vrd-text {
+  font-weight: 500;
+  padding-right: 20px;
+}
+.vrd-list-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.vr-device-box ul li {
+  font-weight: 500;
+}
+.vr-clean {
+  background-color: white;
+  padding: 80px 0px;
+  text-align: center;
+}
+.vr-clean h2 {
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.vr-clean p {
+  font-weight: 600;
+  margin-bottom: 38px;
+}
+.vr-clean a {
+  color: white;
+  background-color: transparent;
+  border: 2px solid #111125;
+  border-radius: 27px;
+  font-weight: 600;
+  padding: 15px 20px 17px 200px;
+  position: relative;
+  z-index: 2;
+  transition: 0.5s;
+}
+.vr-clean a:before {
+  content: "";
+  position: absolute;
+  height: 104%;
+  width: 46%;
+  border-radius: 25px;
+  background-color: #111125;
+  border: 2px solid #111125;
+  top: -1px;
+  right: -1px;
+  z-index: -1;
+  transition: 0.3s;
+}
+.vr-clean a:hover {
+  text-decoration: none;
+  background-color: #111125;
+  padding: 15px 110px 17px 110px;
+}
+.vr-clean a:hover:before {
+  width: 100%;
+}
+.vr-process {
+  padding: 60px 0px;
+}
+.vrp-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+.vrp-text {
+  font-weight: 500;
+  font-size: 15.5px;
+}
+.process-box {
+  margin-top: 60px;
+}
+.vrp-box {
+  background-color: #111125;
+  text-align: center;
+  padding: 80px 0px;
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+.vrp-box img {
+  height: 60px;
+  width: auto;
+}
+.vrp-box h2 {
+  color: white;
+  margin-bottom: 0px;
+}
+.vrp-box span {
+  position: absolute;
+  background-color: white;
+  color: #111125;
+  padding: 5px 10px;
+  border-radius: 8px;
+  top: 15px;
+  left: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.box2,
+.box4 {
+  margin-top: 120px;
+}
+.box1,
+.box5 {
+  margin-top: 30px;
+}
+.box6 {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.box6 h2 {
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.vrp-sm {
+  display: none;
+}
+
+.vr-alert {
+  padding: 50px 0px;
+}
+.vrpa-img img {
+  width: 90%;
+}
+.vrpa-line {
+  height: 9px;
+  width: 100%;
+  background-color: #111125;
+  margin-bottom: 15px;
+}
+.vrpa-box {
+  margin-top: 138px;
+}
+.vrpa-col-box {
+  text-align: center;
+}
+.vrpa-col-box p {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.vrpa-col-box h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 45px;
+  font-weight: 700;
+}
+.vrp-slider {
+  padding: 60px 0px;
+}
+.vrps-left {
+  padding-top: 60px;
+}
+.vrps-left h2 {
+  margin-bottom: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 26px;
+}
+.vrps-left p {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.vrps-text-box {
+  background-color: #111125;
+  color: white;
+  position: relative;
+  padding: 50px 25px 15px 25px;
+}
+.vrps-text-box img {
+  position: absolute;
+  height: 25px;
+  top: 25px;
+  left: 26px;
+}
+.vrps-text-box p {
+  margin-top: 20px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.vrps-client-box {
+  display: flex;
+  margin-top: 20px;
+}
+.vrps-client-box img {
+  height: 140px;
+  width: auto;
+}
+.vrps-client {
+  padding-left: 20px;
+  padding-top: 34px;
+}
+.vrps-client h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+.vrps-client p {
+  font-size: 20px;
+}
+.vrps-btn {
+  text-align: right;
+  margin-bottom: 15px;
+  transition: 0.5s;
+}
+.vrps-btn a {
+  background-color: #575757;
+  padding: 12px 20px 15px 20px;
+  color: white;
+}
+.vrps-btn a:hover {
+  color: white;
+  background-color: #111125;
+  text-decoration: none;
+}
+.vrps-bullets {
+  bottom: 105%;
+  left: 94.5%;
+}
+
+.vrps-bullets .glide__bullet {
+  background-color: #3e3e4e;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  line-height: 0;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+  margin: 0 0.25em;
+}
+.vrps-bullets .glide__bullet:focus {
+  outline: none;
+}
+.vrps-bullets .glide__bullet:hover,
+.vrps-bullets .glide__bullet:focus {
+  border: 2px solid #111125;
+  background-color: #111125;
+}
+.vrps-bullets .glide__bullet--active {
+  background-color: #111125;
+}
+.irb-space {
+  width: 100%;
+  height: 19px;
+}
+@media screen and (max-width: 765px) {
+  .vrp-bg {
+    display: none;
+  }
+  .vrp-sm {
+    display: block;
+  }
+  .vrp-box {
+    height: auto;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .vr-banner {
+    padding: 370px 0px 140px 0px;
+    background-position: 71%;
+  }
+  .vr-banner h2 {
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .vr-devices {
+    padding: 50px 0px 10px 0px;
+  }
+  .vr-device-img img {
+    width: 100%;
+  }
+  .vr-device-box {
+    height: auto;
+    padding-top: 24px;
+  }
+  .vr-clean h2 {
+    font-size: 25px;
+  }
+  .vr-clean {
+    padding: 30px 0px 55px 0px;
+  }
+  .vr-process {
+    padding: 30px 0px;
+  }
+  .process-box {
+    margin-top: 0px;
+  }
+  .box6 {
+    margin-top: 10px;
+  }
+  .box6 h2 {
+    font-size: 25px;
+  }
+  .vrp-box h2 {
+    font-size: 26px;
+  }
+  .vr-alert {
+    padding: 30px 0px;
+  }
+  .vrpa-img img {
+    width: 100%;
+  }
+  .vrpa-box {
+    margin-top: 30px;
+  }
+  .vrp-slider {
+    padding: 0px 0px;
+  }
+  .vrps-left {
+    padding-top: 15px;
+  }
+  .vrps-right {
+    padding-top: 25px;
+  }
+  .vrps-client-box {
+    margin-bottom: 18px;
+  }
+  .vrps-client-box img {
+    height: 100px;
+    width: auto;
+  }
+  .vrps-client {
+    padding-left: 20px;
+    padding-top: 0px;
+  }
+  .vrps-bullets {
+    bottom: 102%;
+    left: 91%;
+  }
+  .irb-space {
+    height: 0px;
+  }
+}
