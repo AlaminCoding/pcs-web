@@ -104,9 +104,10 @@ header {
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
-li.nav-item {
+.navbar-light .navbar-nav .nav-item {
   margin: 0px 10px;
 }
+
 .navbar-light .navbar-toggler-icon i {
   color: white;
   font-size: 35px;
@@ -186,8 +187,6 @@ a.nav-link.dropdown-toggle {
     bottom: 8px;
   }
   .navbar-light .navbar-nav .nav-link:before {
-    /* bottom: 2px;
-    height: 2px; */
     display: none;
   }
   .navbar-nav .dropdown-menu {
@@ -222,6 +221,12 @@ a.nav-link.dropdown-toggle {
     border-radius: 0px;
     padding: 20px;
     background-color: black;
+  }
+  .navbar .nav-item .dropdown-menu-sm {
+    width: 30%;
+  }
+  .dropdown-menu-sm {
+    left: 55%;
   }
   .navbar .nav-item:hover .nav-link {
     color: #fff;
@@ -2634,7 +2639,7 @@ a.bs-read {
   background-color: rgb(40, 42, 51, 1);
   background-blend-mode: overlay;
   width: 100%;
-  padding: 260px 0px;
+  padding: 270px 0px;
   color: white;
 }
 .contact-banner h2 {
@@ -2867,9 +2872,9 @@ a.bs-read {
   content: "\f0d7";
   font-family: FontAwesome;
   position: absolute;
-  font-size: 45px;
-  top: -5px;
-  right: 10px;
+  font-size: 20px;
+  top: 14px;
+  right: 14px;
 }
 .cu-form-group textarea {
   width: 100%;

@@ -122,6 +122,7 @@ $(document).ready(function () {
   });
   ccsBtn.click(function (event) {
     event.preventDefault();
+    serviceBtn.text("Concierge Cybersecurity");
     oi.prop("checked", false);
     ci.prop("checked", false);
     vr.prop("checked", false);
@@ -130,35 +131,47 @@ $(document).ready(function () {
     textBox.hide();
     linkBox.hide();
     deviceSecVr.hide();
-    deviceSecCcs.toggle();
-    mediaSec.toggle();
-    cloudSec.toggle();
-    emailSec.toggle();
-    paymentSec.toggle();
-    wifiSec.toggle();
+    deviceSecCcs.show();
+    mediaSec.show();
+    cloudSec.show();
+    emailSec.show();
+    paymentSec.show();
+    wifiSec.show();
     ciDrop.slideUp();
     irDrop.slideUp();
+    serviceDrop.slideUp();
   });
 
   ciBtn.click(function (event) {
     event.preventDefault();
     ciDrop.slideToggle();
     irDrop.slideUp();
-    textBox.hide();
-    linkBox.hide();
-    deviceSecCcs.hide();
-    deviceSecVr.hide();
-    mediaSec.hide();
-    cloudSec.hide();
-    emailSec.hide();
-    paymentSec.hide();
-    wifiSec.hide();
+    // textBox.hide();
+    // linkBox.hide();
+    // deviceSecCcs.hide();
+    // deviceSecVr.hide();
+    // mediaSec.hide();
+    // cloudSec.hide();
+    // emailSec.hide();
+    // paymentSec.hide();
+    // wifiSec.hide();
+    deviceDropCcs.slideUp();
+    deviceDropVr.slideUp();
+    mobileDropCcs.slideUp();
+    mobileDropVr.slideUp();
+    pcDropCcs.slideUp();
+    pcDropVr.slideUp();
+    socialDrop.slideUp();
+    emailDrop.slideUp();
+    paymentDrop.slideUp();
+    cloudDrop.slideUp();
     vr.prop("checked", false);
     hr.prop("checked", false);
     dr.prop("checked", false);
   });
   oi.click(function () {
     if ($(this).prop("checked") == true) {
+      serviceBtn.text("Opensource Intelligence");
       textBox.show();
       linkBox.hide();
       deviceSecCcs.hide();
@@ -172,12 +185,16 @@ $(document).ready(function () {
       vr.prop("checked", false);
       hr.prop("checked", false);
       dr.prop("checked", false);
+      ciDrop.slideUp();
+      serviceDrop.slideUp();
     } else if ($(this).prop("checked") == false) {
       textBox.hide();
+      serviceBtn.text("Select the Service");
     }
   });
   ci.click(function () {
     if ($(this).prop("checked") == true) {
+      serviceBtn.text("Crime Investigation");
       textBox.show();
       linkBox.hide();
       deviceSecCcs.hide();
@@ -191,28 +208,42 @@ $(document).ready(function () {
       vr.prop("checked", false);
       hr.prop("checked", false);
       dr.prop("checked", false);
+      ciDrop.slideUp();
+      serviceDrop.slideUp();
     } else if ($(this).prop("checked") == false) {
       textBox.hide();
+      serviceBtn.text("Select the Service");
     }
   });
   irBtn.click(function (event) {
     event.preventDefault();
     irDrop.slideToggle();
     ciDrop.slideUp();
-    textBox.hide();
-    linkBox.hide();
-    deviceSecCcs.hide();
-    deviceSecVr.hide();
-    mediaSec.hide();
-    cloudSec.hide();
-    emailSec.hide();
-    paymentSec.hide();
-    wifiSec.hide();
+    // textBox.hide();
+    // linkBox.hide();
+    // deviceSecCcs.hide();
+    // deviceSecVr.hide();
+    // mediaSec.hide();
+    // cloudSec.hide();
+    // emailSec.hide();
+    // paymentSec.hide();
+    // wifiSec.hide();
+    deviceDropCcs.slideUp();
+    deviceDropVr.slideUp();
+    mobileDropCcs.slideUp();
+    mobileDropVr.slideUp();
+    pcDropCcs.slideUp();
+    pcDropVr.slideUp();
+    socialDrop.slideUp();
+    emailDrop.slideUp();
+    paymentDrop.slideUp();
+    cloudDrop.slideUp();
     oi.prop("checked", false);
     ci.prop("checked", false);
   });
   vr.click(function () {
     if ($(this).prop("checked") == true) {
+      serviceBtn.text("Virus Removal");
       hr.prop("checked", false);
       dr.prop("checked", false);
       oi.prop("checked", false);
@@ -226,12 +257,16 @@ $(document).ready(function () {
       emailSec.hide();
       paymentSec.hide();
       wifiSec.hide();
+      irDrop.slideUp();
+      serviceDrop.slideUp();
     } else if ($(this).prop("checked") == false) {
       deviceSecVr.hide();
+      serviceBtn.text("Select the Service");
     }
   });
   hr.click(function () {
     if ($(this).prop("checked") == true) {
+      serviceBtn.text("Hack Recovery");
       dr.prop("checked", false);
       vr.prop("checked", false);
       oi.prop("checked", false);
@@ -245,6 +280,8 @@ $(document).ready(function () {
       emailSec.show();
       paymentSec.show();
       wifiSec.show();
+      irDrop.slideUp();
+      serviceDrop.slideUp();
     } else if ($(this).prop("checked") == false) {
       deviceSecCcs.hide();
       mediaSec.hide();
@@ -252,10 +289,12 @@ $(document).ready(function () {
       emailSec.hide();
       paymentSec.hide();
       wifiSec.hide();
+      serviceBtn.text("Select the Service");
     }
   });
   dr.click(function () {
     if ($(this).prop("checked") == true) {
+      serviceBtn.text("Data Removal");
       hr.prop("checked", false);
       vr.prop("checked", false);
       oi.prop("checked", false);
@@ -269,9 +308,12 @@ $(document).ready(function () {
       emailSec.hide();
       paymentSec.hide();
       wifiSec.hide();
+      irDrop.slideUp();
+      serviceDrop.slideUp();
     } else if ($(this).prop("checked") == false) {
       linkBox.hide();
       textBox.hide();
+      serviceBtn.text("Select the Service");
     }
   });
   //Social Section
@@ -282,6 +324,9 @@ $(document).ready(function () {
     deviceDropCcs.slideUp();
     emailDrop.slideUp();
     cloudDrop.slideUp();
+    ciDrop.slideUp();
+    irDrop.slideUp();
+    serviceDrop.slideUp();
   });
   facebook.click(function () {
     if ($(this).prop("checked") == true) {
@@ -356,6 +401,9 @@ $(document).ready(function () {
     deviceDropCcs.slideUp();
     emailDrop.slideUp();
     cloudDrop.slideUp();
+    ciDrop.slideUp();
+    irDrop.slideUp();
+    serviceDrop.slideUp();
   });
   paypal.click(function () {
     if ($(this).prop("checked") == true) {
@@ -398,6 +446,9 @@ $(document).ready(function () {
     paymentDrop.slideUp();
     deviceDropCcs.slideUp();
     cloudDrop.slideUp();
+    ciDrop.slideUp();
+    irDrop.slideUp();
+    serviceDrop.slideUp();
   });
   yahoo.click(function () {
     if ($(this).prop("checked") == true) {
@@ -448,11 +499,15 @@ $(document).ready(function () {
     paymentDrop.slideUp();
     emailDrop.slideUp();
     cloudDrop.slideUp();
+    ciDrop.slideUp();
+    irDrop.slideUp();
+    serviceDrop.slideUp();
   });
   mobileBtnCcs.click(function (event) {
     event.preventDefault();
     mobileDropCcs.slideToggle();
     pcDropCcs.slideUp();
+    stvInputCcs.hide();
   });
   androidCcs.click(function () {
     if ($(this).prop("checked") == true) {
@@ -474,6 +529,7 @@ $(document).ready(function () {
     event.preventDefault();
     pcDropCcs.slideToggle();
     mobileDropCcs.slideUp();
+    stvInputCcs.hide();
   });
   windowsCcs.click(function () {
     if ($(this).prop("checked") == true) {
@@ -502,16 +558,22 @@ $(document).ready(function () {
   stvBtnCcs.click(function (event) {
     event.preventDefault();
     stvInputCcs.toggle();
+    mobileDropCcs.slideUp();
+    pcDropCcs.slideUp();
   });
   //VR Device
   deviceBtnVr.click(function (event) {
     event.preventDefault();
     deviceDropVr.slideToggle();
+    ciDrop.slideUp();
+    irDrop.slideUp();
+    serviceDrop.slideUp();
   });
   mobileBtnVr.click(function (event) {
     event.preventDefault();
     mobileDropVr.slideToggle();
     pcDropVr.slideUp();
+    stvInputVr.hide();
   });
   androidVr.click(function () {
     if ($(this).prop("checked") == true) {
@@ -533,6 +595,7 @@ $(document).ready(function () {
     event.preventDefault();
     pcDropVr.slideToggle();
     mobileDropVr.slideUp();
+    stvInputVr.hide();
   });
   windowsVr.click(function () {
     if ($(this).prop("checked") == true) {
@@ -561,6 +624,8 @@ $(document).ready(function () {
   stvBtnVr.click(function (event) {
     event.preventDefault();
     stvInputVr.toggle();
+    mobileDropVr.slideUp();
+    pcDropVr.slideUp();
   });
   //Cloud Section
   cloudBtn.click(function (event) {
@@ -570,6 +635,9 @@ $(document).ready(function () {
     socialDrop.slideUp();
     paymentDrop.slideUp();
     emailDrop.slideUp();
+    ciDrop.slideUp();
+    irDrop.slideUp();
+    serviceDrop.slideUp();
   });
   icloud.click(function () {
     if ($(this).prop("checked") == true) {
