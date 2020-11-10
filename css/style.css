@@ -148,6 +148,9 @@ a.nav-link.dropdown-toggle {
   margin-bottom: 0px;
   color: white;
 }
+.mm-title-single {
+  margin-top: 14px;
+}
 .mm-title a {
   color: white;
   text-decoration: none;
@@ -5762,7 +5765,7 @@ a {
   height: 3px;
   width: 60px;
   background-color: #111125;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 .ir-btn a:before {
   content: "";
@@ -5782,6 +5785,7 @@ a {
 }
 .ir-btn a:hover:after {
   transform: translateX(-80px);
+  transition: 0.5s;
   opacity: 0;
 }
 .ir-btn a:hover:before {
