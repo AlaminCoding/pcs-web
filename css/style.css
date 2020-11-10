@@ -57,7 +57,7 @@ header {
   height: 3px;
   bottom: 30px;
   left: 0px;
-  background-color: white;
+  background-color: #5bbc2e;
   border: 0;
   margin-left: 0;
   animation-name: imenuAfter;
@@ -72,7 +72,7 @@ header {
   height: 3px;
   bottom: 21px;
   left: 0;
-  background-color: white;
+  background-color: #5bbc2e;
   animation-name: imenuBefore;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
@@ -94,12 +94,12 @@ header {
     width: 30%;
   }
 }
-.navbar-light .navbar-nav .nav-link:hover:after {
+.navbar-light .navbar-nav .nav-item:hover .nav-link:after {
   animation-name: menuAfter;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
-.navbar-light .navbar-nav .nav-link:hover:before {
+.navbar-light .navbar-nav .nav-item:hover .nav-link:before {
   animation-name: menuBefore;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
@@ -155,7 +155,7 @@ a.nav-link.dropdown-toggle {
 .mm-box hr {
   margin-top: 5px;
   margin-bottom: 5px;
-  border-top: 2px solid white;
+  border-top: 3px solid white;
 }
 .mm-box ul {
   list-style: none;
@@ -166,6 +166,10 @@ a.nav-link.dropdown-toggle {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 5px;
+  transition: 0.5s;
+}
+.mm-box ul li:hover {
+  padding-left: 5px;
 }
 .mm-box ul li a {
   color: white;
@@ -1229,6 +1233,10 @@ footer {
 }
 .footer-box ul li {
   margin-top: 15px;
+  transition: 0.5s;
+}
+.footer-box ul li:hover {
+  padding-left: 5px;
 }
 .footer-box ul li a {
   font-family: "Poppins", sans-serif;
@@ -1260,6 +1268,11 @@ footer {
   height: 44px;
   width: auto;
   margin-left: 10px;
+  margin-top: 2px;
+  transition: 0.1s;
+}
+.footer-bottom a img:hover {
+  margin-top: 0px;
 }
 .copyright-btn {
   color: black;
@@ -1297,6 +1310,9 @@ footer {
   .footer-down-box {
     flex-direction: column;
     align-items: center;
+  }
+  .footer-box ul li {
+    margin-top: 8px;
   }
 }
 @media screen and (max-width: 380px) {
@@ -6003,6 +6019,9 @@ a {
   font-size: 20px;
   margin-bottom: 15px;
 }
+.vr-device-box ul {
+  margin-bottom: 0;
+}
 .vr-device-box ul li {
   font-weight: 500;
 }
@@ -6336,5 +6355,136 @@ a {
   }
   .irb-space {
     height: 0px;
+  }
+}
+/*Hack Recovery Me*/
+.h-banner {
+  background-image: url("../img/hrecovery/Header.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 300px 0px 260px 0px;
+}
+.h-banner h2 {
+  font-family: "Roboto Slab", serif;
+  color: white;
+  text-transform: uppercase;
+  max-width: 532px;
+  line-height: 42px;
+}
+.h-client {
+  background-color: #dcdada;
+  padding: 30px 0px;
+}
+.h-client-img img {
+  width: 100%;
+}
+.h-client-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.h-client-box p {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.h-client-flex {
+  display: flex;
+  margin-top: 30px;
+}
+.h-client-flex h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  padding: 10px 20px 10px 0px;
+  border-right: 5px solid #182f49;
+}
+.h-client-flex small {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 14px;
+  padding-left: 20px;
+}
+.hr-empty {
+  width: 100%;
+  height: 100px;
+}
+.hr-about {
+  background-color: #111125;
+  padding: 60px 0px;
+}
+.hr-about-left p {
+  color: white;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.hr-about-right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.hr-about-right p {
+  color: white;
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 765px) {
+  .col-invers-row {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 480px) {
+  .h-banner {
+    padding: 250px 0px 210px 0px;
+  }
+  .h-client-box {
+    height: auto;
+    margin-top: 20px;
+  }
+  .h-banner h2 {
+    line-height: 34px;
+    font-size: 26px;
+    text-align: center;
+  }
+  .h-client-img {
+    text-align: center;
+  }
+  .h-client-img img {
+    width: 85%;
+  }
+  .h-client-box p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .h-client-flex {
+    flex-direction: column;
+  }
+  .h-client-flex h2 {
+    padding: 10px 0px;
+    border-right: none;
+    border-bottom: 5px solid #182f49;
+  }
+  .h-client-flex small {
+    margin-top: 10px;
+    padding-left: 0;
+  }
+  .hr-empty {
+    height: 40px;
+  }
+  .hr-about {
+    padding: 40px 0px;
+    margin-top: 30px;
+  }
+  .hr-about-left p {
+    font-size: 19px;
+    margin-bottom: 26px;
+  }
+  .hr-about-right p {
+    font-size: 18px;
+    line-height: 23px;
   }
 }
