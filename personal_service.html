@@ -18,55 +18,58 @@
   <body>
     <header>
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light pr-0 pl-0 py-0">
-          <a class="navbar-brand" href="index.html"
-            ><img src="img/logo.png" alt="Site Img"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Buisness Cybersecurity</a>
+        <nav class="menubar">
+          <div class="logo">
+            <a href="index.html" class="logo-brand"
+              ><img src="img/logo.png" alt="LOGO"
+            /></a>
+          </div>
+          <a class="signin-btn-sm" href="#">Sign In</a>
+          <div class="menu-items">
+            <ul class="menu-list-lg">
+              <li class="menus">
+                <a href="#" class="menu-link">Buisness Cybersecurity</a>
               </li>
             </ul>
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  data-toggle="dropdown"
-                >
-                  Personal Cybersecurity
-                </a>
-                <div class="dropdown-menu fade-up">
+            <ul class="menu-list">
+              <div class="mb-header">
+                <div class="logo">
+                  <a href="index.html" class="logo-brand"
+                    ><img src="img/logo.png" alt="LOGO"
+                  /></a>
+                </div>
+                <a class="signin-btn-sm" href="#">Sign In</a>
+                <div class="close-btn" id="close-btn">
+                  <img src="img/cancel.png" alt="cancel" />
+                </div>
+              </div>
+
+              <li class="menus menus-sm">
+                <a href="#" class="menu-link">Buisness Cybersecurity</a>
+              </li>
+              <li class="menus">
+                <a href="#" class="menu-link">Personal Cybersecurity</a>
+                <div class="mega-menu">
+                  <div class="mm-close-btn">
+                    <img src="img/left-arrow.png" alt="Left Arrow" />
+                  </div>
                   <div class="row">
-                    <div class="col">
-                      <div class="mm-box">
-                        <h2 class="mm-title">
-                          <a href="personal_service.html"
-                            >Concierge Cybersecurity</a
-                          >
-                        </h2>
+                    <div class="col-lg-3">
+                      <div class="submenu-box">
+                        <p class="submenu-title">Data & Privacy Protection</p>
+                        <ul class="submenu-list">
+                          <li>
+                            <a href="personal_service.html"
+                              >Concierge Cybersecurity</a
+                            >
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="col">
-                      <div class="mm-box">
-                        <h2 class="mm-title">
-                          <a href="investigate.html">Cyber Investigation</a>
-                        </h2>
-                        <hr />
-                        <ul>
+                    <div class="col-lg-3">
+                      <div class="submenu-box">
+                        <p class="submenu-title">Cyber Investigation</p>
+                        <ul class="submenu-list">
                           <li>
                             <a href="investigate.html"
                               >Open Source Intelligence</a
@@ -78,13 +81,10 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="col">
-                      <div class="mm-box">
-                        <h2 class="mm-title">
-                          <a href="incident.html">Incident Response</a>
-                        </h2>
-                        <hr />
-                        <ul>
+                    <div class="col-lg-3">
+                      <div class="submenu-box">
+                        <p class="submenu-title">Incident Response</p>
+                        <ul class="submenu-list">
                           <li><a href="h_recovery.html">Hack Recovery</a></li>
                           <li>
                             <a href="virus_removal.html">Virus Removal</a>
@@ -93,81 +93,61 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="col">
-                      <div class="mm-box">
-                        <ul>
-                          <li>
-                            <h2 class="mm-title">
-                              <a href="on_board.html">On Boarding</a>
-                            </h2>
-                          </li>
-                          <li>
-                            <h2 class="mm-title">
-                              <a href="pricing.html">Pricing</a>
-                            </h2>
-                          </li>
-                          <li>
-                            <h2 class="mm-title">
-                              <a href="faq.html">FAQ</a>
-                            </h2>
-                          </li>
+                    <div class="col-lg-3">
+                      <div class="submenu-box">
+                        <p class="submenu-title">Explore</p>
+                        <ul class="submenu-list">
+                          <li><a href="on_board.html">On Boarding</a></li>
+                          <li><a href="pricing.html">Pricing</a></li>
+                          <li><a href="faq.html">FAQ</a></li>
                         </ul>
                       </div>
                     </div>
                   </div>
                 </div>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  data-toggle="dropdown"
-                >
-                  Who We Serve
-                </a>
-                <div class="dropdown-menu dropdown-menu-sm fade-up">
+              <li class="menus">
+                <a href="#" class="menu-link">Who We Serve</a>
+                <div class="wmega-menu">
+                  <div class="mm-close-btn">
+                    <img src="img/left-arrow.png" alt="Left Arrow" />
+                  </div>
                   <div class="row">
                     <div class="col">
-                      <div class="mm-box">
-                        <ul>
-                          <li>
-                            <a href="index.html#serve"
-                              >High-Net-Worth Individual</a
-                            >
-                          </li>
-                          <li>
-                            <a href="index.html#serve"
-                              >C-Level Buisness Executive</a
-                            >
-                          </li>
-                          <li>
-                            <a href="index.html#serve">Political Leaders</a>
-                          </li>
-                          <li>
-                            <a href="index.html#serve">Celebrities</a>
-                          </li>
-                        </ul>
+                      <div class="submenu-box">
+                        <p class="wsubmenu-title">
+                          <a href="index.html#serve"
+                            >High-Net-Worth Individual</a
+                          >
+                        </p>
+                        <p class="wsubmenu-title">
+                          <a href="index.html#serve"
+                            >C-Level Buisness Executive</a
+                          >
+                        </p>
+                        <p class="wsubmenu-title">
+                          <a href="index.html#serve">Political Leaders</a>
+                        </p>
+                        <p class="wsubmenu-title">
+                          <a href="index.html#serve">Political Leaders</a>
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  data-toggle="dropdown"
-                >
-                  More
-                </a>
-                <div class="dropdown-menu fade-up">
-                  <div class="row justify-content-center">
-                    <div class="col">
-                      <div class="mm-box">
-                        <h2 class="mm-title">Company</h2>
-                        <hr />
-                        <ul>
-                          <li><a href="aboutus.html">About Us</a></li>
+              <li class="menus">
+                <a href="#" class="menu-link">More</a>
+                <div class="mega-menu">
+                  <div class="mm-close-btn">
+                    <img src="img/left-arrow.png" alt="Left Arrow" />
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="submenu-box">
+                        <p class="submenu-title">Company</p>
+                        <ul class="submenu-list">
+                          <li><a href="#">About Us</a></li>
                           <li><a href="#">Pertnership Program</a></li>
                           <li><a href="#">Franchise Program</a></li>
                           <li><a href="#">Investor Relations</a></li>
@@ -176,11 +156,10 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="col">
-                      <div class="mm-box">
-                        <h2 class="mm-title">Resources</h2>
-                        <hr />
-                        <ul>
+                    <div class="col-lg-4">
+                      <div class="submenu-box">
+                        <p class="submenu-title">Resources</p>
+                        <ul class="submenu-list">
                           <li><a href="#">Case Studies</a></li>
                           <li><a href="#">Securitymania</a></li>
                           <li><a href="#">Report & Whitepapers</a></li>
@@ -190,11 +169,10 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="col">
-                      <div class="mm-box">
-                        <h2 class="mm-title">Legal</h2>
-                        <hr />
-                        <ul>
+                    <div class="col-lg-4">
+                      <div class="submenu-box">
+                        <p class="submenu-title">Legal</p>
+                        <ul class="submenu-list">
                           <li><a href="#">Privacy Policy</a></li>
                           <li><a href="#">Terms of Use</a></li>
                           <li><a href="#">Trust Center</a></li>
@@ -204,12 +182,17 @@
                   </div>
                 </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Get Started</a>
+              <li class="menus">
+                <a href="#" class="menu-link">Get Started</a>
+              </li>
+              <li class="menus">
+                <a href="#" class="signin-btn-lg">Sign In</a>
               </li>
             </ul>
           </div>
-          <button class="secure-btn">Sign In</button>
+          <div class="menu-btn" id="menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
         </nav>
       </div>
     </header>
@@ -661,5 +644,6 @@
         perView: 1,
       }).mount();
     </script>
+    <script src="js/header.js"></script>
   </body>
 </html>
