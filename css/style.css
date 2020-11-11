@@ -456,7 +456,8 @@ header {
     background-position: 57%;
     background-color: rgb(24, 47, 89, 0.4);
     background-blend-mode: overlay;
-    padding-top: 155px;
+    padding-top: 100px;
+    height: 650px;
   }
 }
 @media screen and (max-width: 380px) {
