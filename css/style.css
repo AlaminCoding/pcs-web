@@ -180,13 +180,15 @@ header {
   list-style: none;
 }
 .submenu-box ul li a {
-  text-decoration: none;
   color: white;
   font-size: 16px;
   font-weight: 400;
 }
+.submenu-box ul li a:hover {
+  text-decoration: underline;
+}
 .submenu-list li {
-  padding: 3px 0px;
+  padding: 5px 0px;
 }
 .wsubmenu-title {
   padding: 4px 0px;
@@ -320,7 +322,7 @@ header {
     width: 32px;
   }
   .submenu-box {
-    padding: 10px 0px;
+    padding: 15px 0px;
     border-bottom: 2px solid white;
   }
   .submenu-title {
@@ -356,7 +358,7 @@ header {
     display: none;
   }
   .submenu-box ul {
-    padding-left: 10px;
+    padding: 5px 0px 5px 10px;
   }
 }
 
@@ -825,6 +827,9 @@ header {
   .r-tabs .r-tabs-tab:nth-last-child(1) {
     margin-top: 0px;
   }
+  #tab-1 {
+    display: block;
+  }
 }
 @media screen and (max-width: 1024px) {
   .r-tabs .r-tabs-tab:nth-last-child(1) {
@@ -883,9 +888,54 @@ header {
   outline: none;
   border: 3px solid #5bbc2e;
 }
+.tab-link {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.tab-link img {
+  transition: 0.5s;
+}
+.tab-link:hover img {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+.tab-box-sm {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#tab-pan1 {
+  display: block;
+  margin-bottom: 30px;
+}
+#tab-pan2 {
+  display: none;
+}
+#tab-pan3 {
+  display: none;
+}
+#tab-pan4 {
+  display: none;
+}
+.serve-sm {
+  display: none;
+  padding: 60px 0px 30px 0px;
+}
 @media screen and (max-width: 765px) {
   .tab-box button {
     margin-left: 0;
+  }
+  .serve-sm {
+    display: block;
+  }
+  .serve {
+    display: none;
   }
 }
 

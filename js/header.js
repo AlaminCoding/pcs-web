@@ -5,7 +5,6 @@ const menuLink = document.querySelectorAll(".menu-link");
 const mmCloseBtn = document.querySelectorAll(".mm-close-btn");
 
 const submenuTitle = document.querySelectorAll(".submenu-title");
-console.log(submenuTitle);
 
 menuLink.forEach((element) => {
   element.addEventListener("click", function () {
@@ -29,10 +28,18 @@ closeBtn.addEventListener("click", function () {
   menuList.classList.remove("menu-list-open");
 });
 
-submenuTitle.forEach((element) => {
+submenuTitle.forEach((element, index) => {
   element.addEventListener("click", function () {
     let submenuList = element.nextElementSibling;
     submenuList.classList.toggle("submenu-list-open");
     element.classList.toggle("submenu-title-open");
+    for (let i = 0; i < submenuTitle.length; i++) {
+      if (i != index) {
+        submenuTitle[i].nextElementSibling.classList.remove(
+          "submenu-list-open"
+        );
+        submenuTitle[i].classList.remove("submenu-title-open");
+      }
+    }
   });
 });
