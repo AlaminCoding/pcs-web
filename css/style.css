@@ -6802,3 +6802,496 @@ a {
     line-height: 23px;
   }
 }
+/*Get started*/
+.gs-banner {
+  background-image: url("../img/getstart/Header.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 270px 0px 270px 0px;
+}
+.gs-banner p {
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  color: white;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.gs-banner h2 {
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+  max-width: 500px;
+}
+.gt-point1 {
+  padding: 60px 0px;
+}
+.point-title {
+  color: #010101;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+.point1-category {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 0px 40px;
+}
+
+.pc1 {
+  background-image: url("../img/getstart/pcs-point.png");
+}
+.pc2 {
+  background-image: url("../img/getstart/bcs-point.png");
+}
+.point-category {
+  height: 450px;
+  width: 450px;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+.point-category h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.point-category a {
+  text-align: right;
+  color: white;
+}
+.point-category a img {
+  height: 20px;
+}
+.point-category a:hover {
+  text-decoration: none;
+}
+.pc-line {
+  background-color: #111125;
+  height: 250px;
+  width: 2px;
+}
+.point-modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #111125;
+  color: white;
+  text-transform: uppercase;
+  padding: 0px 10%;
+}
+.pmo-btn {
+  margin-top: 30px;
+}
+.pmo-btn a {
+  color: #111125;
+  background-color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.pmo-btn a:hover {
+  text-decoration: none;
+}
+.point-modal i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.point-modal {
+  display: none;
+}
+#pm-open:hover {
+  cursor: pointer;
+}
+.pcs-select-row {
+  margin-top: 40px;
+}
+.sps-box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.sps-box ul {
+  list-style: none;
+  padding-inline-start: 50px;
+}
+.sps-box ul li {
+  margin: 20px 0px;
+  font-size: 22px;
+  font-weight: 700;
+  position: relative;
+}
+.sps-box ul li input {
+  position: absolute;
+  height: 21px;
+  width: 21px;
+  top: 7px;
+}
+.sps-box ul li label {
+  padding-left: 32px;
+}
+.all-service-box {
+  padding-right: 50px;
+}
+.cc-service-box,
+.ci-service-box,
+.ir-service-box {
+  background-color: #111125;
+  min-height: 300px;
+  border-radius: 8px;
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cc-service-box ul {
+  padding-inline-start: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.cc-service-box ul li {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.cc-service-box a {
+  text-align: right;
+  display: block;
+  color: white;
+  margin-top: 50px;
+}
+.cc-service-box a img {
+  height: 20px;
+}
+.ci-service-box ul,
+.ir-list {
+  list-style: none;
+  padding-left: 0;
+}
+.ci-service-box ul li,
+.ir-list-item {
+  position: relative;
+  margin-bottom: 18px;
+}
+.ci-service-box ul li input,
+.ir-list-item #hr-service,
+.ir-list-item #mr-service,
+.ir-list-item #dr-service {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  top: 6px;
+}
+.ci-service-box ul li label,
+.ir-list-item .hr-service-label,
+.ir-list-item .mr-service-label,
+.ir-list-item .dr-service-label {
+  padding-left: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.ci-service-box ul li > ul {
+  list-style: disc;
+  padding-inline-start: 3rem;
+}
+.ci-service-box ul li > ul li {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 12px;
+}
+.hr-sub-list {
+  list-style: none;
+  display: none;
+}
+.mr-sub-list,
+.dr-sub-list {
+  list-style: disc;
+  display: none;
+}
+.mr-sub-list li,
+.dr-sub-list li {
+  margin-bottom: 8px;
+}
+.cc-service-box,
+.ci-service-box,
+.ir-service-box {
+  display: none;
+}
+.ccisl,
+.osisl {
+  display: none;
+}
+
+.gs-country {
+  margin: 30px 0px;
+}
+.gs-country-select {
+  padding: 0px 50px;
+}
+.gs-country-select select {
+  width: 100%;
+  height: 65px;
+  padding: 0px 15px;
+  background-color: #111125;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 15px 0px;
+  margin-top: 20px;
+}
+.gs-country-select select:focus {
+  outline: none;
+}
+.gs-find {
+  margin: 60px 0px;
+}
+.find-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+.find-section {
+  padding: 0px 50px;
+}
+
+.find-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.f-btn {
+  display: block;
+  margin: 20px 0px;
+  width: 170px;
+  text-align: left;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid gray;
+  padding: 6px 0px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+#request-btn {
+  border-bottom: 3px solid #111125;
+}
+.f-btn:focus {
+  outline: none;
+}
+.find-box {
+  width: 100%;
+  height: 450px;
+  background-position: top;
+  background-size: cover;
+  padding: 30px 20px;
+}
+#request {
+  background-image: url("../img/getstart/Request-call.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: show;
+}
+#inquery {
+  background-image: url("../img/getstart/Iquire-further.png");
+  display: none;
+}
+#virtual {
+  background-image: url("../img/getstart/virtual-meeting.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+.find-box h2 {
+  font-family: "Roboto Slab", serif;
+  color: white;
+}
+.find-box p {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+#request a,
+.inquery-btn,
+.reserve {
+  color: white;
+  background-color: transparent;
+  font-size: 18px;
+  border: 2px solid white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+#request a:hover,
+.inquery-btn:hover,
+.reserve:hover {
+  text-decoration: none;
+  background-color: white;
+  color: #111125;
+  transition: 0.5s;
+}
+.inquery-textarea {
+  margin-top: 50px;
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border: none;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+.inquery-textarea:focus {
+  outline: none;
+  background-color: rgb(255, 255, 255, 0.7);
+}
+.inquery-btn {
+  margin-top: 30px;
+}
+#virtual form {
+  width: 100%;
+}
+
+#virtual form select,
+#virtual form input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 3px solid white;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding-left: 8px;
+  font-weight: 500;
+  padding: 5px 8px;
+  margin-bottom: 20px;
+  color: black;
+}
+#virtual form select:focus,
+#virtual form input:focus {
+  outline: none;
+}
+::placeholder {
+  color: black;
+  opacity: 1;
+}
+::-ms-input-placeholder {
+  color: black;
+}
+.gs-cta {
+  margin: 30px 0px;
+}
+.gs-cta-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+.gs-line {
+  height: 3px;
+  width: 192px;
+  background-color: #111125;
+}
+.gs-cta img {
+  height: 100px;
+}
+h2.gs-cta-sub {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.gs-call-text {
+  text-align: center;
+  margin-top: 40px;
+  color: rgb(0, 0, 0, 0.8);
+  font-size: 20px;
+  font-weight: 500;
+}
+.gs-call-text a {
+  color: rgb(0, 0, 0);
+}
+.gs-call-text a:hover {
+  color: black;
+  text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+  .gs-banner h2 {
+    font-size: 32px;
+  }
+  .gs-banner {
+    background-position: 60%;
+    padding: 160px 0px 160px 0px;
+  }
+  .gt-point1 {
+    padding: 30px 0px;
+  }
+  .point-title {
+    font-size: 22px;
+  }
+  .point1-category {
+    flex-direction: column;
+    padding: 0px 0px;
+  }
+  .point-category {
+    height: 350px;
+    width: 100%;
+    border-radius: 30px 0px;
+  }
+  .pc-line {
+    height: 2px;
+    width: 100%;
+    margin: 20px 0px;
+  }
+  .sps-box ul {
+    padding-inline-start: 0;
+  }
+  .pcs-select-row {
+    margin-top: 0px;
+  }
+  .sps-box {
+    height: auto;
+  }
+  .gs-country {
+    margin: 0px 0px;
+  }
+  .gs-country-select {
+    padding: 0px 0px;
+  }
+  .gs-find {
+    margin: 30px 0px;
+  }
+  .find-section {
+    padding: 0px 0px;
+  }
+  .find-title {
+    font-size: 24px;
+  }
+  .f-btn {
+    margin: 5px 0px;
+  }
+  .find-buttons {
+    height: auto;
+  }
+  .find-box {
+    margin-top: 25px;
+  }
+  .gs-cta-title {
+    font-size: 22px;
+  }
+  .gs-cta img {
+    height: 50px;
+  }
+}

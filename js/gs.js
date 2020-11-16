@@ -1,0 +1,174 @@
+$(document).ready(function () {
+  var ccsInput = $("#cc-service");
+  var ciInput = $("#ci-service");
+  var irInput = $("#ir-service");
+
+  var ccsBox = $("#cc-service-box");
+  var ciBox = $("#ci-service-box");
+  var irBox = $("#ir-service-box");
+
+  ccsInput.click(function () {
+    if ($(this).prop("checked") == true) {
+      ccsBox.show();
+      ciBox.hide();
+      irBox.hide();
+      ciInput.prop("checked", false);
+      irInput.prop("checked", false);
+    } else if ($(this).prop("checked") == false) {
+      ccsBox.hide();
+    }
+  });
+  ciInput.click(function () {
+    if ($(this).prop("checked") == true) {
+      ccsBox.hide();
+      ciBox.show();
+      irBox.hide();
+      ccsInput.prop("checked", false);
+      irInput.prop("checked", false);
+    } else if ($(this).prop("checked") == false) {
+      ciBox.hide();
+    }
+  });
+  irInput.click(function () {
+    if ($(this).prop("checked") == true) {
+      ccsBox.hide();
+      ciBox.hide();
+      irBox.show();
+      ccsInput.prop("checked", false);
+      ciInput.prop("checked", false);
+    } else if ($(this).prop("checked") == false) {
+      irBox.hide();
+    }
+  });
+
+  var callBtn = $("#request-btn");
+  var inqueryBtn = $("#inquery-btn");
+  var virtualBtn = $("#virtual-btn");
+
+  var request = $("#request");
+  var inquery = $("#inquery");
+  var virtual = $("#virtual");
+
+  callBtn.click(function () {
+    request.css({ display: "flex" });
+    $(this).css("border-bottom", "3px solid #111125");
+    virtual.hide();
+    inquery.hide();
+    inqueryBtn.css("border-bottom", "3px solid gray");
+    virtualBtn.css("border-bottom", "3px solid gray");
+  });
+  inqueryBtn.click(function () {
+    request.hide();
+    virtual.hide();
+    inquery.show();
+    $(this).css("border-bottom", "3px solid #111125");
+    callBtn.css("border-bottom", "3px solid gray");
+    virtualBtn.css("border-bottom", "3px solid gray");
+  });
+  virtualBtn.click(function () {
+    request.hide();
+    virtual.css("display", "flex");
+    $(this).css("border-bottom", "3px solid #111125");
+    inquery.hide();
+    inqueryBtn.css("border-bottom", "3px solid gray");
+    callBtn.css("border-bottom", "3px solid gray");
+  });
+
+  var ccisInput = $("#cci-service");
+  var ccisl = $("#ccisl");
+  var osiInput = $("#osi-service");
+  var osisl = $("#osisl");
+
+  ccisInput.click(function () {
+    if ($(this).prop("checked") == true) {
+      ccisl.show();
+      osisl.hide();
+      osiInput.prop("checked", false);
+    }
+    if ($(this).prop("checked") == false) {
+      ccisl.hide();
+    }
+  });
+
+  osiInput.click(function () {
+    if ($(this).prop("checked") == true) {
+      osisl.show();
+      ccisl.hide();
+      ccisInput.prop("checked", false);
+    }
+    if ($(this).prop("checked") == false) {
+      osisl.hide();
+    }
+  });
+
+  var hrService = $("#hr-service");
+  var mrService = $("#mr-service");
+  var drService = $("#dr-service");
+
+  var hrList = $("#hr-sub-list");
+  var mrList = $("#mr-sub-list");
+  var drList = $("#dr-sub-list");
+
+  hrService.click(function () {
+    if ($(this).prop("checked") == true) {
+      hrList.show();
+      mrList.hide();
+      drList.hide();
+
+      mrService.prop("checked", false);
+      drService.prop("checked", false);
+    }
+    if ($(this).prop("checked") == false) {
+      hrList.hide();
+    }
+  });
+  mrService.click(function () {
+    if ($(this).prop("checked") == true) {
+      mrList.show();
+      hrList.hide();
+      drList.hide();
+
+      hrService.prop("checked", false);
+      drService.prop("checked", false);
+    }
+    if ($(this).prop("checked") == false) {
+      mrList.hide();
+    }
+  });
+  drService.click(function () {
+    if ($(this).prop("checked") == true) {
+      hrList.hide();
+      mrList.hide();
+      drList.show();
+
+      mrService.prop("checked", false);
+      hrService.prop("checked", false);
+    }
+    if ($(this).prop("checked") == false) {
+      drList.hide();
+    }
+  });
+
+  var smhr = $("#smhr");
+  var ehr = $("#ehr");
+  var dhr = $("#dhr");
+  var pcar = $("#pcar");
+  var fahr = $("#fahr");
+  var sa = $("#sa");
+  var hrArrays = [smhr, ehr, dhr, pcar, fahr];
+  var sat = $("#select-all-text");
+
+  sa.click(function () {
+    if ($(this).prop("checked") == true) {
+      for (var i = 0; i < hrArrays.length; i++) {
+        hrArrays[i].prop("checked", true);
+        sat.text("Unselect All");
+      }
+    } else {
+      for (let i = 0; i < hrArrays.length; i++) {
+        hrArrays[i].prop("checked", false);
+        sat.text("Select All");
+      }
+    }
+  });
+});

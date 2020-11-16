@@ -43,3 +43,14 @@ submenuTitle.forEach((element, index) => {
     }
   });
 });
+
+const modalOpenBtn = document.getElementById("pm-open");
+const modalCloseBtn = document.getElementById("pm-close");
+const pointModal = document.getElementById("point-modal");
+modalOpenBtn.addEventListener("click", function () {
+  pointModal.style.display = "flex";
+});
+modalCloseBtn.addEventListener("click", function () {
+  pointModal.style.display = "none";
+});
+console.log(pointModal);
