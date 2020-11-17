@@ -7200,6 +7200,9 @@ a {
 ::-ms-input-placeholder {
   color: black;
 }
+.gs-cta {
+  display: none;
+}
 .gs-cta-head {
   background-color: #111125;
   padding: 30px 0px;
