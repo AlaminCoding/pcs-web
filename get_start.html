@@ -211,12 +211,12 @@
     </section>
     <section class="gt-point1">
       <div class="container">
-        <h2 class="point-title">1.<br />What describes you best?</h2>
+        <h2 class="point-title">What describes you best?</h2>
         <div class="point1-category">
           <div class="point-category pc1">
-            <h2>Invidiual<br />Cybersecurity Service</h2>
-            <a href="#"
-              >Explore Now
+            <h2>Personal<br />Cybersecurity Service</h2>
+            <a href="#pcs-part" id="pcsp-btn"
+              >Select
               <img src="img/getstart/double-angle-pointing-to-right.png" alt=""
             /></a>
           </div>
@@ -224,7 +224,7 @@
           <div class="point-category pc2">
             <h2>Buisness<br />Cybersecurity Service</h2>
             <a id="pm-open"
-              >Explore Now
+              >Select
               <img src="img/getstart/double-angle-pointing-to-right.png" alt=""
             /></a>
           </div>
@@ -241,10 +241,9 @@
         </div>
       </div>
     </section>
-    <section class="gt-point2">
+    <section class="gt-point2" id="pcs-part">
       <div class="container">
         <h2 class="point-title">
-          2.<br />
           Please select your<br />personal cybersecurity service
         </h2>
         <div class="row pcs-select-row">
@@ -476,12 +475,9 @@
     </section>
     <section class="gs-country">
       <div class="container">
-        <h2 class="point-title">
-          3.<br />
-          Where are you form
-        </h2>
+        <h2 class="point-title">Where are you from?</h2>
         <div class="gs-country-select">
-          <select name="country" id="gs-country">
+          <select name="country" id="gs-country" onchange="checkCountry()">
             <option value="">Please select your country</option>
             <option value="Afganistan">Afghanistan</option>
             <option value="Albania">Albania</option>
@@ -764,21 +760,21 @@
                   <p>Contact a specialist</p>
                 </div>
 
-                <div>
-                  <a href="#"
-                    ><i class="fas fa-phone-square-alt mr-2"></i>Call Now
+                <form action="">
+                  <input type="text" placeholder="Full Name" />
+                  <input type="tel" placeholder="Mobile Number" />
+                  <a href="#" type="submit"
+                    ><i class="fas fa-phone-square-alt mr-2"></i>Contact a
+                    Specialist
                   </a>
-                </div>
+                </form>
               </div>
               <div id="inquery" class="find-box">
                 <h2>Want to know more ?</h2>
                 <form action="">
-                  <textarea
-                    name="inquery"
-                    id="inquery-text"
-                    class="inquery-textarea"
-                    placeholder="Write Us"
-                  ></textarea>
+                  <input type="text" placeholder="Full Name" />
+                  <input type="email" placeholder="Your Email" />
+                  <input type="tel" placeholder="Mobile Number" />
                   <button class="inquery-btn">
                     <i class="fas fa-paper-plane mr-2"></i>Send
                   </button>
@@ -790,7 +786,7 @@
                   <p>We can help you achive your goals</p>
                 </div>
                 <form action="">
-                  <select name="service" id="services">
+                  <!-- <select name="service" id="services">
                     <option value="">Select a service</option>
                     <option value="pcs">Personal Cybersecurity</option>
                     <option value="bcs">Enterprise Cybersecurity</option>
@@ -801,7 +797,7 @@
                     class="pickdate"
                     placeholder="Select a day"
                   />
-                  <input class="timepicker" placeholder="Select a time" />
+                  <input class="timepicker" placeholder="Select a time" /> -->
                   <button class="reserve">
                     <i class="far fa-calendar-check mr-2"></i>Reserve
                   </button>
@@ -813,22 +809,39 @@
       </div>
     </section>
     <section class="gs-cta">
-      <div class="container">
-        <h2 class="gs-cta-title">Contact Sales</h2>
-        <div class="gs-line"></div>
-        <h2 class="gs-cta-sub">You can contact us via</h2>
-        <div class="d-flex justify-content-center">
-          <a href="#" class="mr-2">
-            <img src="img/getstart/facebook-(1).png" alt="" />
-          </a>
-          <a href="#" class="ml-2">
-            <img src="img/getstart/whatsapp.png" alt="" />
-          </a>
+      <div class="gs-cta-head">
+        <div class="container">
+          <h2>Contact Sales</h2>
+          <p>You can contact us</p>
         </div>
-        <p class="gs-call-text">
-          To speak with a sales representative, please call
-          <a href="#">+8801730940005</a>
-        </p>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-3 col-6">
+            <div class="gs-social gs-fb">
+              <a href="#"
+                ><i class="fab fa-facebook-square mr-1"></i> Facebook</a
+              >
+              <p>Via Facebook</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="gs-social gs-wa">
+              <a href="#"
+                ><i class="fab fa-whatsapp-square mr-1"></i>Whatsapp</a
+              >
+              <p>Via Whatsapp</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="gs-social gs-call">
+              <a href="#"
+                ><i class="fas fa-phone-square-alt mr-1"></i> +880169696969</a
+              >
+              <p>Or you can call us directly</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <footer>
@@ -978,6 +991,17 @@
         dropdown: true,
         scrollbar: true,
       });
+    </script>
+    <script>
+      var gsCountry = $("#gs-country");
+      var gsCta = $(".gs-cta");
+      function checkCountry() {
+        if (gsCountry.val() == "Bangladesh") {
+          gsCta.css("display", "block");
+        } else {
+          gsCta.css("display", "none");
+        }
+      }
     </script>
   </body>
 </html>

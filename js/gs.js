@@ -50,7 +50,7 @@ $(document).ready(function () {
   var virtual = $("#virtual");
 
   callBtn.click(function () {
-    request.css({ display: "flex" });
+    request.css({ display: "block" });
     $(this).css("border-bottom", "3px solid #111125");
     virtual.hide();
     inquery.hide();
@@ -170,5 +170,12 @@ $(document).ready(function () {
         sat.text("Select All");
       }
     }
+  });
+  var pcspBtn = $("#pcsp-btn");
+  var pcsPart = $("#pcs-part");
+  pcspBtn.click(function (e) {
+    e.preventDefault();
+    var pcsLocation = pcsPart.offset().top;
+    $("body, html").animate({ scrollTop: pcsLocation }, 1000);
   });
 });

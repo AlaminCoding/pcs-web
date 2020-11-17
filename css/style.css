@@ -6827,6 +6827,9 @@ a {
 .gt-point1 {
   padding: 60px 0px;
 }
+.gt-point2 {
+  padding: 10px 0px;
+}
 .point-title {
   color: #010101;
   text-transform: uppercase;
@@ -7047,7 +7050,7 @@ a {
   padding: 0px 50px;
 }
 .gs-country-select select {
-  width: 100%;
+  width: 50%;
   height: 65px;
   padding: 0px 15px;
   background-color: #111125;
@@ -7106,10 +7109,6 @@ a {
 }
 #request {
   background-image: url("../img/getstart/Request-call.png");
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  display: show;
 }
 #inquery {
   background-image: url("../img/getstart/Iquire-further.png");
@@ -7135,7 +7134,7 @@ a {
 .inquery-btn,
 .reserve {
   color: white;
-  background-color: transparent;
+  background-color: rgb(0, 0, 0, 0.5);
   font-size: 18px;
   border: 2px solid white;
   padding: 4px 10px;
@@ -7150,21 +7149,7 @@ a {
   color: #111125;
   transition: 0.5s;
 }
-.inquery-textarea {
-  margin-top: 50px;
-  width: 100%;
-  height: 200px;
-  padding: 10px;
-  border: none;
-  background-color: rgb(255, 255, 255, 0.5);
-}
-.inquery-textarea:focus {
-  outline: none;
-  background-color: rgb(255, 255, 255, 0.7);
-}
-.inquery-btn {
-  margin-top: 30px;
-}
+
 #virtual form {
   width: 100%;
 }
@@ -7186,6 +7171,28 @@ a {
 #virtual form input:focus {
   outline: none;
 }
+#request form {
+  margin-top: 150px;
+}
+#inquery form {
+  margin-top: 130px;
+}
+#request form input,
+#inquery form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 40px;
+  padding-left: 10px;
+}
+#request form input:focus,
+#inquery form input:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: none;
+  border: 2px solid white;
+}
 ::placeholder {
   color: black;
   opacity: 1;
@@ -7193,39 +7200,65 @@ a {
 ::-ms-input-placeholder {
   color: black;
 }
-.gs-cta {
-  margin: 30px 0px;
-}
-.gs-cta-title {
-  font-size: 30px;
-  font-weight: 700;
-}
-.gs-line {
-  height: 3px;
-  width: 192px;
+.gs-cta-head {
   background-color: #111125;
+  padding: 30px 0px;
+  color: white;
 }
-.gs-cta img {
-  height: 100px;
+.gs-cta-head h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 5px;
 }
-h2.gs-cta-sub {
-  font-size: 24px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.gs-call-text {
-  text-align: center;
-  margin-top: 40px;
-  color: rgb(0, 0, 0, 0.8);
+.gs-cta-head p {
   font-size: 20px;
+  margin-bottom: 0;
+}
+.gs-social {
+  margin: 30px 0px;
+  text-align: center;
+  padding: 30px 0px;
+  border-radius: 5px;
+}
+.gs-social a {
+  color: white;
+  font-size: 30px;
+  padding: 5px 14px;
+  border-radius: 5px;
+  box-shadow: -2px -2px 5px white, 2px 2px 5px black;
+  transition: 0.5s;
+}
+
+.gs-social a:hover {
+  text-decoration: none;
+  background-color: white;
+  transition: 0.5s;
+}
+.gs-fb a:hover {
+  color: royalblue;
+  box-shadow: inset 2px 2px 2px #182f59, inset -2px -2px 2px #182f59;
+}
+.gs-wa a:hover {
+  color: #308a3a;
+  box-shadow: inset 2px 2px 2px#308a3a, inset -2px -2px 2px #308a3a;
+}
+.gs-call a:hover {
+  color: #182f59;
+  box-shadow: inset 2px 2px 2px #182f59, inset -2px -2px 2px#182f59;
+}
+.gs-social p {
+  font-size: 16px;
+  padding-top: 16px;
   font-weight: 500;
 }
-.gs-call-text a {
-  color: rgb(0, 0, 0);
+.gs-fb a {
+  background-color: rgb(43, 77, 179);
 }
-.gs-call-text a:hover {
-  color: black;
-  text-decoration: none;
+.gs-wa a {
+  background-color: #308a3a;
+}
+.gs-call a {
+  background-color: #182f59;
 }
 @media screen and (max-width: 480px) {
   .gs-banner h2 {
@@ -7288,10 +7321,23 @@ h2.gs-cta-sub {
   .find-box {
     margin-top: 25px;
   }
-  .gs-cta-title {
-    font-size: 22px;
+  .gs-country-select select {
+    width: 100%;
   }
-  .gs-cta img {
-    height: 50px;
+  .gs-social {
+    margin: 10px 0px;
+    padding: 0px 0px;
+  }
+  .gs-social a {
+    font-size: 20px;
+  }
+  .gs-cta-head {
+    margin-bottom: 20px;
+  }
+  #request form {
+    margin-top: 100px;
+  }
+  #inquery form {
+    margin-top: 90px;
   }
 }
