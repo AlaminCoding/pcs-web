@@ -3729,7 +3729,8 @@ a.bs-read {
   font-weight: 600;
   margin: 0;
   margin-top: 10px;
-  font-size: 25px;
+  font-size: 20px;
+  line-height: 26px;
 }
 /*Data Broker Section*/
 .db-mobile-img img {
@@ -3808,7 +3809,6 @@ a.bs-read {
   font-family: "Roboto Slab", serif;
   font-weight: 600;
   font-size: 40px;
-  max-width: 800px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -3957,7 +3957,9 @@ a.bs-read {
     font-size: 28px;
   }
   .dm-text {
-    height: 140px;
+    height: auto;
+    padding-bottom: 10px;
+    padding-right: 10px;
   }
   .dm-text p {
     font-size: 18px;
@@ -6675,7 +6677,7 @@ a {
   background-image: url("../img/hrecovery/Header.jpg");
   background-position: center;
   background-size: cover;
-  padding: 300px 0px 260px 0px;
+  padding: 340px 0px 300px 0px;
 }
 .h-banner h2 {
   font-family: "Roboto Slab", serif;
@@ -6752,7 +6754,7 @@ a {
 }
 @media screen and (max-width: 480px) {
   .h-banner {
-    padding: 250px 0px 210px 0px;
+    padding: 290px 0px 250px 0px;
   }
   .h-client-box {
     height: auto;
