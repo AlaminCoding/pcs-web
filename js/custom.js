@@ -17,6 +17,8 @@ new Glide(".glide", {
   type: "carousel",
   startAt: 0,
   perView: 2,
+  autoplay: 3000,
+  keyboard:true,
   breakpoints: {
     800: {
       perView: 1,
