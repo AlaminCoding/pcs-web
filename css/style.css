@@ -7359,6 +7359,9 @@ a {
 .banner-box p {
   text-shadow: 2px 2px 0px black;
 }
+.banner-v2 .banner-box p {
+  max-width: 450px;
+}
 .hcase-title {
   text-transform: uppercase;
   font-size: 26px;
