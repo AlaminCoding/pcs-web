@@ -7346,6 +7346,431 @@ a {
     margin-top: 90px;
   }
 }
+
+/* C-Level Executive */
+.clevel-banner,
+.political-banner,
+.cele-banner {
+  background-image: url("../img/c_level/header.png");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+.political-banner {
+  background-image: url("../img/political/header.png");
+  background-attachment: fixed;
+}
+.clevel-about,
+.poli-cause {
+  margin-top: 40px;
+}
+.clevel-title {
+  text-align: center;
+  font-family: "Roboto slab", serif;
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.clevel-about p {
+  text-align: center;
+  font-size: 18px;
+  color: black;
+}
+.cla-row {
+  margin-top: 40px;
+}
+.cla-box h2 {
+  font-size: 24px;
+}
+.cla-box ul {
+  list-style: none;
+}
+.cla-box ul li {
+  margin: 38px 0px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.cla-box ul li span {
+  background-color: #111125;
+  border-radius: 50%;
+  padding: 1px 8px 5px 8px;
+  margin-right: 10px;
+}
+.cla-box ul li span img {
+  height: 15px;
+}
+.clevel-category {
+  margin-top: 60px;
+}
+.clac-box {
+  width: 100%;
+  background-color: white;
+  padding: 30px 20px;
+  box-shadow: 3px 3px 7px gray;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+.clac-box h2 {
+  font-size: 25px;
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.clac-box img {
+  width: 120px;
+  margin-bottom: 18px;
+}
+.clac-ques {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+.clac-text {
+  color: black;
+  margin-bottom: 0;
+}
+.clevel-blog,
+.political-blog,
+.cele-blog {
+  margin-top: 50px;
+}
+.clevel-blog .row,
+.political-blog .row,
+.cele-blog .row {
+  margin-bottom: 80px;
+}
+.cl-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+.clb-box p {
+  color: black;
+  margin-bottom: 0;
+  line-height: 22px;
+}
+.clb-img img {
+  width: 100%;
+}
+.cla-img img {
+  width: 100%;
+}
+
+.clh-img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.clevel-how p,
+.poli-what p {
+  color: black;
+  font-size: 18px;
+}
+.clevel-case {
+  margin-top: 40px;
+}
+.cl-case-box {
+  margin-top: 30px;
+  background-color: white;
+  padding-bottom: 20px;
+  position: relative;
+  box-shadow: 1px 1px 1px gray;
+}
+.cl-case-box h2 {
+  position: absolute;
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  top: 20px;
+  left: 20px;
+  color: white;
+}
+.cl-case-box img {
+  width: 100%;
+}
+.cl-case-box p {
+  color: black;
+  margin-top: 28px;
+  margin-bottom: 22px;
+  padding: 0px 15px;
+}
+.cl-case-box a {
+  font-family: "Roboto Slab", serif;
+  color: black;
+  font-weight: 600;
+}
+.cl-case-btn {
+  text-align: right;
+  padding-right: 15px;
+}
+.clevel-cta {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.cl-cta-box {
+  border: 4px solid #111125;
+  text-align: center;
+  padding: 100px 35px;
+}
+.cl-cta-box h2 {
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.cl-cta-box p {
+  font-size: 17px;
+  color: black;
+  margin-bottom: 42px;
+}
+.cl-cta-box a {
+  color: white;
+  background-color: #111125;
+  font-size: 20px;
+  padding: 5px 27px;
+  border: 3px solid #111125;
+  position: relative;
+  transition: 0.5s;
+}
+.cl-cta-box a:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 120%;
+  border: 3px solid #111125;
+  bottom: -50%;
+  left: -16px;
+  z-index: -1;
+  transition: 0.5s;
+}
+.cl-cta-box a:hover {
+  background-color: white;
+  color: #111125;
+  text-decoration: none;
+}
+.cl-cta-box a:hover:after {
+  background-color: #111125;
+}
+.cl-cta-box input {
+  display: block;
+  width: 100%;
+  height: 47px;
+  border: none;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 575px) {
+  .clevel-banner {
+    background-position: 45%;
+    height: 215px;
+  }
+  .clevel-title {
+    font-size: 28px;
+  }
+  .clevel-about,
+  .poli-cause {
+    margin-top: 30px;
+  }
+  .cla-box h2 {
+    font-size: 22px;
+  }
+  .cla-box ul li {
+    margin: 25px 0px;
+  }
+  .clac-box img {
+    width: 90px;
+  }
+  .clevel-blog,
+  .political-blog,
+  .cele-blog {
+    margin-top: 15px;
+  }
+  .clb-img {
+    margin-top: 20px;
+  }
+  .clb-inverse {
+    flex-direction: column-reverse;
+  }
+  .clevel-blog .row,
+  .political-blog .row,
+  .cele-blog .row {
+    margin-bottom: 35px;
+  }
+  .clevel-case {
+    margin-top: 15px;
+  }
+  .cl-cta-box {
+    padding: 45px 5px;
+    margin: 20px 0px;
+  }
+  .clevel-cta {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .cl-cta-box input {
+    margin-bottom: 35px;
+  }
+}
+/* Political Leaders */
+.poli-about ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.poli-about ul li {
+  color: black;
+  line-height: 22px;
+  margin-bottom: 19px;
+}
+.poli-about ul li i {
+  color: #111125;
+  margin-top: 4px;
+  margin-right: 7px;
+}
+.political-blog {
+  margin-top: 80px;
+}
+.poli-about h2 {
+  font-family: "Roboto slab", serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.poli-cause {
+  margin-top: 0px;
+}
+.poli-cause .cla-row {
+  margin-top: 0px;
+}
+.poli-cause .poli-about ul li {
+  font-size: 15px;
+}
+.poli-what {
+  margin-top: 80px;
+}
+.poli-cta {
+  background-image: url("../img/political/cta.png");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 100px 0px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.poli-cta h2 {
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.poli-cta p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.poli-cta a {
+  color: white;
+  border: 3px solid white;
+  font-size: 20px;
+  padding: 6px 40px;
+  transition: 0.5s;
+}
+.poli-cta a:hover {
+  text-decoration: none;
+  color: #111125;
+  background-color: white;
+}
+.cl-case-img {
+  width: 100%;
+  height: 279px;
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(0, 0, 0, 0.65);
+  background-blend-mode: overlay;
+}
+@media screen and (max-width: 575px) {
+  .political-banner {
+    height: 270px;
+    background-attachment: local;
+  }
+  .poli-about {
+    margin-top: 30px;
+  }
+  .political-blog {
+    margin-top: 10px;
+  }
+  .plb-box {
+    margin-top: 26px;
+  }
+  .poli-what {
+    margin-top: 30px;
+  }
+  .poli-cta h2 {
+    font-size: 26px;
+  }
+}
+/* Celebrities and Media */
+.cele-banner {
+  background-image: url("../img/celebrity/header.png");
+}
+.cele-points ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.cele-points ul li {
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 22px;
+}
+.cele-points ul li:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+.cele-points ul li h2 {
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+.cele-blog {
+  margin-top: 80px;
+}
+.cele-incident p {
+  font-size: 18px;
+  color: black;
+}
+.celei-box {
+  margin-top: 20px;
+}
+.celei-box img {
+  width: 100%;
+}
+.celei-box h2 {
+  font-size: 17px;
+  margin: 15px 0px 10px 0px;
+  font-weight: 700;
+}
+.celei-box p {
+  color: black;
+  font-size: 15px;
+  margin-bottom: 0;
+  line-height: 22px;
+}
+.cele-tips {
+  margin-top: 60px;
+}
+.tips-box {
+  margin-top: 30px;
+  align-items: center;
+}
+
+.tips-box p {
+  line-height: 20px;
+  margin-bottom: 0;
+}
 /*New Home Update*/
 .banner-v2 {
   background-image: url("../img/PCS--header.png");
