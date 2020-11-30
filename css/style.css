@@ -6831,6 +6831,7 @@ a {
 }
 .gt-point2 {
   padding: 10px 0px;
+  display: none;
 }
 .point-title {
   color: #010101;
@@ -7126,6 +7127,7 @@ a {
 .find-box h2 {
   font-family: "Roboto Slab", serif;
   color: white;
+  margin-bottom: 0;
 }
 .find-box p {
   color: white;
@@ -7174,10 +7176,10 @@ a {
   outline: none;
 }
 #request form {
-  margin-top: 150px;
+  margin-top: 10px;
 }
 #inquery form {
-  margin-top: 130px;
+  margin-top: 32px;
 }
 #request form input,
 #inquery form input {
@@ -7185,8 +7187,18 @@ a {
   width: 100%;
   margin-bottom: 20px;
   border: none;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.6);
   height: 40px;
+  padding-left: 10px;
+}
+#request form textarea,
+#inquery form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 88px;
   padding-left: 10px;
 }
 #request form input:focus,
@@ -7350,7 +7362,8 @@ a {
 /* C-Level Executive */
 .clevel-banner,
 .political-banner,
-.cele-banner {
+.cele-banner,
+.hnwi-banner {
   background-image: url("../img/c_level/header.png");
   background-position: center;
   background-size: cover;
@@ -7359,7 +7372,6 @@ a {
 }
 .political-banner {
   background-image: url("../img/political/header.png");
-  background-attachment: fixed;
 }
 .clevel-about,
 .poli-cause {
@@ -7568,7 +7580,7 @@ a {
     height: 215px;
   }
   .clevel-title {
-    font-size: 28px;
+    font-size: 25px;
   }
   .clevel-about,
   .poli-cause {
@@ -7622,7 +7634,7 @@ a {
 }
 .poli-about ul li {
   color: black;
-  line-height: 22px;
+  line-height: 24px;
   margin-bottom: 19px;
 }
 .poli-about ul li i {
@@ -7660,7 +7672,6 @@ a {
   color: white;
   padding: 100px 0px;
   margin-top: 60px;
-  margin-bottom: 60px;
 }
 .poli-cta h2 {
   text-transform: uppercase;
@@ -7761,15 +7772,118 @@ a {
 }
 .cele-tips {
   margin-top: 60px;
+  margin-bottom: 80px;
+}
+.cele-tips .row {
+  justify-content: space-around;
+  position: relative;
+}
+.cele-tips .row:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  background-color: #111125;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .tips-box {
-  margin-top: 30px;
+  margin: 40px 0px;
   align-items: center;
 }
 
 .tips-box p {
   line-height: 20px;
   margin-bottom: 0;
+}
+.tip-bullet {
+  position: relative;
+  margin-right: 30px;
+}
+.bullet-div {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  bottom: -11px;
+  right: -9px;
+  background-color: #111125;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+.bullet-div:after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+}
+.tip-bullet h2 {
+  color: black;
+  margin: 0;
+  font-size: 24px;
+}
+.cele-service {
+  margin-top: 60px;
+}
+.cele-service .row {
+  justify-content: center;
+  margin-top: 40px;
+}
+.celes-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.celes-box p {
+  margin-bottom: 0;
+  margin-top: 5px;
+  transition: 0.1s;
+}
+.celes-box:hover p {
+  font-weight: 600;
+}
+@media screen and (max-width: 575px) {
+  .cele-banner {
+    height: 240px;
+  }
+  .cele-blog {
+    margin-top: 40px;
+  }
+  .cele-tips .row:after {
+    display: none;
+  }
+  .tips-box {
+    margin: 10px 0px;
+  }
+  .bullet-div {
+    height: 30px;
+    width: 30px;
+    bottom: -4px;
+    right: -6px;
+  }
+  .tip-bullet h2 {
+    font-size: 18px;
+  }
+  .cele-tips {
+    margin-bottom: 40px;
+  }
+  .cele-service {
+    margin-top: 25px;
+  }
+
+  .celes-box {
+    height: 74px;
+    justify-content: flex-end;
+    margin-top: 25px;
+  }
+  .cele-service .row {
+    margin-top: 0px;
+  }
 }
 /*New Home Update*/
 .banner-v2 {
@@ -7950,5 +8064,269 @@ a {
   }
   .row.hcase-row {
     margin-top: 0px;
+  }
+}
+/*Thank you page*/
+.thank-section {
+  width: 100%;
+  text-align: center;
+  padding: 200px 0px;
+}
+.thank-section h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 60px;
+}
+.thank-section i {
+  font-size: 70px;
+  color: #182f59;
+  margin: 20px 0px;
+}
+.thank-section p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.thank-section a {
+  color: #182f59;
+  text-decoration: underline;
+}
+@media screen and (max-width: 575px) {
+  .thank-section {
+    padding: 65px 0px;
+  }
+}
+
+/* HNWI Page */
+.hnwi-banner {
+  background-image: url("../img/hnwi/header.png");
+}
+.poli-about ul li p {
+  font-size: 16px;
+  text-align: left;
+  font-weight: 600;
+}
+.poli-about .hnwi-about-list {
+  padding-left: 20px;
+}
+.poli-about .hnwi-about-list li i {
+  font-size: 13px;
+  margin-top: 6px;
+}
+.poli-about .hnwi-about-list li {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.hnwi-flow {
+  margin-top: 60px;
+  padding-bottom: 10px;
+}
+.hnwi-flow p {
+  color: black;
+}
+.hnwi-flow-box,
+.hfb2 {
+  margin-top: 30px;
+  padding: 10px;
+  background-color: white;
+  position: relative;
+}
+.hnwi-flow-box img {
+  position: absolute;
+  top: 50%;
+  right: -35px;
+  transform: translateY(-50%);
+}
+.hnwi-flow-box:after {
+  content: "";
+  position: absolute;
+  height: 52%;
+  width: 104%;
+  bottom: -5px;
+  right: -5px;
+  border-radius: 0px 0px 7px 7px;
+  border: 3px solid #111125;
+  stroke-dasharray: 10;
+  border-top: 0px;
+  z-index: -1;
+}
+.hnwi-flow-box:before {
+  content: "";
+  position: absolute;
+  height: 52%;
+  width: 104%;
+  top: -5px;
+  right: -5px;
+  border-radius: 7px 7px 0px 0px;
+  border: 3px solid #111125;
+  border-bottom: 0px;
+  border-style: dashed;
+  z-index: -1;
+}
+.hnwi-inner {
+  background-color: #111125;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+}
+.hnwi-inner p {
+  color: white;
+  margin: 0;
+  padding: 0px 12px;
+}
+.hnwi-flow .row {
+  justify-content: space-evenly;
+}
+.hfb2:after {
+  content: "";
+  position: absolute;
+  height: 52%;
+  width: 104%;
+  top: -5px;
+  right: -5px;
+  border-radius: 7px 7px 0px 0px;
+  border: 3px solid #111125;
+  stroke-dasharray: 10;
+  border-bottom: 0px;
+  z-index: -1;
+}
+.hfb2:before {
+  content: "";
+  position: absolute;
+  height: 52%;
+  width: 104%;
+  bottom: -5px;
+  right: -5px;
+  border-radius: 0px 0px 7px 7px;
+  border: 3px solid #111125;
+  border-top: 0px;
+  border-style: dashed;
+  z-index: -1;
+}
+.hnwi-strategi {
+  margin-top: 80px;
+  padding-bottom: 30px;
+}
+.hnwis-box {
+  display: flex;
+  margin-top: 30px;
+}
+.hnwis-box img {
+  height: 100px;
+}
+.hnwis-text {
+  padding-left: 15px;
+  padding-top: 14px;
+}
+.hnwis-text h2 {
+  font-size: 18px;
+}
+.hnwis-text p {
+  font-size: 15px;
+  color: black;
+  line-height: 20px;
+}
+.hnwi-service-list {
+  list-style: none;
+}
+.hnwi-service-list li {
+  margin: 26px 0px;
+  color: black;
+  line-height: 22px;
+}
+.hnwi-service-list li i {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.hnwis-row {
+  position: relative;
+  margin-bottom: 40px;
+}
+.hnwis-row:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  background-color: #111125;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hnwi-cta {
+  background-image: url("../img/hnwi/Group-1311.jpg");
+}
+@media screen and (max-width: 575px) {
+  .hnwi-flow {
+    margin-top: 10px;
+  }
+  .hnwi-flow-box,
+  .hfb2 {
+    margin-bottom: 30px;
+  }
+  .hnwi-flow-box img {
+    top: 101%;
+    right: 50%;
+    transform: translateX(50%) rotate(90deg);
+  }
+  .hnwi-strategi {
+    margin-top: 10px;
+    padding-bottom: 0px;
+  }
+  .hnwis-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hnwis-row:after {
+    display: none;
+  }
+  .hnwi-service-list {
+    padding-inline-start: 0px;
+    margin: 0;
+  }
+  .hnwi-service-list li {
+    margin: 20px 0px 0px 0px;
+  }
+  .hnwis-row {
+    margin-bottom: 30px;
+  }
+}
+.clac-flex {
+  display: flex;
+  align-items: flex-start;
+}
+.clac-flex .clac-ques {
+  font-size: 17px;
+}
+.clac-flex div {
+  padding-left: 10px;
+}
+.clac-box .clac-flex img {
+  margin-bottom: 0px;
+  transition: 0.8s;
+}
+.clac-text {
+  text-align: justify;
+}
+.clac-box {
+  box-shadow: none;
+  transition: 0.5s;
+}
+.clac-box:hover {
+  box-shadow: 3px 3px 7px grey;
+}
+.clac-box:hover .clac-flex img {
+  transform: rotate(45deg);
+}
+@media screen and (max-width: 575px) {
+  .clac-flex {
+    flex-direction: column;
+  }
+  .clac-flex div {
+    padding-left: 0px;
+  }
+  .clac-box h2 {
+    margin-bottom: 6px;
   }
 }

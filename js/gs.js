@@ -173,8 +173,10 @@ $(document).ready(function () {
   });
   var pcspBtn = $("#pcsp-btn");
   var pcsPart = $("#pcs-part");
+  var gtPoint = $(".gt-point2");
   pcspBtn.click(function (e) {
     e.preventDefault();
+    gtPoint.css("display", "block");
     var pcsLocation = pcsPart.offset().top;
     $("body, html").animate({ scrollTop: pcsLocation }, 1000);
   });
