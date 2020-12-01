@@ -6119,8 +6119,24 @@ a {
   top: -15px;
   left: 0;
 }
+.irb-box1 {
+  background-image: url("../img/crime/blog1.jpeg");
+}
+.irb-box2 {
+  background-image: url("../img/crime/blog2.jpg");
+}
+.irb-box3 {
+  background-image: url("../img/crime/blog3.jpg");
+}
 .irb-box {
   position: relative;
+
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+  width: 100%;
+  height: 550px;
 }
 .irb-box img {
   width: 100%;
@@ -6579,10 +6595,7 @@ a {
 .vrps-bullets .glide__bullet--active {
   background-color: #111125;
 }
-.irb-space {
-  width: 100%;
-  height: 19px;
-}
+
 @media screen and (max-width: 765px) {
   .vrp-bg {
     display: none;
@@ -6667,9 +6680,6 @@ a {
   .vrps-bullets {
     bottom: 102%;
     left: 91%;
-  }
-  .irb-space {
-    height: 0px;
   }
 }
 /*Hack Recovery Me*/
@@ -7191,6 +7201,11 @@ a {
   height: 40px;
   padding-left: 10px;
 }
+#request form select {
+  height: 40px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
 #request form textarea,
 #inquery form textarea {
   display: block;
@@ -7417,9 +7432,7 @@ a {
 }
 .clac-box {
   width: 100%;
-  background-color: white;
   padding: 30px 20px;
-  box-shadow: 3px 3px 7px gray;
   margin-bottom: 40px;
   border-radius: 10px;
 }
@@ -7441,6 +7454,8 @@ a {
 .clac-text {
   color: black;
   margin-bottom: 0;
+  font-size: 15px;
+  line-height: 20px;
 }
 .clevel-blog,
 .political-blog,
@@ -8123,12 +8138,13 @@ a {
 }
 .hnwi-flow p {
   color: black;
+  font-weight: 600;
 }
 .hnwi-flow-box,
 .hfb2 {
   margin-top: 30px;
   padding: 10px;
-  background-color: white;
+  background-color: transparent;
   position: relative;
 }
 .hnwi-flow-box img {
@@ -8306,16 +8322,12 @@ a {
   margin-bottom: 0px;
   transition: 0.8s;
 }
-.clac-text {
-  text-align: justify;
-}
+
 .clac-box {
   box-shadow: none;
   transition: 0.5s;
 }
-.clac-box:hover {
-  box-shadow: 3px 3px 7px grey;
-}
+
 .clac-box:hover .clac-flex img {
   transform: rotate(45deg);
 }
@@ -8328,5 +8340,176 @@ a {
   }
   .clac-box h2 {
     margin-bottom: 6px;
+  }
+}
+
+/* Cyber Crime Investigation */
+.crime-banner {
+  width: 100%;
+  background-image: url("../img/crime/Header.jpg");
+  background-position: top;
+  background-size: cover;
+  background-color: rgb(17, 17, 37, 0.5);
+  background-blend-mode: overlay;
+  padding: 330px 0px 260px 0px;
+}
+.crime-banner h2 {
+  color: white;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  max-width: 471px;
+  font-size: 35px;
+}
+.crime-about {
+  margin: 40px 0px 30px 0px;
+  padding-bottom: 10px;
+}
+.crimea-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ca-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ca-list li {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 22px;
+}
+.ca-list li i {
+  font-size: 13px;
+  margin-top: 6px;
+  margin-right: 5px;
+}
+.ca-list li:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.crimea-img img {
+  width: 100%;
+}
+.crime-about p {
+  color: black;
+  font-size: 17px;
+}
+.cyber-bull {
+  margin-top: 80px;
+}
+.crime-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.bull-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bull-box p {
+  color: black;
+  line-height: 22px;
+}
+.bull-box ul {
+  list-style: none;
+  padding-left: 15px;
+}
+.bull-box ul li {
+  font-weight: 600;
+  font-size: 17px;
+}
+.bull-box ul li i {
+  margin-top: 8px;
+  font-size: 13px;
+  margin-right: 7px;
+}
+.bull-img {
+  text-align: left;
+}
+.bull-img img {
+  width: 100%;
+}
+.cyber-phis {
+  margin-top: 80px;
+}
+.phis-img img {
+  width: 100%;
+}
+.cyber-theft {
+  margin-top: 80px;
+}
+.theft-img img {
+  width: 100%;
+}
+.crime-serve {
+  margin-top: 80px;
+}
+.crime-serve img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.crime-serve p {
+  line-height: 22px;
+  color: black;
+  margin-bottom: 0;
+}
+.crime-radar {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.crime-radar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.crime-radar ul li {
+  margin: 0px 10px;
+  font-weight: 600;
+}
+.crime-radar ul li i {
+  font-size: 12px;
+  margin-right: 5px;
+}
+@media screen and (max-width: 575px) {
+  .crime-banner {
+    height: 320px;
+  }
+  .crimea-box {
+    height: auto;
+    margin-top: 30px;
+  }
+  .ca-list li {
+    margin-bottom: 16px;
+  }
+  .cyber-bull {
+    margin-top: 30px;
+  }
+  .bull-box {
+    height: auto;
+    margin-top: 30px;
+  }
+  .bull-box ul {
+    padding-left: 0px;
+  }
+  .cyber-phis {
+    margin-top: 30px;
+  }
+  .cyber-theft {
+    margin-top: 30px;
+  }
+  .crime-serve {
+    margin-top: 30px;
+  }
+  .crime-title {
+    font-size: 22px;
+  }
+  .crime-radar ul {
+    flex-direction: column;
+    padding-left: 80px;
   }
 }

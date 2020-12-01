@@ -83,7 +83,7 @@
                             >
                           </li>
                           <li>
-                            <a href="investigate.html">Crime Investigation</a>
+                            <a href="crime.html">Crime Investigation</a>
                           </li>
                         </ul>
                       </div>
@@ -215,7 +215,7 @@
         <h2 class="point-title">What describes you best?</h2>
         <div class="point1-category">
           <div class="point-category pc1">
-            <h2>Invidual<br />Cybersecurity Service</h2>
+            <h2>Invidual</h2>
             <a href="#pcs-part" id="pcsp-btn"
               >Select
               <img src="img/getstart/double-angle-pointing-to-right.png" alt=""
@@ -223,7 +223,7 @@
           </div>
           <div class="pc-line"></div>
           <div class="point-category pc2">
-            <h2>Buisness<br />Cybersecurity Service</h2>
+            <h2>Buisness</h2>
             <a id="pm-open"
               >Select
               <img src="img/getstart/double-angle-pointing-to-right.png" alt=""
@@ -740,7 +740,7 @@
     </section> -->
     <section class="gs-find">
       <div class="container">
-        <h2 class="find-title">Let's find what's' right for you</h2>
+        <h2 class="point-title">Let's find what's' right for you</h2>
         <div class="find-section">
           <div class="row">
             <div class="col-md-6">
@@ -764,8 +764,15 @@
                     <div class="col-md-6">
                       <input
                         type="text"
-                        name="fullname"
-                        placeholder="Full Name"
+                        name="firstname"
+                        placeholder="First Name"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        name="lastname"
+                        placeholder="Last Name"
                       />
                     </div>
                     <div class="col-md-6">
@@ -775,18 +782,65 @@
                         onkeypress="checkCountry()"
                       />
                     </div>
-                  </div>
-                  <input type="email" name="email" placeholder="Email" />
-                  <div class="row">
                     <div class="col-md-6">
+                      <input type="email" name="email" placeholder="Email" />
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-4">
                       <input
                         data-toggle="datepicker"
                         class="pickdate"
                         placeholder="Select a day"
                       />
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                       <input class="timepicker" placeholder="Select a time" />
+                    </div>
+                    <div class="col-md-4">
+                      <select name="timezone_offset" id="timezone-offset">
+                        <option value="-12:00">GMT -12:00</option>
+                        <option value="-11:00">GMT -11:00</option>
+                        <option value="-10:00">GMT -10:00</option>
+                        <option value="-09:50">GMT -9:30</option>
+                        <option value="-09:00">GMT -9:00</option>
+                        <option value="-08:00">GMT -8:00</option>
+                        <option value="-07:00">GMT -7:00</option>
+                        <option value="-06:00">GMT -6:00</option>
+                        <option value="-05:00">GMT -5:00</option>
+                        <option value="-04:50">GMT -4:30</option>
+                        <option value="-04:00">GMT -4:00</option>
+                        <option value="-03:50">GMT -3:30</option>
+                        <option value="-03:00">GMT -3:00</option>
+                        <option value="-02:00">GMT -2:00</option>
+                        <option value="-01:00">GMT -1:00</option>
+                        <option value="+00:00" selected="selected">GMT</option>
+                        <option value="+01:00">GMT +1:00</option>
+                        <option value="+02:00">GMT +2:00</option>
+                        <option value="+03:00">GMT +3:00</option>
+                        <option value="+03:50">GMT +3:30</option>
+                        <option value="+04:00">GMT +4:00</option>
+                        <option value="+04:50">GMT +4:30</option>
+                        <option value="+05:00">GMT +5:00</option>
+                        <option value="+05:50">GMT +5:30</option>
+                        <option value="+05:75">GMT +5:45</option>
+                        <option value="+06:00">GMT +6:00</option>
+                        <option value="+06:50">GMT +6:30</option>
+                        <option value="+07:00">GMT +7:00</option>
+                        <option value="+08:00">GMT +8:00</option>
+                        <option value="+08:75">GMT +8:45</option>
+                        <option value="+09:00">GMT +9:00</option>
+                        <option value="+09:50">GMT +9:30</option>
+                        <option value="+10:00">GMT +10:00</option>
+                        <option value="+10:50">GMT +10:30</option>
+                        <option value="+11:00">GMT +11:00</option>
+                        <option value="+11:50">GMT +11:30</option>
+                        <option value="+12:00">GMT +12:00</option>
+                        <option value="+12:75">GMT +12:45</option>
+                        <option value="+13:00">GMT +13:00</option>
+                        <option value="+14:00">GMT +14:00</option>
+                      </select>
                     </div>
                   </div>
                   <textarea
@@ -1023,12 +1077,12 @@
     <script>
       $(".timepicker").timepicker({
         timeFormat: "h:mm p",
-        interval: 60,
-        minTime: "10",
-        maxTime: "6:00pm",
-        // defaultTime: '11',
-        startTime: "10:00",
-        dynamic: true,
+        interval: 30,
+        minTime: "12:00am",
+        maxTime: "11:30pm",
+        defaultTime: "11",
+        startTime: "12:00am",
+        dynamic: false,
         dropdown: true,
         scrollbar: true,
       });

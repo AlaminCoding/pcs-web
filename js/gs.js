@@ -181,3 +181,15 @@ $(document).ready(function () {
     $("body, html").animate({ scrollTop: pcsLocation }, 1000);
   });
 });
+const modalOpenBtn = document.getElementById("pm-open");
+const modalCloseBtn = document.getElementById("pm-close");
+const pointModal = document.getElementById("point-modal");
+const gtPoint = document.getElementById("pcs-part");
+modalOpenBtn.addEventListener("click", function () {
+  pointModal.style.display = "flex";
+  gtPoint.style.display = "none";
+});
+modalCloseBtn.addEventListener("click", function () {
+  pointModal.style.display = "none";
+});
+console.log(pointModal);
