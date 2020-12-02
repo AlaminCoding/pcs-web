@@ -7446,11 +7446,7 @@ a {
   width: 120px;
   margin-bottom: 18px;
 }
-.clac-ques {
-  color: black;
-  font-size: 18px;
-  font-weight: 500;
-}
+
 .clac-text {
   color: black;
   margin-bottom: 0;
@@ -8344,7 +8340,8 @@ a {
 }
 
 /* Cyber Crime Investigation */
-.crime-banner {
+.crime-banner,
+.osint-banner {
   width: 100%;
   background-image: url("../img/crime/Header.jpg");
   background-position: top;
@@ -8353,18 +8350,24 @@ a {
   background-blend-mode: overlay;
   padding: 330px 0px 260px 0px;
 }
-.crime-banner h2 {
+.osint-banner {
+  background-image: url("../img/osint/header.png");
+}
+.crime-banner h2,
+.osint-banner h2 {
   color: white;
   font-family: "Roboto Slab", serif;
   text-transform: uppercase;
   max-width: 471px;
   font-size: 35px;
 }
-.crime-about {
+.crime-about,
+.osint-about {
   margin: 40px 0px 30px 0px;
   padding-bottom: 10px;
 }
-.crimea-box {
+.crimea-box,
+.osinta-box {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -8391,7 +8394,8 @@ a {
 .crimea-img img {
   width: 100%;
 }
-.crime-about p {
+.crime-about p,
+.osint-about p {
   color: black;
   font-size: 17px;
 }
@@ -8445,14 +8449,17 @@ a {
 .theft-img img {
   width: 100%;
 }
-.crime-serve {
+.crime-serve,
+.osint-serve {
   margin-top: 80px;
 }
-.crime-serve img {
+.crime-serve img,
+.osint-serve img {
   width: 100%;
   margin-bottom: 30px;
 }
-.crime-serve p {
+.crime-serve p,
+.osint-serve p {
   line-height: 22px;
   color: black;
   margin-bottom: 0;
@@ -8479,7 +8486,8 @@ a {
   .crime-banner {
     height: 320px;
   }
-  .crimea-box {
+  .crimea-box,
+  .osinta-box {
     height: auto;
     margin-top: 30px;
   }
@@ -8502,7 +8510,8 @@ a {
   .cyber-theft {
     margin-top: 30px;
   }
-  .crime-serve {
+  .crime-serve,
+  .osint-serve {
     margin-top: 30px;
   }
   .crime-title {
@@ -8511,5 +8520,78 @@ a {
   .crime-radar ul {
     flex-direction: column;
     padding-left: 80px;
+  }
+}
+/* OSINT Page Start */
+.crime-subtitle,
+.osint-subtitle {
+  font-family: "Roboto slab", serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.osint-subtitle {
+  font-size: 22px;
+}
+.osinta-box p {
+  line-height: 22px;
+}
+.osint-need {
+  margin-top: 40px;
+}
+.osintn-box i {
+  font-size: 13px;
+  font-size: 13px;
+  margin-top: 6px;
+  margin-right: 5px;
+}
+.osintn-box p {
+  line-height: 22px;
+}
+.osint-quote {
+  padding-left: 16px;
+  font-size: 17px;
+}
+.osint-box-list {
+  display: flex;
+  justify-content: space-between;
+}
+.osint-box-list ul li {
+  font-size: 16px;
+}
+.osint-box1 {
+  background-image: url("../img/osint/blog1.png");
+  background-color: transparent;
+}
+.osint-box2 {
+  background-image: url("../img/osint/blog2.png");
+  background-color: transparent;
+}
+.osint-box3 {
+  background-image: url("../img/osint/blog3.png");
+  background-color: transparent;
+}
+.osint-about {
+  margin-top: 80px;
+}
+.osint-serve {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 575px) {
+  .osint-banner {
+    background-position: 63%;
+    padding: 180px 0px 180px 0px;
+  }
+  .osint-box-list {
+    flex-direction: column;
+  }
+  .osint-box-list ul {
+    margin: 0;
+  }
+  .osint-serve img {
+    margin-bottom: 9px;
+  }
+  .osint-serve {
+    margin-bottom: 0px;
   }
 }
