@@ -52,6 +52,9 @@ header {
   padding: 33px 0px;
   position: relative;
 }
+.submenu-title a {
+  color: white;
+}
 .menu-link:hover {
   color: white;
   text-decoration: none;
@@ -7202,6 +7205,7 @@ a {
   padding-left: 10px;
 }
 #request form select {
+  border: none;
   height: 40px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.6);
