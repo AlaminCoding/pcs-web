@@ -200,8 +200,22 @@ header {
   color: white;
   text-decoration: none;
 }
+.mobile-home-link {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: block;
+  margin: 20px 0px 10px 0px;
+}
+.mobile-home-link:hover {
+  color: white;
+}
 
 @media screen and (min-width: 1200px) {
+  .mobile-home-link {
+    display: none;
+  }
   .menus:hover a {
     text-decoration: none;
   }
@@ -233,7 +247,19 @@ header {
 .menu-btn i {
   font-size: 30px;
 }
+.submenu-title-mobile {
+  display: none;
+}
+.submenu-title-pc {
+  display: block;
+}
 @media screen and (max-width: 1200px) {
+  .submenu-title-mobile {
+    display: block;
+  }
+  .submenu-title-pc {
+    display: none;
+  }
   header {
     position: static;
     background-color: rgb(0, 0, 0, 1);
@@ -2470,11 +2496,19 @@ footer {
   cursor: pointer;
   transition: 0.8s;
 }
-.ps-cta {
+.ps-cta,
+.inc-cta {
   background-image: url("../img/personal-service/cta.png");
   padding: 180px 0px;
   background-position: top;
   background-size: cover;
+}
+.inc-cta {
+  background-image: url("../img/incident/cta.jpg");
+  background-position: bottom;
+  background-color: rgb(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+  padding: 110px 0px;
 }
 .ps-cta-box {
   text-align: center;
@@ -8273,6 +8307,17 @@ a {
 .hnwi-cta {
   background-image: url("../img/hnwi/Group-1311.jpg");
 }
+.cle-cta {
+  background-image: url("../img/c_level/cta.jpg");
+  background-color: rgb(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+}
+.cele-cta {
+  background-image: url("../img/celebrity/cta.jpg");
+  background-color: rgb(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+  background-position: bottom;
+}
 @media screen and (max-width: 575px) {
   .hnwi-flow {
     margin-top: 10px;
@@ -8598,4 +8643,180 @@ a {
   .osint-serve {
     margin-bottom: 0px;
   }
+}
+/*Case studies Main service pages*/
+.pcs-line {
+  width: 70px;
+  height: 6px;
+  background-color: #111125;
+  margin-bottom: 10px;
+}
+.case-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+.case-box {
+  margin-bottom: 60px;
+}
+.case-img img {
+  width: 100%;
+  border-radius: 0px 0px 50px 0px;
+}
+.case-inner {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding-left: 50px;
+}
+.smb-box-fluid {
+  margin-top: 40px;
+  padding: 60px 0px 10px 0px;
+  background-color: #f4f4f4;
+  position: relative;
+}
+.smb-box-fluid:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 100%;
+  background-color: #111125;
+  top: 0;
+  left: 0;
+}
+.smb-case-box {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 2px solid #111125;
+}
+
+.case-box-title {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.case-text {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.case-btn {
+  text-align: right;
+}
+.case-btn a {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 2px 80px 3px 5px;
+  border-radius: 20px;
+  color: black;
+}
+.case-btn a:focus {
+  outline: none;
+}
+.case-btn a:before {
+  content: "\f061";
+  position: absolute;
+  font-family: fontAwesome;
+  top: -1px;
+  right: -1px;
+  border: 2px solid #111125;
+  background-color: #111125;
+  color: #182f59;
+  padding: 1px 17px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.case-btn a:before {
+  color: white;
+}
+.case-btn a:hover {
+  color: black;
+  text-decoration: none;
+}
+.case-btn a:hover:before {
+  color: black;
+  background-color: transparent;
+  transition: 0.5s;
+}
+.case-btn a:focus {
+  border: 2px solid #111125;
+}
+@media screen and (max-width: 575px) {
+  .case-inner {
+    height: auto;
+    padding-left: 10px;
+    margin-top: 20px;
+  }
+  .smb-box-fluid:after {
+    width: 8px;
+  }
+  .smb-case-box {
+    padding-bottom: 25px;
+  }
+}
+.inves-cta h2,
+.psn-cta h2,
+.inci-cta h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 34px;
+  line-height: 44px;
+}
+@media screen and (max-width: 765px) {
+  .inves-cta h2,
+  .psn-cta h2,
+  .inci-cta h2 {
+    font-size: 22px;
+  }
+}
+/* Sub Service page cta and blog */
+.pt-title {
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.pt-blog {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.pt-blog-box img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.pt-blog-box h2 {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.pt-blog-box p {
+  color: black;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+.pt-blog-row {
+  background-color: #f4f4f4;
+  margin-top: 30px;
+  padding: 40px 0px;
+}
+@media screen and (max-width: 575px) {
+  .pt-blog-row {
+    padding: 0px 0px;
+  }
+  .pt-blog {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+}
+.psn-cta {
+  background-image: url("../img/personal-service/cta.png");
+}
+.inci-cta {
+  background-image: url("../img/incident/cta.jpg");
+  background-color: rgb(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+  background-position: bottom;
 }
