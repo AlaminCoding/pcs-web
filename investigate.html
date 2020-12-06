@@ -230,6 +230,61 @@
         <h2>We investigate to solve and prevent cybercrime.</h2>
       </div>
     </section>
+    <section class="ps-report-slider">
+      <div class="glide" id="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="ps-report">
+                <div class="container">
+                  <p>Report, Presentation & Free Test</p>
+                  <h2>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </h2>
+
+                  <a href="#" class="psr-btn">Read the full report </a>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="ps-report">
+                <div class="container">
+                  <p>Report, Presentation & Free Test</p>
+                  <h2>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </h2>
+
+                  <a href="#" class="psr-btn">Read the full report </a>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="ps-report">
+                <div class="container">
+                  <p>Report, Presentation & Free Test</p>
+                  <h2>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </h2>
+
+                  <a href="#" class="psr-btn">Read the full report </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="glide__bullets ps-report-bullets"
+          data-glide-el="controls[nav]"
+        >
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+        </div>
+      </div>
+    </section>
     <section class="i-wwd">
       <div class="container">
         <h2 class="wwd-title">
@@ -335,7 +390,7 @@
       <div class="container">
         <h2 class="iclient-title">what our clients are saying</h2>
         <div class="iclient-slider">
-          <div class="glide">
+          <div class="glide" id="testi-glide">
             <div class="glide__track" data-glide-el="track">
               <ul class="glide__slides">
                 <li class="glide__slide">
@@ -701,7 +756,16 @@
     <script src="js/footer.js"></script>
     <script src="js/header.js"></script>
     <script>
-      new Glide(".glide", {
+      new Glide("#glide", {
+        type: "carousel",
+        keyboard: true,
+        autoplay: 2500,
+        hoverpause: true,
+        perView: 1,
+      }).mount();
+    </script>
+    <script>
+      new Glide("#testi-glide", {
         type: "carousel",
         perView: 1,
         autoplay: 3000,

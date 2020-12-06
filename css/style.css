@@ -1326,11 +1326,11 @@ img.quot-img {
   background-image: url("../img/Contact-Us-Bg.png");
   background-size: cover;
   text-align: center;
-  padding: 110px 0px;
+  padding: 104px 0px;
 }
 .protect h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 48px;
+  font-size: 35px;
   font-weight: 600;
   text-transform: uppercase;
   color: white;
@@ -4282,11 +4282,11 @@ a.bs-read {
   background-image: url("../img/faq/CTA.png");
   background-position: center;
   background-size: cover;
-  padding: 200px 0px;
+  padding: 125px 0px;
   text-align: center;
 }
 .faq-cta h2 {
-  font-size: 48px;
+  font-size: 35px;
   color: white;
   font-family: "Roboto Slab", serif;
   font-weight: 600;
@@ -4557,7 +4557,7 @@ a.bs-read {
   margin-bottom: 0;
 }
 .o-cta {
-  padding: 140px 0px 100px 0px;
+  padding: 102px 0px 102px 0px;
   background-image: url("../img/onboard/CTA.png");
   background-position: top;
   background-size: cover;
@@ -4568,14 +4568,14 @@ a.bs-read {
   font-family: "Roboto Slab", serif;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 38px;
+  font-size: 35px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .o-cta p {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 23px;
   margin-top: 0px;
   margin-bottom: 50px;
 }
@@ -8309,6 +8309,11 @@ a {
 }
 .cle-cta {
   background-image: url("../img/c_level/cta.jpg");
+  background-color: rgb(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+}
+.pr-cta {
+  background-image: url("../img/price/cta.jpg");
   background-color: rgb(0, 0, 0, 0.8);
   background-blend-mode: overlay;
 }
