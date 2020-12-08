@@ -8457,7 +8457,7 @@ a {
   font-size: 17px;
 }
 .bull-box ul li i {
-  margin-top: 8px;
+  margin-top: 6px;
   font-size: 13px;
   margin-right: 7px;
 }
@@ -8578,9 +8578,17 @@ a {
 .osintn-box p {
   line-height: 22px;
 }
-.osint-quote {
-  padding-left: 16px;
-  font-size: 17px;
+.mid-section {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.mid-section .crime-title {
+  margin-bottom: 10px;
+}
+.crime-under {
+  text-align: center;
+  font-size: 18px;
+  color: black;
 }
 .osint-box-list {
   display: flex;
@@ -8623,6 +8631,9 @@ a {
   }
   .osint-serve {
     margin-bottom: 0px;
+  }
+  .mid-section {
+    margin: 30px 0px;
   }
 }
 /*Case studies Main service pages*/
@@ -8790,6 +8801,9 @@ a {
   .pt-blog {
     margin-top: 30px;
     margin-bottom: 0px;
+  }
+  .pt-blog-box {
+    margin-bottom: 30px;
   }
 }
 
