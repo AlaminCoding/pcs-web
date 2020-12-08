@@ -484,7 +484,7 @@ header {
 @media screen and (max-width: 500px) {
   .banner {
     background-position: 57%;
-    background-color: rgb(24, 47, 89, 0.4);
+    background-color: rgb(17, 17, 37, 0.8);
     background-blend-mode: overlay;
     padding-top: 100px;
     height: 650px;
@@ -7918,9 +7918,13 @@ a {
 }
 /*New Home Update*/
 .banner-v2 {
-  background-position: left;
   padding-top: 200px;
   padding-bottom: 52px;
+}
+@media screen and (max-width: 575px) {
+  .banner-v2 {
+    padding-top: 140px;
+  }
 }
 .banner-box h2 {
   text-shadow: 2px 2px 2px black;
