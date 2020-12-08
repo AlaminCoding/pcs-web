@@ -479,7 +479,7 @@
         </div>
       </section>
     </div>
-    <section class="faq-cta">
+    <section class="faq-cta lazy" data-bg="img/faq/CTA.png">
       <h2>still need help? Send us a note</h2>
       <a href="#">Let Us Secure</a>
     </section>
@@ -625,5 +625,11 @@
     </script>
     <script src="js/footer.js"></script>
     <script src="js/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.0/dist/lazyload.min.js"></script>
+    <script>
+      const myLazyLoad = new LazyLoad({
+        elements_selector: ".lazy",
+      });
+    </script>
   </body>
 </html>

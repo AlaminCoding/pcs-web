@@ -30,7 +30,11 @@
         <nav class="menubar">
           <div class="logo">
             <a href="index.html" class="logo-brand"
-              ><img src="img/logo.png" alt="LOGO"
+              ><img
+                data-src="img/logo.png"
+                alt="Cybersecurity Company"
+                class="lazy"
+                title="TechForing Logo"
             /></a>
           </div>
           <a class="signin-btn-sm" href="#">Sign In</a>
@@ -44,12 +48,12 @@
               <div class="mb-header">
                 <div class="logo">
                   <a href="index.html" class="logo-brand"
-                    ><img src="img/logo.png" alt="LOGO"
+                    ><img data-src="img/logo.png" alt="LOGO" class="lazy"
                   /></a>
                 </div>
                 <a class="signin-btn-sm" href="#">Sign In</a>
                 <div class="close-btn" id="close-btn">
-                  <img src="img/cancel.png" alt="cancel" />
+                  <img data-src="img/cancel.png" alt="cancel" class="lazy" />
                 </div>
               </div>
 
@@ -64,7 +68,11 @@
                 <a href="#" class="menu-link">Personal Cybersecurity</a>
                 <div class="mega-menu">
                   <div class="mm-close-btn">
-                    <img src="img/left-arrow.png" alt="Left Arrow" />
+                    <img
+                      data-src="img/left-arrow.png"
+                      alt="Left Arrow"
+                      class="lazy"
+                    />
                   </div>
                   <a class="mobile-home-link" href="index.html"
                     ><i class="fas fa-home"></i> Personal Cybersecurity</a
@@ -141,7 +149,11 @@
                 <a href="#" class="menu-link">Who We Serve</a>
                 <div class="wmega-menu">
                   <div class="mm-close-btn">
-                    <img src="img/left-arrow.png" alt="Left Arrow" />
+                    <img
+                      data-src="img/left-arrow.png"
+                      alt="Left Arrow"
+                      class="lazy"
+                    />
                   </div>
                   <div class="row">
                     <div class="col">
@@ -169,7 +181,11 @@
                 <a href="#" class="menu-link">More</a>
                 <div class="mega-menu">
                   <div class="mm-close-btn">
-                    <img src="img/left-arrow.png" alt="Left Arrow" />
+                    <img
+                      data-src="img/left-arrow.png"
+                      alt="Left Arrow"
+                      class="lazy"
+                    />
                   </div>
                   <div class="row">
                     <div class="col-lg-4">
@@ -237,7 +253,12 @@
         <div class="row">
           <div class="col-md-6">
             <div class="crimea-img">
-              <img src="img/osint/1.png" alt="" />
+              <img
+                data-src="img/osint/1.png"
+                alt="osint-investigations-background -check"
+                title="open-source-intelligence-service"
+                class="lazy"
+              />
             </div>
           </div>
           <div class="col-md-6">
@@ -354,7 +375,12 @@
     </section>
     <section class="crime-serve">
       <div class="container">
-        <img src="img/osint/2.png" alt="" />
+        <img
+          data-src="img/osint/2.png"
+          alt="osint-investigations-executive-protection"
+          title="executive-protection-osint"
+          class="lazy"
+        />
         <b>If you are one of them, try our Osint services. </b>
         <p class="mt-3">
           In some cases, we also had to collect information ranging from
@@ -433,7 +459,12 @@
           </div>
           <div class="col-md-6">
             <div class="bull-img">
-              <img src="img/osint/3.png" alt="" />
+              <img
+                data-src="img/osint/3.png"
+                alt="osint-investigations-private-monitoring"
+                title="collect-information-poi-investigation"
+                class="lazy"
+              />
             </div>
           </div>
         </div>
@@ -441,7 +472,12 @@
     </section>
     <section class="osint-serve">
       <div class="container">
-        <img src="img/osint/4.png" alt="" />
+        <img
+          data-src="img/osint/4.png"
+          alt="osint-investigations-collect-information"
+          title="personal-information-audit"
+          class="lazy"
+        />
         <p class="mt-3">
           As OSint analysts, we help high-net-worth individuals understand and
           manage digital risk, unwanted material detection so that business
@@ -549,7 +585,12 @@
           <div class="row">
             <div class="col-md-4">
               <div class="pt-blog-box">
-                <img src="img/osint/case1.png" alt="" />
+                <img
+                  data-src="img/osint/case1.png"
+                  alt="osint-investigations-case-study"
+                  title="case-study1"
+                  class="lazy"
+                />
                 <div class="pt-bar"></div>
                 <h2>Lorem Ipsum is simply dummy text</h2>
                 <p>
@@ -566,7 +607,12 @@
             </div>
             <div class="col-md-4">
               <div class="pt-blog-box">
-                <img src="img/osint/case2.png" alt="" />
+                <img
+                  data-src="img/osint/case2.png"
+                  alt="osint-investigations-case-study2"
+                  title="case-study2"
+                  class="lazy"
+                />
                 <div class="pt-bar"></div>
                 <h2>Lorem Ipsum is simply dummy text</h2>
                 <p>
@@ -583,7 +629,12 @@
             </div>
             <div class="col-md-4">
               <div class="pt-blog-box">
-                <img src="img/osint/case3.png" alt="" />
+                <img
+                  data-src="img/osint/case3.png"
+                  alt="osint-investigations-case-study3"
+                  title="case-study3"
+                  class="lazy"
+                />
                 <div class="pt-bar"></div>
                 <h2>Lorem Ipsum is simply dummy text</h2>
                 <p>
@@ -742,5 +793,11 @@
       }).mount();
     </script>
     <script src="js/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.0/dist/lazyload.min.js"></script>
+    <script>
+      const myLazyLoad = new LazyLoad({
+        elements_selector: ".lazy",
+      });
+    </script>
   </body>
 </html>

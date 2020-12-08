@@ -28,7 +28,11 @@
         <nav class="menubar">
           <div class="logo">
             <a href="index.html" class="logo-brand"
-              ><img src="img/logo.png" alt="LOGO"
+              ><img
+                data-src="img/logo.png"
+                alt="Cybersecurity Company"
+                class="lazy"
+                title="TechForing Logo"
             /></a>
           </div>
           <a class="signin-btn-sm" href="#">Sign In</a>
@@ -42,12 +46,12 @@
               <div class="mb-header">
                 <div class="logo">
                   <a href="index.html" class="logo-brand"
-                    ><img src="img/logo.png" alt="LOGO"
+                    ><img data-src="img/logo.png" alt="LOGO" class="lazy"
                   /></a>
                 </div>
                 <a class="signin-btn-sm" href="#">Sign In</a>
                 <div class="close-btn" id="close-btn">
-                  <img src="img/cancel.png" alt="cancel" />
+                  <img data-src="img/cancel.png" alt="cancel" class="lazy" />
                 </div>
               </div>
 
@@ -62,7 +66,11 @@
                 <a href="#" class="menu-link">Personal Cybersecurity</a>
                 <div class="mega-menu">
                   <div class="mm-close-btn">
-                    <img src="img/left-arrow.png" alt="Left Arrow" />
+                    <img
+                      data-src="img/left-arrow.png"
+                      alt="Left Arrow"
+                      class="lazy"
+                    />
                   </div>
                   <a class="mobile-home-link" href="index.html"
                     ><i class="fas fa-home"></i> Personal Cybersecurity</a
@@ -139,7 +147,11 @@
                 <a href="#" class="menu-link">Who We Serve</a>
                 <div class="wmega-menu">
                   <div class="mm-close-btn">
-                    <img src="img/left-arrow.png" alt="Left Arrow" />
+                    <img
+                      data-src="img/left-arrow.png"
+                      alt="Left Arrow"
+                      class="lazy"
+                    />
                   </div>
                   <div class="row">
                     <div class="col">
@@ -167,7 +179,11 @@
                 <a href="#" class="menu-link">More</a>
                 <div class="mega-menu">
                   <div class="mm-close-btn">
-                    <img src="img/left-arrow.png" alt="Left Arrow" />
+                    <img
+                      data-src="img/left-arrow.png"
+                      alt="Left Arrow"
+                      class="lazy"
+                    />
                   </div>
                   <div class="row">
                     <div class="col-lg-4">
@@ -234,19 +250,33 @@
       <div class="container">
         <h2 class="point-title">What describes you best?</h2>
         <div class="point1-category">
-          <div class="point-category pc1">
+          <div
+            class="point-category pc1 lazy"
+            data-bg="img/getstart/pcs-point.png"
+            title="techforing-get-started-pcs"
+          >
             <h2>Invidual</h2>
             <a href="#pcs-part" id="pcsp-btn"
               >Select
-              <img src="img/getstart/double-angle-pointing-to-right.png" alt=""
+              <img
+                data-src="img/getstart/double-angle-pointing-to-right.png"
+                alt=""
+                class="lazy"
             /></a>
           </div>
           <div class="pc-line"></div>
-          <div class="point-category pc2">
+          <div
+            class="point-category pc2 lazy"
+            data-bg="img/getstart/bcs-point.png"
+            title="techforing-get-started-bcs"
+          >
             <h2>Buisness</h2>
             <a id="pm-open"
               >Select
-              <img src="img/getstart/double-angle-pointing-to-right.png" alt=""
+              <img
+                data-src="img/getstart/double-angle-pointing-to-right.png"
+                alt=""
+                class="lazy"
             /></a>
           </div>
           <div class="point-modal" id="point-modal">
@@ -781,7 +811,12 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div id="request" class="find-box pt-3">
+              <div
+                id="request"
+                class="find-box pt-3 lazy"
+                data-bg="img/getstart/Request-call.png"
+                title="techforing-get-started-pcs"
+              >
                 <div>
                   <h2>Getting in touch is easy</h2>
                 </div>
@@ -877,7 +912,11 @@
                   </a>
                 </form>
               </div>
-              <div id="inquery" class="find-box">
+              <div
+                id="inquery"
+                class="find-box"
+                title="techforing-get-started-image"
+              >
                 <h2>Want to know more ?</h2>
                 <form action="">
                   <input type="text" placeholder="Full Name" />
@@ -1135,6 +1174,12 @@
           gsCta.css("display", "none");
         }
       }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.0/dist/lazyload.min.js"></script>
+    <script>
+      const myLazyLoad = new LazyLoad({
+        elements_selector: ".lazy",
+      });
     </script>
   </body>
 </html>

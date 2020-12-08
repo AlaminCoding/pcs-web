@@ -229,7 +229,11 @@
     <section class="about-price">
       <div class="ap-box">
         <div class="ap-box-img">
-          <img src="img/price/Side-Graphics.png" alt="About Price Image" />
+          <img
+            data-src="img/price/Side-Graphics.png"
+            alt="About Price Image"
+            class="lazy"
+          />
         </div>
         <div class="ap-box-text">
           <h2>
@@ -1100,18 +1104,22 @@
               <li class="glide__slide">
                 <div class="ps-slider-outer">
                   <div class="ps-img-box">
-                    <img src="img/investigate/islider-img.png" alt="" />
+                    <img
+                      data-src="img/investigate/islider-img.png"
+                      alt=""
+                      class="lazy"
+                    />
                   </div>
                   <div class="price-slider-box">
                     <img
-                      src="img/price/Quote.png"
+                      data-src="img/price/Quote.png"
                       alt="Quote"
-                      class="quote-left"
+                      class="quote-left lazy"
                     />
                     <img
-                      src="img/price/Quote.png"
+                      data-src="img/price/Quote.png"
                       alt="Quote"
-                      class="quote-right"
+                      class="quote-right lazy"
                     />
                     <h2>
                       Lorem ipsum, or lipsum as it is sometimes known, is dummy
@@ -1128,18 +1136,22 @@
               <li class="glide__slide">
                 <div class="ps-slider-outer">
                   <div class="ps-img-box">
-                    <img src="img/investigate/islider-img.png" alt="" />
+                    <img
+                      data-src="img/investigate/islider-img.png"
+                      alt=""
+                      class="lazy"
+                    />
                   </div>
                   <div class="price-slider-box">
                     <img
-                      src="img/price/Quote.png"
+                      data-src="img/price/Quote.png"
                       alt="Quote"
-                      class="quote-left"
+                      class="quote-left lazy"
                     />
                     <img
-                      src="img/price/Quote.png"
+                      data-src="img/price/Quote.png"
                       alt="Quote"
-                      class="quote-right"
+                      class="quote-right lazy"
                     />
                     <h2>
                       Lorem ipsum, or lipsum as it is sometimes known, is dummy
@@ -1156,18 +1168,22 @@
               <li class="glide__slide">
                 <div class="ps-slider-outer">
                   <div class="ps-img-box">
-                    <img src="img/investigate/islider-img.png" alt="" />
+                    <img
+                      data-src="img/investigate/islider-img.png"
+                      alt=""
+                      class="lazy"
+                    />
                   </div>
                   <div class="price-slider-box">
                     <img
-                      src="img/price/Quote.png"
+                      data-src="img/price/Quote.png"
                       alt="Quote"
-                      class="quote-left"
+                      class="quote-left lazy"
                     />
                     <img
-                      src="img/price/Quote.png"
+                      data-src="img/price/Quote.png"
                       alt="Quote"
-                      class="quote-right"
+                      class="quote-right lazy"
                     />
                     <h2>
                       Lorem ipsum, or lipsum as it is sometimes known, is dummy
@@ -1204,11 +1220,12 @@
         ></a>
       </div>
     </section> -->
-    <section class="poli-cta pr-cta">
+    <section class="poli-cta pr-cta lazy" data-bg="img/price/cta.jpg">
       <h2>
-        Our managed service provider pricing is fully surveyed to outshine our competitors.
+        Our managed service provider pricing is fully surveyed to outshine our
+        competitors.
       </h2>
-      <p>Want to talk in details? </p>
+      <p>Want to talk in details?</p>
       <a href="#">Schedule A Call</a>
     </section>
     <footer>
@@ -1355,5 +1372,11 @@
       }).mount();
     </script>
     <script src="js/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.0/dist/lazyload.min.js"></script>
+    <script>
+      const myLazyLoad = new LazyLoad({
+        elements_selector: ".lazy",
+      });
+    </script>
   </body>
 </html>

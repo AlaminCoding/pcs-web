@@ -396,7 +396,6 @@ header {
 .banner {
   width: 100%;
   height: 750px;
-  background-image: url("../img/banner.jpg");
   background-size: cover;
   background-position: center;
   padding-top: 250px;
@@ -640,7 +639,6 @@ header {
 }
 /*Guard section Start*/
 .guard {
-  background-image: url("../img/guard.png");
   background-position: center;
   background-size: cover;
   padding: 120px 0px;
@@ -1323,7 +1321,6 @@ img.quot-img {
 
 .protect {
   margin-top: 40px;
-  background-image: url("../img/Contact-Us-Bg.png");
   background-size: cover;
   text-align: center;
   padding: 104px 0px;
@@ -3776,7 +3773,6 @@ a.bs-read {
   display: none;
 }
 .db-box {
-  background-image: url("../img/data-removal/Data-broker.png");
   background-position: top;
   background-size: cover;
   width: 100%;
@@ -3837,7 +3833,6 @@ a.bs-read {
 .d-link {
   padding: 80px 0px;
   width: 100%;
-  background-image: url("../img/data-removal/Link-approval.png");
   background-position: center;
   background-size: cover;
   color: white;
@@ -4279,7 +4274,6 @@ a.bs-read {
 /* FAQ End */
 /* FAQ CTA */
 .faq-cta {
-  background-image: url("../img/faq/CTA.png");
   background-position: center;
   background-size: cover;
   padding: 125px 0px;
@@ -4512,7 +4506,6 @@ a.bs-read {
 }
 .o-expert {
   padding: 100px 0px;
-  background-image: url("../img/onboard/Team-Bg.png");
   background-size: cover;
   background-position: top;
   background-color: #0b111e;
@@ -4558,7 +4551,6 @@ a.bs-read {
 }
 .o-cta {
   padding: 102px 0px 102px 0px;
-  background-image: url("../img/onboard/CTA.png");
   background-position: top;
   background-size: cover;
   text-align: center;
@@ -6332,7 +6324,6 @@ a {
 }
 /*Virus Removal*/
 .vr-banner {
-  background-image: url("../img/virus/Header.jpg");
   background-position: center;
   background-size: cover;
   padding: 325px 0px 275px 0px;
@@ -6896,12 +6887,6 @@ a {
   padding: 0px 40px;
 }
 
-.pc1 {
-  background-image: url("../img/getstart/pcs-point.png");
-}
-.pc2 {
-  background-image: url("../img/getstart/bcs-point.png");
-}
 .point-category {
   height: 450px;
   width: 450px;
@@ -7157,9 +7142,7 @@ a {
   background-size: cover;
   padding: 30px 20px;
 }
-#request {
-  background-image: url("../img/getstart/Request-call.png");
-}
+
 #inquery {
   background-image: url("../img/getstart/Iquire-further.png");
   display: none;
@@ -7714,7 +7697,6 @@ a {
   margin-top: 80px;
 }
 .poli-cta {
-  background-image: url("../img/political/cta.png");
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -7936,7 +7918,6 @@ a {
 }
 /*New Home Update*/
 .banner-v2 {
-  background-image: url("../img/PCS--header.png");
   background-position: left;
   padding-top: 200px;
   padding-bottom: 52px;
@@ -7979,16 +7960,12 @@ a {
   justify-content: space-between;
 }
 .hcase1 {
-  background-image: url("../img/case1.jpg");
   background-position: 65%;
 }
 .hcase2 {
-  background-image: url("../img/case2.jpg");
   background-position: 9%;
 }
-.hcase3 {
-  background-image: url("../img/case3.jpg");
-}
+
 .hcase-outer:after {
   content: "";
   position: absolute;
@@ -8304,21 +8281,16 @@ a {
   left: 50%;
   transform: translateX(-50%);
 }
-.hnwi-cta {
-  background-image: url("../img/hnwi/Group-1311.jpg");
-}
+
 .cle-cta {
-  background-image: url("../img/c_level/cta.jpg");
   background-color: rgb(0, 0, 0, 0.8);
   background-blend-mode: overlay;
 }
 .pr-cta {
-  background-image: url("../img/price/cta.jpg");
   background-color: rgb(0, 0, 0, 0.8);
   background-blend-mode: overlay;
 }
 .cele-cta {
-  background-image: url("../img/celebrity/cta.jpg");
   background-color: rgb(0, 0, 0, 0.8);
   background-blend-mode: overlay;
   background-position: bottom;
@@ -8816,11 +8788,8 @@ a {
     margin-bottom: 0px;
   }
 }
-.psn-cta {
-  background-image: url("../img/personal-service/cta.png");
-}
+
 .inci-cta {
-  background-image: url("../img/incident/cta.jpg");
   background-color: rgb(0, 0, 0, 0.8);
   background-blend-mode: overlay;
   background-position: bottom;
