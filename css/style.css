@@ -8842,3 +8842,185 @@ a {
   background-blend-mode: overlay;
   background-position: bottom;
 }
+/* 404 page */
+.pn-section {
+  text-align: center;
+  margin-top: 190px;
+  margin-bottom: 60px;
+}
+.pn-section img {
+  width: 50%;
+}
+.pn-section h2 {
+  margin-top: 40px;
+  font-size: 20px;
+}
+.pn-section p {
+  color: black;
+  font-weight: 500;
+}
+.pn-section p a {
+  color: #182f59;
+  text-decoration: underline;
+}
+@media screen and (max-width: 992px) {
+  .pn-section img {
+    width: 100%;
+  }
+  .pn-section {
+    margin-top: 65px;
+  }
+}
+/* SignUp */
+.sign-banner {
+  background-image: url("../img/signup/header.png");
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 600px;
+}
+.sign-form {
+  padding: 60px 0px;
+}
+.sign-form form {
+  border: 2px solid #182f59;
+  padding: 20px;
+  background-color: white;
+}
+.sign-form h2 {
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  color: #182f59;
+}
+.form-text {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+.sign-auth {
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 500;
+}
+.sign-auth i {
+  margin-left: 10px;
+}
+.sign-google {
+  font-size: 20px;
+  background-color: rgb(72, 133, 237);
+  padding: 10px;
+  border: 1px solid #4885ed;
+  border-radius: 50%;
+  color: white;
+}
+.sign-google:hover {
+  background-color: white;
+  color: #4885ed;
+}
+.sign-fb {
+  font-size: 20px;
+  background-color: #3b5998;
+  border: 1px solid #3b5998;
+  padding: 10px 13px;
+  border-radius: 50%;
+  color: white;
+}
+.sign-fb:hover {
+  background-color: white;
+  color: #335c8a;
+}
+.sign-box {
+  margin-bottom: 20px;
+}
+.sign-box label {
+  font-family: "roboto Slab", serif;
+  color: black;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.sign-box input,
+.sign-box select {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 0px;
+  outline: 0;
+  padding-left: 5px;
+  height: 30px;
+}
+
+.sign-box .iti__selected-flag {
+  height: 50%;
+  margin-top: 8px;
+}
+.sign-form small {
+  line-height: 20px;
+  color: black;
+}
+.form-agree {
+  font-size: 14px;
+  color: black;
+  line-height: 20px;
+}
+.sign-form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sign-form-btn button {
+  border: 2px solid #182f59;
+  background-color: #182f59;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px 35px;
+  transition: 0.5s;
+}
+.sign-form-btn button:hover {
+  border: 2px solid #182f59;
+  background-color: white;
+  color: #182f59;
+}
+.sign-form-btn a {
+  border: 2px solid #182f59;
+  background-color: white;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  color: #182f59;
+  padding: 10px 35px;
+  transition: 0.5s;
+}
+.sign-form-btn a span {
+  color: black;
+  transition: 0.5s;
+}
+.sign-form-btn a:hover {
+  border: 2px solid #182f59;
+  background-color: #182f59;
+  color: white;
+  text-decoration: none;
+}
+.sign-form-btn a:hover span {
+  color: white;
+}
+@media screen and (max-width: 575px) {
+  .sign-banner {
+    height: 400px;
+    background-position: 27%;
+  }
+  .sign-form h2 {
+    font-size: 26px;
+  }
+  .sign-form-btn {
+    flex-direction: column;
+  }
+  .sign-form-btn a {
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .sign-form form {
+    padding: 10px;
+  }
+}
