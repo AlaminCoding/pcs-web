@@ -56,7 +56,7 @@
                       title="Cybersecurity Company"
                   /></a>
                 </div>
-                <a class="signin-btn-sm" href="signup.html">Sign Up</a>
+                <a class="signin-btn-sm" href="signin.html">Sign In</a>
                 <div class="close-btn" id="close-btn">
                   <img src="img/cancel.png" alt="cancel" />
                 </div>
@@ -295,7 +295,7 @@
                 <a href="get_start.html" class="menu-link">Get Started</a>
               </li>
               <li class="menus">
-                <a href="signup.html" class="signin-btn-lg">Sign Up</a>
+                <a href="signin.html" class="signin-btn-lg">Sign In</a>
               </li>
             </ul>
           </div>
@@ -313,6 +313,10 @@
             <form action="">
               <h2>Login or Sign Up</h2>
               <p class="form-text">Sign up for Personal Cybersecurity</p>
+              <p class="form-text-alt">
+                Want to sign up for Buisness Cybersecurity?
+                <a href="#">Click Here</a>
+              </p>
               <p class="sign-auth">
                 Continue With
                 <a href="#"><i class="fab fa-google sign-google"></i></a>
@@ -321,38 +325,38 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="sign-box">
-                    <label for="firstname">First Name</label>
-                    <input type="text" name="firstname" />
+                    <label for="firstname">First Name*</label>
+                    <input type="text" name="firstname" required />
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="sign-box">
-                    <label for="lastname">Last Name</label>
-                    <input type="text" name="lastname" />
+                    <label for="lastname">Last Name*</label>
+                    <input type="text" name="lastname" required />
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="sign-box">
-                    <label for="pemail">Personal Email</label>
-                    <input type="email" name="pemail" />
+                    <label for="pemail">Personal Email*</label>
+                    <input type="email" name="pemail" required />
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="sign-box">
-                    <label for="pphone">mobile phone number</label>
-                    <input type="tell" id="phone" />
+                    <label for="pphone">mobile phone number*</label>
+                    <input type="tell" id="phone" required />
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="sign-box">
-                    <label for="password1">Password</label>
-                    <input type="password" name="password1" />
+                    <label for="password1">Password*</label>
+                    <input type="password" name="password1" required />
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="sign-box">
-                    <label for="password2">Confirm Password</label>
-                    <input type="password" name="password2" />
+                    <label for="password2">Confirm Password*</label>
+                    <input type="password" name="password2" required />
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -660,13 +664,43 @@
                   </div>
                 </div>
               </div>
+              <div class="vaf-group">
+                <input
+                  type="checkbox"
+                  id="newsletter"
+                  name="newsletter"
+                  value="newsletter"
+                />
+                <label for="newsletter" class="newsletter"
+                  >Yes, I would also like to sign up for the promotional offers
+                  & newsletter.</label
+                ><br />
+              </div>
               <p class="form-agree">
                 By clicking on "Sign up ", you agree to our Terms of Use and
                 acknowledge our Privacy Statement.
               </p>
-              <div class="sign-form-btn">
-                <button type="submit">Sign up</button>
-                <a href="#"><span>Have an account?</span> sign in</a>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="sign-form-btn">
+                    <button
+                      type="submit"
+                      class="g-recaptcha"
+                      data-sitekey="reCAPTCHA_site_key"
+                      data-callback="onSubmit"
+                      data-action="submit"
+                    >
+                      Sign up
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="sign-form-btn">
+                    <a href="signin.html"
+                      ><span>Have an account?</span> sign in</a
+                    >
+                  </div>
+                </div>
               </div>
             </form>
           </div>
@@ -804,6 +838,12 @@
       intlTelInput(input, {
         utilsScript: "js/utils.js",
       });
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+      function onSubmit(token) {
+        document.getElementById("signup-form").submit();
+      }
     </script>
   </body>
 </html>

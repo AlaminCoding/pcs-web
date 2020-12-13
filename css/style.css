@@ -3996,9 +3996,9 @@ a.bs-read {
 .faq-cta a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 24px;
   color: white;
-  border: 4px solid white;
+  border: 3px solid white;
   padding: 12px 35px;
   transition: 0.5s;
 }
@@ -4186,13 +4186,13 @@ a.bs-read {
   font-weight: 600;
   margin-top: 0;
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 40px;
 }
 .f-banner p {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   margin-top: 25px;
 }
 .fsearch-box {
@@ -4204,7 +4204,7 @@ a.bs-read {
   background-color: white;
   font-family: "Roboto Slab", serif;
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   width: 100%;
   height: 55px;
   border-radius: 28px;
@@ -4240,22 +4240,22 @@ a.bs-read {
 }
 .faq-category {
   border-top: 5px solid #182f49;
-  padding-top: 14px;
+  padding-top: 4px;
 }
 .faq-category h2 {
   font-family: "Roboto Slab", serif;
-  font-size: 30px;
+  font-size: 26px;
   color: #111725;
   text-transform: uppercase;
 }
 .accordion {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   background-color: #f4f4f4;
   color: #111725;
   cursor: pointer;
-  padding: 22px 18px 22px 0px;
+  padding: 15px 18px 15px 10px;
   width: 100%;
   border: none;
   text-align: left;
@@ -4279,7 +4279,7 @@ a.bs-read {
   font-size: 25px;
   font-weight: bold;
   position: absolute;
-  top: 32%;
+  top: 26%;
   right: 5px;
 }
 
@@ -4288,7 +4288,7 @@ a.bs-read {
 }
 
 .fpanel {
-  padding: 0 18px;
+  padding: 0 10px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
@@ -4298,8 +4298,8 @@ a.bs-read {
   margin-bottom: 0;
   padding: 10px 0px;
   color: #111725;
-  font-family: "Montserrat", sans-serif;
-  font-size: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 /* FAQ End */
 /* FAQ CTA */
@@ -8877,7 +8877,7 @@ a {
   background-size: cover;
   background-position: top;
   width: 100%;
-  height: 600px;
+  height: 500px;
 }
 .sign-form {
   padding: 60px 0px;
@@ -8896,6 +8896,7 @@ a {
   color: black;
   font-size: 18px;
   font-weight: 500;
+  margin-bottom: 8px;
 }
 .sign-auth {
   font-family: "Roboto Slab", serif;
@@ -8947,7 +8948,7 @@ a {
   border-radius: 0px;
   outline: 0;
   padding-left: 5px;
-  height: 30px;
+  height: 35px;
 }
 
 .sign-box .iti__selected-flag {
@@ -8962,12 +8963,9 @@ a {
   font-size: 14px;
   color: black;
   line-height: 20px;
+  margin-bottom: 25px;
 }
-.sign-form-btn {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 .sign-form-btn button {
   border: 2px solid #182f59;
   background-color: #182f59;
@@ -8983,6 +8981,7 @@ a {
   color: #182f59;
 }
 .sign-form-btn a {
+  display: inline-block;
   border: 2px solid #182f59;
   background-color: white;
   font-family: "Roboto Slab", serif;
@@ -9004,6 +9003,14 @@ a {
 .sign-form-btn a:hover span {
   color: white;
 }
+.form-text-alt {
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+}
+.form-text-alt a {
+  color: #182f59;
+}
 @media screen and (max-width: 575px) {
   .sign-banner {
     height: 400px;
@@ -9013,7 +9020,7 @@ a {
     font-size: 26px;
   }
   .sign-form-btn {
-    flex-direction: column;
+    text-align: center;
   }
   .sign-form-btn a {
     padding: 10px 20px;
@@ -9023,4 +9030,74 @@ a {
   .sign-form form {
     padding: 10px;
   }
+}
+/* Login */
+.login-btn {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #182f59;
+  background-color: #182f59;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px 35px;
+  transition: 0.5s;
+  margin-top: 28px;
+}
+.login-btn:hover {
+  border: 2px solid #182f59;
+  background-color: white;
+  color: #182f59;
+}
+.forget-text {
+  text-align: center;
+  margin-top: 15px;
+}
+.forget-text a {
+  color: #182f59;
+}
+.login-alt-btn {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.login-alt-btn a {
+  border: 2px solid #182f59;
+  background-color: white;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  color: #182f59;
+  padding: 10px 35px;
+  transition: 0.5s;
+}
+.login-alt-btn a span {
+  color: black;
+  transition: 0.5s;
+}
+.login-alt-btn a:hover {
+  border: 2px solid #182f59;
+  background-color: #182f59;
+  color: white;
+  text-decoration: none;
+}
+.login-alt-btn:hover a span {
+  color: white;
+}
+.vaf-group #newsletter {
+  width: 15px;
+  height: 15px;
+  display: inline;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+.vaf-group .newsletter {
+  display: inline;
+  margin-top: -2px;
+}
+.vaf-group {
+  margin-bottom: 10px;
+}
+.vaf-group label {
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
 }
